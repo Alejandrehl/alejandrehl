@@ -7,7 +7,7 @@
 
 - 🏆 I'm currently work as a software architect at [Banco Estado de Chile](https://www.bancoestado.cl/imagenes/_personas/home/default.asp)
 
-- 🤝 I’m looking to collaborate in **freelance or startup projects**
+- 🤝 I’m looking for **Frontend Developer** to collaborate in different projects.
 
 - 👨‍💻 Frontend stack: **React, React Native, Flutter**
 
