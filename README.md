@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=alejandrehl" alt="alejandrehl" /></a> </p>
 
-- 🔭 I'm currently work as a software architect at [Banco Estado de Chile](https://www.bancoestado.cl/imagenes/_personas/home/default.asp)
+- 🏆 I'm currently work as a software architect at [Banco Estado de Chile](https://www.bancoestado.cl/imagenes/_personas/home/default.asp)
 
 - 🤝 I’m looking to collaborate in **freelance or startup projects**
 
