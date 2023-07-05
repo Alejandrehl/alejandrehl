@@ -1,24 +1,25 @@
-# ¡Hola, soy Alejandro Exequiel Hernández Lara! 👋
+# Hello, I'm Alejandro Exequiel Hernández Lara! 👋
 
-¡Bienvenido a mi perfil de GitHub! Soy un Arquitecto de software apasionado y un 1st class developer con un enfoque en el desarrollo de aplicaciones móviles y web. Permíteme presentarte un poco más sobre mí:
+Welcome to my GitHub profile! I am a passionate Software Architect and a 1st class developer with a focus on mobile and web application development. Let me introduce myself:
 
-- 🌎 Soy de Chile, apasionado por la tecnología y la programación.
-- 📅 Nacido el 3 de enero y orgulloso representante del signo de Capricornio ♑️.
-- 💼 Actualmente trabajo como Arquitecto de software en el Banco del Estado de Chile.
-- 🚀 Experto en Flutter, NestJS y AWS. Disfruto creando aplicaciones móviles y servicios web escalables y robustos.
-- 🛠️ También tengo habilidades sólidas en Golang y React, ampliando constantemente mi conjunto de herramientas.
+- 🌎 I am from Chile and deeply passionate about technology and programming.
+- 📅 Born on January 3rd and proud Capricorn ♑️.
+- 💼 Currently working as a Software Architect at Banco del Estado de Chile.
+- 🚀 Expert in Flutter, NestJS, and AWS. I enjoy creating scalable and robust mobile applications and web services.
+- 🛠️ I also have solid skills in Golang and React, constantly expanding my toolkit.
 
-## Mis habilidades y tecnologías preferidas
+## My Preferred Skills and Technologies
 
 - 💙 Flutter
 - ☁️ AWS (Amazon Web Services)
 - 🦆 Golang
 - ⚛️ React
 
-## Contacto
+## Contact
 
-¡Si estás interesado en colaborar en proyectos emocionantes o simplemente quieres charlar sobre tecnología, no dudes en contactarme! Puedes encontrarme en las siguientes plataformas:
+If you are interested in collaborating on exciting projects or simply want to have a chat about technology, feel free to reach out to me! You can find me on the following platforms:
 
-- 📧 Correo electrónico: [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
+- 📧 Email: [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
 - 💼 LinkedIn: [Alejandro Exequiel Hernández Lara](https://www.linkedin.com/in/alejandrrhernandez/)
-- 
+
+Thank you for visiting my profile! I hope you find my projects and contributions interesting. Feel free to explore my repositories and leave a star if anything catches your attention!
