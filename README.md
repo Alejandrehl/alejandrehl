@@ -15,6 +15,15 @@ Welcome to my GitHub profile! I am a passionate Software Architect and a 1st cla
 - 🦆 Golang
 - ⚛️ React
 
+## Additional Skills and Projects
+
+In addition to my preferred skills and technologies, I have worked on other interesting projects:
+
+- 💻 Proficient in Python, including web scraping and full-stack development with Django.
+- 🌐 Developed REST APIs using Django Rest Framework.
+- 🆓 Created a free and publicly accessible API to obtain the value of the UF (Unidad de Fomento) in Chile. The API is documented and built with Django and other related tools. You can find it at [UF Point API](https://www.uf-point.com/).
+- 📦 Developed a project for low-cost package shipping and delivery. This project is built with Laravel and can be found at [Envios Gallo Negro](https://enviosgallonegro.com/).
+
 ## Contact
 
 If you are interested in collaborating on exciting projects or simply want to have a chat about technology, feel free to reach out to me! You can find me on the following platforms:
