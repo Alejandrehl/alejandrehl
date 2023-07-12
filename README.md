@@ -1,34 +1,46 @@
-# Hello, I'm Alejandro Exequiel Hernández Lara! 👋
+# Hello, World! I'm Alejandro Exequiel Hernández Lara 👋
 
-Welcome to my GitHub profile! I am a passionate Software Architect and a 1st class developer with a focus on mobile and web application development. Let me introduce myself:
+Welcome to my GitHub profile! A Software Architect by profession and a first-class developer at heart, I specialize in web and mobile application development. Based in Chile, I use my passion for technology and programming to drive innovation in every project I undertake.
 
-- 🌎 I am from Chile and deeply passionate about technology and programming.
-- 📅 Born on January 3rd and proud Capricorn ♑️.
-- 💼 Currently working as a Software Architect at Banco del Estado de Chile.
-- 🚀 Expert in Flutter, NestJS, and AWS. I enjoy creating scalable and robust mobile applications and web services.
-- 🛠️ I also have solid skills in Golang and React, constantly expanding my toolkit.
+## About Me
 
-## My Preferred Skills and Technologies
+- 🌎 Born and raised in Chile, I am driven by a deep passion for technology and programming.
+- 📅 A proud Capricorn, my approach to coding is meticulous and dedicated ♑️.
+- 💼 Currently navigating the exciting world of finance as a Software Architect at Banco del Estado de Chile.
+- 🚀 Expertise in Flutter, NestJS, and AWS. I thrive on creating scalable, robust mobile applications and web services.
+- 🛠️ Always learning, always growing. Expanding my toolkit with Golang and React.
+
+Additionally, I offer experience in configuring domains purchased through BlueHosting, Namecheap, and Hover. I am proficient with CloudFlare and its CNAME Flattening feature. Furthermore, I am adept at deployment and server management with Laravel Forge, Heroku, and Digital Ocean.
+
+## Preferred Skills and Technologies
 
 - 💙 Flutter
+- 🌱 NestJS
 - ☁️ AWS (Amazon Web Services)
 - 🦆 Golang
 - ⚛️ React
+- 🌐 Domain Configuration: BlueHosting, Namecheap, Hover
+- ☁️ Web Performance Optimization: CloudFlare and CNAME Flattening
+- 🚀 Deployment and Server Management: Laravel Forge, Heroku, and Digital Ocean
 
 ## Additional Skills and Projects
 
-In addition to my preferred skills and technologies, I have worked on other interesting projects:
+Beyond my primary skills and technologies, I have a portfolio of diverse projects:
 
-- 💻 Proficient in Python, including web scraping and full-stack development with Django.
-- 🌐 Developed REST APIs using Django Rest Framework.
-- 🆓 Created a free and publicly accessible API to obtain the value of the UF (Unidad de Fomento) in Chile. The API is documented and built with Django and other related tools. You can find it at [UF Point API](https://www.uf-point.com/).
-- 📦 Developed a project for low-cost package shipping and delivery. This project is built with Laravel and can be found at [Envios Gallo Negro](https://enviosgallonegro.com/).
+- 💻 Skilled in Python for web scraping and full-stack development with Django.
+- 🌐 Crafted REST APIs using the Django Rest Framework.
+- 🆓 Developed a free, publicly accessible API to obtain the value of the UF (Unidad de Fomento) in Chile, using Flask. Visit [UF Point API](https://www.uf-point.com/).
+- 📦 Initiated a low-cost package shipping and delivery project using Laravel. Explore more at [Envios Gallo Negro](https://enviosgallonegro.com/).
 
 ## Contact
 
-If you are interested in collaborating on exciting projects or simply want to have a chat about technology, feel free to reach out to me! You can find me on the following platforms:
+If you're interested in collaboration, need consultation on your projects, or simply want to discuss the fascinating world of technology, don't hesitate to reach out!
 
 - 📧 Email: [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
 - 💼 LinkedIn: [Alejandro Exequiel Hernández Lara](https://www.linkedin.com/in/alejandrrhernandez/)
 
-Thank you for visiting my profile! I hope you find my projects and contributions interesting. Feel free to explore my repositories and leave a star if anything catches your attention!
+Consider supporting my work and enabling more innovative projects by buying me a coffee:
+
+- ☕ [Buy me a coffee](https://www.buymeacoffee.com/Alejandrehl)
+
+Thank you for stopping by my profile! Feel free to browse through my repositories, and if you find something interesting, leaving a star is a great way to show your appreciation. Happy coding!
