@@ -36,7 +36,7 @@ Beyond my primary skills and technologies, I have a portfolio of diverse project
 If you're interested in collaboration, need consultation on your projects, or simply want to discuss the fascinating world of technology, don't hesitate to reach out!
 
 - 📧 Email: [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
-- 💼 LinkedIn: [Alejandro Hernández](https://www.linkedin.com/in/alejandrrhernandez/)
+- 💼 LinkedIn: [Alejandro Hernández](https://www.linkedin.com/in/alejandrehl/)
 - 🌐 Personal Website: [www.alejandrehl.com](http://www.alejandrehl.com)
 
 Consider supporting my work and enabling more innovative projects by buying me a coffee:
