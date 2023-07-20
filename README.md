@@ -1,12 +1,11 @@
-# Hello, World! I'm Alejandro Exequiel Hernández Lara 👋
+# Hello, Digital Realm. This is Alejandro Hernández 👋
 
-Welcome to my GitHub profile! A Software Architect by profession and a first-class developer at heart, I specialize in web and mobile application development. Based in Chile, I use my passion for technology and programming to drive innovation in every project I undertake.
+Welcome to my GitHub habitat, where the art of software engineering comes alive. Based in Chile, I specialize in web and mobile application development, and use my boundless passion for technology and programming to inject innovation into each project I undertake.
 
 ## About Me
 
-- 🌎 Born and raised in Chile, I am driven by a deep passion for technology and programming.
-- 📅 A proud Capricorn, my approach to coding is meticulous and dedicated ♑️.
-- 💼 Currently navigating the exciting world of finance as a Software Architect at Banco del Estado de Chile.
+- 🌎 Chilean by birth, I'm driven by an inexhaustible passion for technology and programming.
+- 💼 Currently exploring the exhilarating world of finance as a Software Architect at Banco del Estado de Chile.
 - 🚀 Expertise in Flutter, NestJS, and AWS. I thrive on creating scalable, robust mobile applications and web services.
 - 🛠️ Always learning, always growing. Expanding my toolkit with Golang and React.
 
@@ -37,7 +36,8 @@ Beyond my primary skills and technologies, I have a portfolio of diverse project
 If you're interested in collaboration, need consultation on your projects, or simply want to discuss the fascinating world of technology, don't hesitate to reach out!
 
 - 📧 Email: [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
-- 💼 LinkedIn: [Alejandro Exequiel Hernández Lara](https://www.linkedin.com/in/alejandrrhernandez/)
+- 💼 LinkedIn: [Alejandro Hernández](https://www.linkedin.com/in/alejandrrhernandez/)
+- 🌐 Personal Website: [www.alejandrehl.com](http://www.alejandrehl.com)
 
 Consider supporting my work and enabling more innovative projects by buying me a coffee:
 
