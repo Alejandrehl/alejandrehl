@@ -4,6 +4,6 @@
 
 ---
 
-- 📧 [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
-- 🌐 [www.alejandrehl.com](http://www.alejandrehl.com)
-- 💼 [LinkedIn - Alejandro Hernández](https://www.linkedin.com/in/alejandrehl/)
+- **Email:** [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com) 📧
+- **Phone:** [+56944889280](https://wa.me/56944889280) 📱 (WhatsApp)
+- **LinkedIn:** [www.linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl) 🔗
