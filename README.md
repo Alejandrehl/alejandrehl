@@ -42,7 +42,7 @@ I’ve been involved in the development and deployment of multiple projects rang
 - **Email:** [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com) 📧
 - **Website:** [www.alejandrehl.com](https://www.alejandrehl.com) 🌐
 - **LinkedIn:** [www.linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl) 🔗
-- **Instagram:** [www.instagram.com/alehernandezlabs](https://www.instagram.com/alehernandezlabs) 📸
+- **Instagram:** [www.instagram.com/alejandrehl](https://www.instagram.com/alejandrehl) 📸
 
 ---
 
