@@ -8,6 +8,4 @@ I am a Solutions Architect and Software Engineer specializing in scalable cloud 
 ### Get in Touch
 
 - **Email:** [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com) 📧
-- **Website:** [www.alejandrehl.com](https://www.alejandrehl.com) 🌐
 - **LinkedIn:** [www.linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl) 🔗
-- **Instagram:** [www.instagram.com/alehernandezlabs](https://www.instagram.com/alehernandezlabs) 📸
