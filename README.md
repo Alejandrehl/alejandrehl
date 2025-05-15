@@ -1,24 +1,27 @@
 # Alejandro Exequiel Hernández Lara
 
 **Founder & CEO at KaiNext**  
-**Cloud Architect · Full-Stack Engineer · Product Builder**
+**Cloud Architect · Full-Stack Engineer · Python Specialist · Product Builder**
 
-I’m the founder of **KaiNext**, a software company born to empower people and businesses through modern, scalable, and beautiful technology. We build digital tools that simplify complexity, automate workflows, and elevate user experience — always guided by real impact, clean design, and technical excellence.
+I’m the founder of **KaiNext**, a software company born to empower people and businesses through modern, scalable, and beautifully crafted technology. We build tools that simplify complexity, automate workflows, and elevate user experience — always guided by clean architecture, real impact, and design excellence.
 
-With over a decade of experience in tech, I specialize in designing and delivering high-performance systems that scale. I’m passionate about solving real-world problems with code, and I lead every project with a deep focus on efficiency, clarity, and continuous improvement.
+With 10+ years of experience in tech, I specialize in designing high-performance systems that scale. I lead projects end-to-end with deep focus on clarity, speed, and real-world problem solving — combining engineering precision with entrepreneurial mindset.
 
 ---
 
 ## ⚙️ Core Competencies
 
 - **Backend & Cloud Architecture:**  
-  Laravel · Node.js · AWS · Serverless · Amazon CDK · API Design · PostgreSQL · MySQL
+  Laravel · Node.js · Python · AWS · Serverless · Amazon CDK · API Design · PostgreSQL · MySQL
+
+- **Data Automation & Scraping:**  
+  Web Scraping · Playwright · BeautifulSoup · REST APIs · JSON Processing · Data Extraction
 
 - **Frontend & Mobile Development:**  
   React · Next.js · Flutter · TailwindCSS · UI/UX Thinking
 
 - **DevOps & Automation:**  
-  GitHub Actions · Docker · Infrastructure as Code · CI/CD Pipelines · Monitoring & Observability
+  Docker · GitHub Actions · CI/CD Pipelines · Infrastructure as Code · Monitoring & Observability
 
 - **Business & Product Strategy:**  
   SaaS Development · B2B Solutions · Technical Leadership · Agile Delivery · Customer-centric Design
@@ -29,10 +32,10 @@ With over a decade of experience in tech, I specialize in designing and deliveri
 
 At [**KaiNext**](https://www.kainext.cl), we’re focused on:
 
-- Crafting **custom digital platforms** for SMBs and emerging businesses
-- Developing our **first SaaS products** with modern stacks and global potential
-- Helping clients **automate, modernize and grow** with affordable and powerful software
-- Building a lean, autonomous, and world-class dev culture from Chile to the world
+- Delivering **custom digital platforms** for SMBs with real business impact
+- Launching our own **SaaS products** using modern cloud-native stacks
+- Automating mission-critical operations with **Python, AWS, and modern tools**
+- Growing a lean, autonomous, world-class dev culture — from Chile to the world
 
 ---
 
