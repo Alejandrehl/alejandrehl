@@ -1,47 +1,53 @@
 # Alejandro Exequiel Hernández Lara
 
-**Founder & CEO @ KaiNext**  
+**Founder & CEO @ [KaiNext](https://www.kainext.cl)**  
 **Cloud Architect · Full-Stack Engineer · Python Specialist · Product Builder**
 
-I’m the founder of **KaiNext**, a software company focused on building modern, scalable, and impactful digital products. We design systems that simplify complexity, automate workflows, and elevate user experience — always rooted in clean architecture, performance, and design excellence.
+[![Committers.top Badge](https://user-badge.committers.top/chile_private/alejandrehl.svg)](https://user-badge.committers.top/chile_private/alejandrehl)
+[![KaiNext Badge](https://org-badge.committers.top/chile_private/kainext.svg)](https://org-badge.committers.top/chile_private/kainext)
 
-With over 10 years of experience in tech, I specialize in cloud-native systems and full-cycle product development. My approach blends engineering precision with entrepreneurial drive, turning ideas into software people actually use.
+---
+
+I’m the founder of **KaiNext**, a premium software company crafting modern, scalable, and high-impact digital products.  
+We build systems that simplify complexity, automate workflows, and elevate user experience — all rooted in clean architecture, cloud performance, and thoughtful design.
+
+With 10+ years of experience, I specialize in cloud-native engineering and full-product lifecycles. I blend deep tech with business insight to deliver software that drives real value.
 
 ---
 
 ## ⚙️ Core Competencies
 
-- **Backend & Cloud Architecture**  
-  Laravel · Node.js · Python · AWS · Amazon CDK · Serverless · API Design · PostgreSQL · MySQL
+### 🧠 Backend & Cloud Architecture
+`Laravel` · `Node.js` · `Python` · `AWS` · `Amazon CDK` · `Serverless` · `API Design` · `PostgreSQL` · `MySQL`
 
-- **Data Automation & Scraping**  
-  Playwright · BeautifulSoup · REST APIs · Web Crawlers · JSON Pipelines
+### 🔄 Data Automation & Scraping  
+`Playwright` · `BeautifulSoup` · `REST APIs` · `Web Crawlers` · `ETL Pipelines`
 
-- **Frontend & Mobile**  
-  React · Next.js · Flutter · TailwindCSS · UI/UX Thinking
+### 💻 Frontend & Mobile  
+`React` · `Next.js` · `Flutter` · `TailwindCSS` · `UI/UX First Principles`
 
-- **DevOps & Infra**  
-  Docker · GitHub Actions · CI/CD · Infrastructure as Code · Monitoring · Observability
+### ⚙️ DevOps & Infrastructure  
+`Docker` · `GitHub Actions` · `CI/CD` · `IaC` · `Monitoring` · `Observability`
 
-- **Business & Product**  
-  SaaS Development · Technical Leadership · B2B Platforms · Agile Delivery · Lean Execution
+### 💼 Business & Product  
+`SaaS Development` · `Technical Leadership` · `B2B Platforms` · `Agile Delivery` · `Lean Execution`
 
 ---
 
-## 🚀 Building @ [KaiNext](https://www.kainext.cl)
+## 🚀 Currently Building @ [KaiNext](https://www.kainext.cl)
 
-- Custom **digital platforms** for high-impact SMB workflows  
-- Scalable, cloud-native **SaaS products** from idea to launch  
-- End-to-end **automation** with Python, AWS, and modern stacks  
-- A premium, autonomous, high-performance dev culture — made in Chile, built for the world
+- 🌐 Custom **platforms** for SMB workflows  
+- ☁️ Cloud-native **SaaS products** from zero to production  
+- 🤖 End-to-end **automation** using Python, AWS, and modern stacks  
+- 🇨🇱 A premium, high-performance dev culture — born in Chile, built for global impact
 
 ---
 
 ## 🤝 Let’s Connect
 
-- 📬 **Email:** [alejandro@kainext.cl](mailto:alejandro@kainext.cl)  
-- 💼 **LinkedIn:** [linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl)  
-- 🌐 **Website:** [www.kainext.cl](https://www.kainext.cl)
+- 📬 Email: [alejandro@kainext.cl](mailto:alejandro@kainext.cl)  
+- 💼 LinkedIn: [linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl)  
+- 🌐 Website: [www.kainext.cl](https://www.kainext.cl)
 
 ---
 
