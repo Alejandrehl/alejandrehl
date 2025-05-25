@@ -2,18 +2,19 @@
 
 **Software Architect & Tech Lead**  
 **Founder @ [KaiNext](https://www.kainext.cl)**  
-**Cloud-Native Engineer · Full-Stack Developer · Product-Focused Builder**
+**Cloud-Native Engineer · Full-Stack Developer · Product Builder**
 
-[![Committers.top Badge](https://user-badge.committers.top/chile_private/alejandrehl.svg)](https://user-badge.committers.top/chile_private/alejandrehl)  
-[![KaiNext Badge](https://org-badge.committers.top/chile_private/kainext.svg)](https://org-badge.committers.top/chile_private/kainext)
+![GitHub followers](https://img.shields.io/github/followers/alejandrehl?label=Followers&style=social)  
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=alejandrehl&show_icons=true&hide=stars&count_private=true&theme=default)  
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=alejandrehl&layout=compact&langs_count=8&theme=default)
 
 ---
 
-I'm a software architect and product builder focused on delivering real, scalable solutions that solve business problems and bring measurable value.
+I'm a software architect and product builder focused on delivering **real, scalable solutions** that solve business problems and bring measurable value.
 
-I currently lead **KaiNext**, a software consultancy born from years of hands-on experience building platforms, SaaS products, and automation tools. While I continue developing my own projects, I'm also open to joining a high-impact team as a **Software Architect, Tech Lead, or CTO**, where I can bring everything I’ve learned into a collaborative environment.
+I currently lead **KaiNext**, a software consultancy born from years of hands-on experience developing platforms, SaaS products, and automation tools. While I continue building my own technology stack, I'm also exploring opportunities to join a high-impact team as a **Software Architect, Tech Lead, or CTO**, where I can contribute with everything I’ve learned — and keep growing.
 
-I believe in building software that works — technically, visually, and commercially.
+I believe in building software that works: **technically sound, visually refined, and aligned with business goals**.
 
 ---
 
@@ -39,9 +40,9 @@ I believe in building software that works — technically, visually, and commerc
 ## 🚀 Currently Building @ [KaiNext](https://www.kainext.cl)
 
 - 🌐 Tailored **platforms** for small business workflows  
-- ☁️ Cloud-native **SaaS** from zero to production  
+- ☁️ Cloud-native **SaaS** products from zero to production  
 - 🤖 Automation pipelines using Python + AWS  
-- 🧭 A pragmatic dev culture — built in Chile, shaped for global impact
+- 🧭 A pragmatic dev culture — built in Chile, designed for real impact
 
 ---
 
