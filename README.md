@@ -1,24 +1,26 @@
 # Alejandro Exequiel Hernández Lara
 
-**Founder & CEO @ [KaiNext](https://www.kainext.cl)**  
-**Cloud Architect · Full-Stack Engineer · Python Specialist · Product Builder**
+**Software Architect & Tech Lead**  
+**Founder @ [KaiNext](https://www.kainext.cl)**  
+**Cloud-Native Engineer · Full-Stack Developer · Product-Focused Builder**
 
-[![Committers.top Badge](https://user-badge.committers.top/chile_private/alejandrehl.svg)](https://user-badge.committers.top/chile_private/alejandrehl)
+[![Committers.top Badge](https://user-badge.committers.top/chile_private/alejandrehl.svg)](https://user-badge.committers.top/chile_private/alejandrehl)  
 [![KaiNext Badge](https://org-badge.committers.top/chile_private/kainext.svg)](https://org-badge.committers.top/chile_private/kainext)
 
 ---
 
-I’m the founder of **KaiNext**, a premium software company crafting modern, scalable, and high-impact digital products.  
-We build systems that simplify complexity, automate workflows, and elevate user experience — all rooted in clean architecture, cloud performance, and thoughtful design.
+I'm a software architect and product builder focused on delivering real, scalable solutions that solve business problems and bring measurable value.
 
-With 10+ years of experience, I specialize in cloud-native engineering and full-product lifecycles. I blend deep tech with business insight to deliver software that drives real value.
+I currently lead **KaiNext**, a software consultancy born from years of hands-on experience building platforms, SaaS products, and automation tools. While I continue developing my own projects, I'm also open to joining a high-impact team as a **Software Architect, Tech Lead, or CTO**, where I can bring everything I’ve learned into a collaborative environment.
+
+I believe in building software that works — technically, visually, and commercially.
 
 ---
 
 ## ⚙️ Core Competencies
 
-### 🧠 Backend & Cloud Architecture
-`Laravel` · `Node.js` · `Python` · `AWS` · `Amazon CDK` · `Serverless` · `API Design` · `PostgreSQL` · `MySQL`
+### 🧠 Backend & Cloud Architecture  
+`Laravel` · `NestJS` · `Node.js` · `Python` · `AWS` · `Amazon CDK` · `Serverless` · `API Design` · `PostgreSQL` · `MySQL`
 
 ### 🔄 Data Automation & Scraping  
 `Playwright` · `BeautifulSoup` · `REST APIs` · `Web Crawlers` · `ETL Pipelines`
@@ -29,17 +31,17 @@ With 10+ years of experience, I specialize in cloud-native engineering and full-
 ### ⚙️ DevOps & Infrastructure  
 `Docker` · `GitHub Actions` · `CI/CD` · `IaC` · `Monitoring` · `Observability`
 
-### 💼 Business & Product  
-`SaaS Development` · `Technical Leadership` · `B2B Platforms` · `Agile Delivery` · `Lean Execution`
+### 💼 Product & Execution  
+`SaaS Development` · `Lean Architecture` · `Technical Leadership` · `B2B Platforms` · `Agile Delivery`
 
 ---
 
 ## 🚀 Currently Building @ [KaiNext](https://www.kainext.cl)
 
-- 🌐 Custom **platforms** for SMB workflows  
-- ☁️ Cloud-native **SaaS products** from zero to production  
-- 🤖 End-to-end **automation** using Python, AWS, and modern stacks  
-- 🇨🇱 A premium, high-performance dev culture — born in Chile, built for global impact
+- 🌐 Tailored **platforms** for small business workflows  
+- ☁️ Cloud-native **SaaS** from zero to production  
+- 🤖 Automation pipelines using Python + AWS  
+- 🧭 A pragmatic dev culture — built in Chile, shaped for global impact
 
 ---
 
@@ -51,4 +53,4 @@ With 10+ years of experience, I specialize in cloud-native engineering and full-
 
 ---
 
-> “Code is craft. Software is leverage. KaiNext is the future.”
+> “Build with intent. Scale with clarity. Learn by doing.”
