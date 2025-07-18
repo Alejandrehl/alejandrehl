@@ -1,19 +1,16 @@
 # Alejandro Exequiel Hernández Lara
 
 **Founder @ [KaiNext](https://www.kainext.cl)**
-**Full‑Stack & Cloud Engineer · Product Builder**
 
 ---
 
-I build pragmatic software that solves real business problems. Through **KaiNext** — a lean, part‑time product studio I bootstrapped in 2025 — I design, code, and ship end‑to‑end platforms for Chilean SMEs and community projects.
+I build pragmatic software that solves real business problems. Through **KaiNext** — a lean, part‑time product studio I bootstrapped in 2025 — I design, code, and ship end‑to‑end platforms for Chilean SMEs and community projects. I’m currently deep‑diving into the modern Angular ecosystem to become a go‑to reference for high‑performance front‑end solutions.
 
-### 👩‍💻 What I’m shipping
+## 🚀 Projects in Production
 
-* **Disrover** – mobile point‑of‑sale platform in daily production use.
-* **Art Santiago** – Flutter app where artists publish galleries, gain followers, and share contact details.
-* **micodigopostal.fun** – instant postal‑code lookup that beats the official Chilean search in speed and UX.
-
-Day‑to‑day I work across Laravel, Node.js, Python, React, Next.js, and Flutter, run everything on AWS with Docker‑based CI/CD, and keep a close eye on performance, security, and clean code. Outside client delivery I’m deep‑diving into modern **Angular** to become a go‑to resource for building robust, maintainable front‑end solutions.
+* **[Disrover](https://disrover.com/)** – Mobile point‑of‑sale platform used daily by its namesake retailer.
+* **[Art Santiago](https://www.artstgo.cl/)** – Flutter app where artists publish galleries, gain followers, and share contact details.
+* **[micodigopostal.fun](https://www.micodigopostal.fun/)** – Lightweight site for instant Chilean postal‑code lookup.
 
 ---
 
@@ -56,27 +53,21 @@ Day‑to‑day I work across Laravel, Node.js, Python, React, Next.js, and Flutt
 
 ---
 
-## 🚀 Building @ [KaiNext](https://www.kainext.cl)
-
-* 🌐 Tailored **platforms** for small‑business workflows
-* ☁️ Cloud‑native **SaaS** products from zero to production
-* 🤖 Automation pipelines using Python + AWS
-* 🧭 A pragmatic dev culture — made in Chile, designed for real impact
-
----
-
 ## 🤝 Let’s Connect
 
 * 📬 Email: [alejandro@kainext.cl](mailto:alejandro@kainext.cl)
 * 💼 LinkedIn: [linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl)
+* 💬 Discord: `alejandrehl#8843`
+* 🎮 PlayStation Network: **KaiNextCL**
+* 🎮 Nintendo Switch: **Sn00w** – [Friend Code](https://lounge.nintendo.com/friendcode/6317-7141-0337/DVd7sxYPf6)
 * 🌐 Website: [www.kainext.cl](https://www.kainext.cl)
 
 ---
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=alejandrehl\&show_icons=true\&count_private=true\&theme=default)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=alejandrehl\&layout=compact\&langs_count=8\&theme=default)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=alejandrehl\&show_icons=true\&count_private=true\&theme=default)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=alejandrehl\&layout=compact\&langs_count=8\&theme=default)
 
 ---
 
