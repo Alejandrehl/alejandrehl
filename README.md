@@ -81,9 +81,10 @@ AI-powered crypto trading signals for Telegram
 
 #### **[Chilean Postal Codes API](https://postal-code-api.kainext.cl/v1/api)**
 Production REST API • 91%+ test coverage
-- **43,390 postal codes** indexed
-- **40,378 streets** catalogued
-- Real-time scraping from Correos de Chile
+- **43,390 postal codes** indexed *(Oct 2025)*
+- **40,378 streets** catalogued *(Oct 2025)*
+- Growing daily via automated scraping
+- Real-time data from Correos de Chile
 - Intelligent **PostgreSQL** caching
 - **100% free** • No authentication
 
@@ -98,12 +99,12 @@ Production REST API • 91%+ test coverage
 <div align="center">
 
 ```yaml
-AI/ML:          OpenAI GPT-4 • LangChain • TensorFlow • Prompt Engineering
-Backend:        Python • FastAPI • NestJS • Laravel • Node.js • PostgreSQL
-Cloud:          Google Cloud Platform • AWS • DigitalOcean • Railway
-Frontend:       Next.js • React • Flutter • TailwindCSS • TypeScript
-DevOps:         Docker • Kubernetes • Terraform • GitHub Actions • CI/CD
-Infrastructure: Firebase • Confluent Kafka • Laravel Forge • Redis
+AI/ML:           OpenAI GPT-4 • LangChain • TensorFlow • Prompt Engineering
+Backend:         Python • FastAPI • NestJS • Laravel • Node.js • PostgreSQL
+Cloud:           Google Cloud Platform • AWS • DigitalOcean • Railway
+Frontend:        Next.js • React • Flutter • TailwindCSS • TypeScript
+DevOps:          Docker • Kubernetes • Terraform • GitHub Actions • CI/CD
+Infrastructure:  Firebase • Confluent Kafka • Laravel Forge • Redis
 ```
 
 <img src="https://skillicons.dev/icons?i=python,gcp,aws,docker,kubernetes,terraform,fastapi,nestjs,laravel,postgres,nextjs,react,flutter,tailwind,github&perline=8" alt="Tech Stack"/>
