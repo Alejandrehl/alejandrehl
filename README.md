@@ -98,14 +98,34 @@ Production REST API • 91%+ test coverage
 
 <div align="center">
 
-```yaml
-AI/ML:           OpenAI GPT-4 • LangChain • TensorFlow • Prompt Engineering
-Backend:         Python • FastAPI • NestJS • Laravel • Node.js • PostgreSQL
-Cloud:           Google Cloud Platform • AWS • DigitalOcean • Railway
-Frontend:        Next.js • React • Flutter • TailwindCSS • TypeScript
-DevOps:          Docker • Kubernetes • Terraform • GitHub Actions • CI/CD
-Infrastructure:  Firebase • Confluent Kafka • Laravel Forge • Redis
-```
+<table>
+<tr>
+<td align="right"><strong>AI/ML</strong></td>
+<td>OpenAI GPT-4 • LangChain • TensorFlow • Prompt Engineering</td>
+</tr>
+<tr>
+<td align="right"><strong>Backend</strong></td>
+<td>Python • FastAPI • NestJS • Laravel • Node.js • PostgreSQL</td>
+</tr>
+<tr>
+<td align="right"><strong>Cloud</strong></td>
+<td>Google Cloud Platform • AWS • DigitalOcean • Railway</td>
+</tr>
+<tr>
+<td align="right"><strong>Frontend</strong></td>
+<td>Next.js • React • Flutter • TailwindCSS • TypeScript</td>
+</tr>
+<tr>
+<td align="right"><strong>DevOps</strong></td>
+<td>Docker • Kubernetes • Terraform • GitHub Actions • CI/CD</td>
+</tr>
+<tr>
+<td align="right"><strong>Infrastructure</strong></td>
+<td>Firebase • Confluent Kafka • Laravel Forge • Redis</td>
+</tr>
+</table>
+
+<br>
 
 <img src="https://skillicons.dev/icons?i=python,gcp,aws,docker,kubernetes,terraform,fastapi,nestjs,laravel,postgres,nextjs,react,flutter,tailwind,github&perline=8" alt="Tech Stack"/>
 
