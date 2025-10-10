@@ -1,21 +1,30 @@
 <div align="center">
 
-# Alejandro Hernández
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Alejandro%20Hernández&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Cloud-Native%20Architect%20|%20AI%20%26%20Automation&descAlignY=51&descAlign=50" width="100%"/>
 
 **Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) · Founder @ [KaiNext](https://www.kainext.cl)**
 
-Cloud-Native Architect | AI & Automation for Business Impact
+<p>
+  <img src="https://komarev.com/ghpvc/?username=alejandrehl&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
+  <img src="https://img.shields.io/github/followers/alejandrehl?label=Followers&style=flat&logo=github" alt="followers" />
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejandrehl)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@alejandrehl)
-[![Email](https://img.shields.io/badge/Email-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white)](mailto:alejandrehl@icloud.com)
-[![Website](https://img.shields.io/badge/Website-000000?style=flat-square&logo=About.me&logoColor=white)](https://www.kainext.cl)
+<p>
+  <a href="https://www.linkedin.com/in/alejandrehl"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://www.youtube.com/@alejandrehl"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+  <a href="mailto:alejandrehl@icloud.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white"/></a>
+  <a href="https://www.kainext.cl"><img src="https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white"/></a>
+</p>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
+
+<img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="500">
 
 </div>
 
 ---
 
-## About
+## <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" alt="Fire" width="30" /> About
 
 **8+ years** building cloud-native platforms at enterprise scale. Currently architecting solutions at **Thoughtworks** with focus on Python, GCP, and multi-team delivery. Through **KaiNext**, I ship tailored products for SMEs leveraging multi-cloud infrastructure (AWS, GCP, DigitalOcean, Railway) and modern frameworks (FastAPI, NestJS, Laravel).
 
@@ -23,7 +32,7 @@ Cloud-Native Architect | AI & Automation for Business Impact
 
 ---
 
-## Projects
+## <img src="https://user-images.githubusercontent.com/74038190/221857969-f37e1717-1470-4fe4-abb5-88b334cf64ea.png" alt="Projects" width="30" /> Projects
 
 ### 🏢 Production Systems
 
@@ -47,7 +56,9 @@ Cloud-Native Architect | AI & Automation for Business Impact
 
 ---
 
-## Stack
+## <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" alt="Coding" width="30" /> Stack
+
+<div align="center">
 
 **AI/ML** · OpenAI · GPT-4 · LangChain · TensorFlow  
 **Backend** · Python · FastAPI · NestJS · Laravel · PostgreSQL  
@@ -55,15 +66,23 @@ Cloud-Native Architect | AI & Automation for Business Impact
 **Frontend** · Next.js · React · Flutter · TailwindCSS  
 **DevOps** · Docker · GitHub Actions · Terraform · Firebase · Confluent
 
----
+<img src="https://skillicons.dev/icons?i=python,gcp,aws,docker,kubernetes,terraform,fastapi,nestjs,laravel,postgres,nextjs,react,flutter,tailwind,github&perline=8" />
 
-## Now
-
-Building AI agents and automation systems · Exploring LLM engineering · Scaling multi-cloud architectures
+</div>
 
 ---
 
-## Connect
+## <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" alt="Now" width="30" /> Now
+
+```yaml
+focus: ["AI Agents & Automation", "LLM Engineering", "Multi-Cloud Architectures"]
+building: ["Production AI Systems", "Trading Bots", "Enterprise Platforms"]
+learning: ["Advanced Prompt Engineering", "AI Agent Orchestration", "MLOps at Scale"]
+```
+
+---
+
+## <img src="https://user-images.githubusercontent.com/74038190/235294019-40007353-6219-4ec5-b661-b3c35136dd0b.gif" alt="Connect" width="30" /> Connect
 
 **Work**: [LinkedIn](https://www.linkedin.com/in/alejandrehl) · [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)  
 **Content**: [YouTube](https://www.youtube.com/@alejandrehl) — Software, gaming & experiments  
@@ -71,18 +90,38 @@ Building AI agents and automation systems · Exploring LLM engineering · Scalin
 
 ---
 
+## <img src="https://user-images.githubusercontent.com/74038190/216122069-5b8169d7-1d8e-4a13-b245-a8e4176c99f8.png" alt="Metrics" width="30" /> GitHub Analytics
+
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=alejandrehl&show_icons=true&count_private=true&theme=default&hide_border=true)
+### 🏆 GitHub Trophies
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=alejandrehl&layout=compact&langs_count=8&theme=default&hide_border=true)
+<img src="https://github-profile-trophy.vercel.app/?username=alejandrehl&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" width="100%" />
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=alejandrehl&theme=default&hide_border=true)
+### 📈 Stats
+
+<img src="https://github-readme-stats.vercel.app/api?username=alejandrehl&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=alejandrehl&theme=tokyonight&hide_border=true&background=0D1117" width="49%" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alejandrehl&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" width="49%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=alejandrehl&theme=tokyo-night&hide_border=true&bg_color=0D1117" width="49%" />
+
+### 🐍 Contribution Snake
+
+![Snake animation](https://raw.githubusercontent.com/alejandrehl/alejandrehl/output/github-contribution-grid-snake-dark.svg)
+
+</div>
 
 ---
 
-> "Build with intent. Automate with intelligence. Deliver with impact."
+<div align="center">
 
-Open to collaborate on AI-powered solutions, cloud-native architectures, and automation projects 🚀
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
+
+### 💭 *"Build with intent. Automate with intelligence. Deliver with impact."*
+
+**Open to collaborate** on AI-powered solutions, cloud-native architectures, and automation projects 🚀
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
 </div>
