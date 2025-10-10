@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Alejandro%20Hernández&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Cloud-Native%20Architect%20|%20AI%20%26%20Automation&descAlignY=51&descAlign=50" width="100%"/>
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=200&section=header&text=Alejandro%20Hernández&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35)
 
 **Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) · Founder @ [KaiNext](https://www.kainext.cl)**
 
