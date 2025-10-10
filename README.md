@@ -5,6 +5,12 @@
 **Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) · Founder @ [KaiNext](https://www.kainext.cl)**
 
 <p>
+  <a href="https://committers.top/chile_private"><img src="https://user-badge.committers.top/chile_private/alejandrehl.svg" alt="committers.top badge" /></a>
+  <img src="https://img.shields.io/badge/Rank-🇨🇱_2nd_in_Chile-FF6B35?style=flat-square&logo=github&labelColor=1F222E" alt="Chile Rank" />
+  <img src="https://img.shields.io/badge/Contributions-51,953+-00D9FF?style=flat-square&logo=git&labelColor=1F222E" alt="Total Contributions" />
+</p>
+
+<p>
   <img src="https://komarev.com/ghpvc/?username=alejandrehl&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
   <img src="https://img.shields.io/github/followers/alejandrehl?label=Followers&style=flat&logo=github" alt="followers" />
 </p>
@@ -27,6 +33,16 @@
 ## <img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" alt="Fire" width="30" /> About
 
 **8+ years** building cloud-native platforms at enterprise scale. Currently architecting solutions at **Thoughtworks** with focus on Python, GCP, and multi-team delivery. Through **KaiNext**, I ship tailored products for SMEs leveraging multi-cloud infrastructure (AWS, GCP, DigitalOcean, Railway) and modern frameworks (FastAPI, NestJS, Laravel).
+
+<div align="center">
+
+### 🏆 Ranked #2 Most Active GitHub User in Chile
+
+[![committers.top badge](https://user-badge.committers.top/chile_private/alejandrehl.svg)](https://user-badge.committers.top/chile_private/alejandrehl)
+
+*51,953+ contributions • As of October 2025 • [View ranking →](https://committers.top/chile_private)*
+
+</div>
 
 **Current focus**: Generative AI and intelligent automation for accelerating delivery pipelines and creating business value.
 
