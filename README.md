@@ -4,12 +4,13 @@
 
 ### Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) | Founder @ [KaiNext](https://www.kainext.cl)
 
-Cloud-Native Architect • AI & Automation Specialist • 51K+ GitHub Contributions
+GCP & Multi-Cloud Platform Engineering • GenAI & Automation for Developer Autonomy • 50K+ GitHub Contributions
 
 <br>
 
 [![committers.top](https://img.shields.io/badge/🇨🇱_Rank_2_in_Chile-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://committers.top/chile_private)
-[![Contributions](https://img.shields.io/badge/51,953+_Contributions-00D9FF?style=for-the-badge&logo=git&logoColor=white)](https://github.com/alejandrehl)
+[![Contributions](https://img.shields.io/badge/50K+_Contributions-00D9FF?style=for-the-badge&logo=git&logoColor=white)](https://github.com/alejandrehl)
+[![Repositories](https://img.shields.io/badge/194_Repositories-667eea?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alejandrehl?tab=repositories)
 [![Profile Views](https://komarev.com/ghpvc/?username=alejandrehl&label=Profile%20Views&color=667eea&style=for-the-badge)](https://github.com/alejandrehl)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejandrehl)
@@ -23,11 +24,13 @@ Cloud-Native Architect • AI & Automation Specialist • 51K+ GitHub Contributi
 
 ## 💼 Who I Am
 
-**8+ years** architecting and shipping **cloud-native platforms** at enterprise scale. Currently leading technical initiatives as a **Senior Consultant at Thoughtworks**, specializing in **Python**, **Google Cloud Platform**, and distributed systems that enable secure, scalable delivery across multiple teams.
+I design and deliver **cloud-native platforms** that increase reliability, developer autonomy, and speed-to-delivery. I combine **platform engineering**, production-grade cloud architecture, and **GenAI-driven automation** to translate complex problems into scalable, maintainable systems with measurable business impact.
 
-As **Founder of KaiNext**, I build production-grade solutions for SMEs—from AI-powered trading bots to public APIs serving thousands of requests. Expertise spans **multi-cloud** (AWS, GCP, DigitalOcean, Railway) and modern stacks (**FastAPI**, **NestJS**, **Laravel**, **Flutter**).
+At **Thoughtworks**, I deliver **GCP platform capabilities** and self-service tooling for enterprise teams—focusing on production readiness, observability, and automation that lowers cognitive load and standardizes high-quality delivery. Currently working with **LATAM Airlines' eMantto organization** within Platform Engineering's TechLabs Team, building Terraform Cloud workspace models, monorepo strategies, and self-service capabilities that enable teams to operate infrastructure with less overhead.
 
-**Current obsession**: Pushing the boundaries of **generative AI** and **intelligent automation** to accelerate delivery pipelines and create measurable business value.
+As **Founder & Product Engineer at KaiNext**, I build end-to-end solutions for SMEs and tech initiatives, working across **GCP, AWS, and other clouds**. I implement cloud-native services in **Python, Java, and Node.js**, use **FastAPI/NestJS/Laravel** where appropriate, and apply **TDD and hexagonal architecture** to ensure long-term operability.
+
+**Current focus**: Applying **GenAI and automation** to accelerate delivery pipelines, reduce operational toil, and enable teams to ship stable software faster with greater autonomy.
 
 <div align="center">
 <br>
@@ -36,7 +39,7 @@ As **Founder of KaiNext**, I build production-grade solutions for SMEs—from AI
 
 [![committers.top badge](https://user-badge.committers.top/chile_private/alejandrehl.svg)](https://committers.top/chile_private)
 
-**51,953+ contributions • October 2025 • [View Full Ranking →](https://committers.top/chile_private)**
+**50K+ contributions in the last year • November 2025 • [View Full Ranking →](https://committers.top/chile_private)**
 
 <br>
 </div>
@@ -52,41 +55,25 @@ As **Founder of KaiNext**, I build production-grade solutions for SMEs—from AI
 ### 🏢 Production Systems
 
 #### **[Disrover POS](https://disrover.com/)**
+
 Enterprise mobile point-of-sale platform built with **Laravel**
+
 - Real-time inventory management
 - Payment processing integration
 - Multi-store synchronization
 - Used daily by retail operations
 
+</td>
+<td width="50%">
+
 #### **[Art Santiago](https://www.artstgo.cl/)**
+
 Cross-platform mobile app connecting artists with audiences
+
 - **Flutter** for iOS & Android
 - Gallery management system
 - User authentication & profiles
 - Available on [App Store](https://www.apple.com/app-store/) & [Google Play](https://play.google.com/)
-
-</td>
-<td width="50%">
-
-### 🤖 AI & Automation
-
-#### **[Adam Trading Bot](https://t.me/adam_telegram_bot)**
-AI-powered crypto trading signals for Telegram
-- Real-time market analysis via **GPT-4o**
-- Technical indicators integration
-- **Binance API** connectivity
-- Automated signal generation
-
-### 🇨🇱 Open Source
-
-#### **[Chilean Postal Codes API](https://postal-code-api.kainext.cl/v1/api)**
-Production REST API • 91%+ test coverage
-- **43,390 postal codes** indexed *(Oct 2025)*
-- **40,378 streets** catalogued *(Oct 2025)*
-- Growing daily via automated scraping
-- Real-time data from Correos de Chile
-- Intelligent **PostgreSQL** caching
-- **100% free** • No authentication
 
 </td>
 </tr>
@@ -100,34 +87,34 @@ Production REST API • 91%+ test coverage
 
 <table>
 <tr>
-<td align="right"><strong>AI/ML</strong></td>
-<td>OpenAI GPT-4 • LangChain • TensorFlow • Prompt Engineering</td>
+<td align="right"><strong>Platform</strong></td>
+<td>GCP • AWS • Terraform Cloud • Kubernetes • Docker</td>
 </tr>
 <tr>
 <td align="right"><strong>Backend</strong></td>
-<td>Python • FastAPI • NestJS • Laravel • Node.js • PostgreSQL</td>
+<td>Python • Java • Node.js • FastAPI • NestJS • Laravel</td>
 </tr>
 <tr>
-<td align="right"><strong>Cloud</strong></td>
-<td>Google Cloud Platform • AWS • DigitalOcean • Railway</td>
+<td align="right"><strong>Infrastructure</strong></td>
+<td>Terraform • GitHub Actions • CI/CD • Kafka • Redis</td>
+</tr>
+<tr>
+<td align="right"><strong>GenAI</strong></td>
+<td>OpenAI GPT-4 • LangChain • Cursor Workflows • Prompt Engineering</td>
 </tr>
 <tr>
 <td align="right"><strong>Frontend</strong></td>
 <td>Next.js • React • Flutter • TailwindCSS • TypeScript</td>
 </tr>
 <tr>
-<td align="right"><strong>DevOps</strong></td>
-<td>Docker • Kubernetes • Terraform • GitHub Actions • CI/CD</td>
-</tr>
-<tr>
-<td align="right"><strong>Infrastructure</strong></td>
-<td>Firebase • Confluent Kafka • Laravel Forge • Redis</td>
+<td align="right"><strong>Data</strong></td>
+<td>PostgreSQL • Observability • DORA Metrics • Pipeline Analytics</td>
 </tr>
 </table>
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=python,gcp,aws,docker,kubernetes,terraform,fastapi,nestjs,laravel,postgres,nextjs,react,flutter,tailwind,github&perline=8" alt="Tech Stack"/>
+<img src="https://skillicons.dev/icons?i=python,java,nodejs,gcp,aws,docker,kubernetes,terraform,fastapi,nestjs,laravel,postgres,nextjs,react,flutter,github&perline=8" alt="Tech Stack"/>
 
 </div>
 
@@ -135,31 +122,17 @@ Production REST API • 91%+ test coverage
 
 ## 🎯 Now
 
-```typescript
-const currentFocus = {
-  building: [
-    "Production AI agents with GPT-4o and Claude",
-    "Multi-tenant SaaS platforms on GCP",
-    "Real-time trading systems with WebSockets"
-  ],
-  exploring: [
-    "Advanced LLM prompt engineering & fine-tuning",
-    "Event-driven architectures at scale",
-    "AI agent orchestration patterns"
-  ],
-  learning: [
-    "MLOps and model deployment strategies",
-    "Advanced Terraform for multi-cloud",
-    "Distributed systems optimization"
-  ]
-};
-```
+Building **platform engineering capabilities** at Thoughtworks (LATAM Airlines) and shipping **cloud-native solutions** at KaiNext. Focused on **GenAI-driven automation**, **Terraform Cloud workspace models**, and **self-service tooling** that reduces cognitive load and accelerates delivery.
+
+**Key areas**: Platform Engineering • GenAI Workflows (Cursor) • Multi-Cloud Infrastructure • TDD & Hexagonal Architecture
 
 ---
 
 ## 📊 GitHub Impact
 
 <div align="center">
+
+**Achievements**: Pull Shark x2 • YOLO • Quickdraw • Starstruck • Arctic Code Vault Contributor
 
 <img src="https://github-profile-trophy.vercel.app/?username=alejandrehl&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" width="100%" alt="GitHub Trophies"/>
 
@@ -193,9 +166,9 @@ const currentFocus = {
 
 <br>
 
-### 💡 Open to collaboration on:
+### 💡 Open to collaboration on
 
-**AI-Powered Solutions** • **Cloud-Native Architectures** • **Open Source Projects** • **Technical Content**
+**Platform Engineering** • **Cloud-Native Architectures** • **GenAI Automation** • **Open Source Projects**
 
 <br>
 
