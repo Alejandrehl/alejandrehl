@@ -9,13 +9,9 @@ Building cloud-native platforms at enterprise scale • Shipping production syst
 
 <br>
 
-[![Contributions](https://img.shields.io/badge/50K+_Contributions-00D9FF?style=for-the-badge&logo=git&logoColor=white)](https://github.com/alejandrehl)
-[![Repositories](https://img.shields.io/badge/194_Repositories-667eea?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alejandrehl?tab=repositories)
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejandrehl)
 [![Email](https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:alejandrehl@icloud.com)
 [![Website](https://img.shields.io/badge/KaiNext-000000?style=for-the-badge&logo=safari&logoColor=white)](https://www.kainext.cl)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@alejandrehl)
 
 </div>
 
@@ -41,10 +37,10 @@ At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantt
 
 Enterprise point-of-sale platform in daily production use
 
-- Production system processing real-time transactions
-- Multi-store inventory synchronization
+- Operating in active production use
+- Supports multi-location inventory flows
 - Payment processing integration
-- Built and operated in production since 2025
+- Real-time transaction processing
 
 </td>
 <td width="50%">
@@ -73,30 +69,18 @@ Cross-platform mobile app connecting artists with audiences
 <td>Multi-cloud architecture • Infrastructure as Code • Developer self-service • Platform foundations</td>
 </tr>
 <tr>
-<td align="right"><strong>Backend Development</strong></td>
-<td>Python • Java • Node.js • API design • Microservices architecture</td>
+<td align="right"><strong>Software Architecture</strong></td>
+<td>API design • Microservices • System design for production scale</td>
 </tr>
 <tr>
-<td align="right"><strong>Infrastructure & DevOps</strong></td>
+<td align="right"><strong>Infrastructure & Delivery</strong></td>
 <td>CI/CD pipelines • Container orchestration • Observability • Delivery automation</td>
 </tr>
 <tr>
 <td align="right"><strong>GenAI & Automation</strong></td>
-<td>AI-assisted engineering workflows • Prompt engineering • Automation patterns</td>
-</tr>
-<tr>
-<td align="right"><strong>Frontend & Mobile</strong></td>
-<td>Web applications • Mobile apps • TypeScript • Modern UI frameworks</td>
-</tr>
-<tr>
-<td align="right"><strong>Data & Observability</strong></td>
-<td>Database design • Observability systems • DORA metrics • Pipeline analytics</td>
+<td>AI-assisted engineering workflows • Automation patterns • Developer tooling</td>
 </tr>
 </table>
-
-<br>
-
-<img src="https://skillicons.dev/icons?i=python,java,nodejs,gcp,aws,docker,kubernetes,terraform,fastapi,nestjs,laravel,postgres,nextjs,react,flutter,github&perline=8" alt="Tech Stack"/>
 
 </div>
 
@@ -112,16 +96,8 @@ Building platform engineering capabilities at Thoughtworks (LATAM Airlines) and 
 
 <div align="center">
 
-**Achievements**: Pull Shark x2 • YOLO • Quickdraw • Starstruck • Arctic Code Vault Contributor
-
-<img src="https://github-profile-trophy.vercel.app/?username=alejandrehl&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" width="100%" alt="GitHub Trophies"/>
-
-<br>
-
 <img src="https://github-readme-stats.vercel.app/api?username=alejandrehl&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&include_all_commits=true" width="49.5%" alt="GitHub Stats"/>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=alejandrehl&theme=tokyonight&hide_border=true&background=0D1117&ring=667eea&fire=764ba2&currStreakLabel=764ba2" width="49.5%" alt="GitHub Streak"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alejandrehl&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" width="100%" alt="Top Languages"/>
 
 ### 🐍 Contribution Flow
 
@@ -130,8 +106,6 @@ Building platform engineering capabilities at Thoughtworks (LATAM Airlines) and 
 ![Snake animation](https://raw.githubusercontent.com/alejandrehl/alejandrehl/output/github-contribution-grid-snake-dark.svg)
 
 </div>
-
-<sub>✨ Updated every 6 hours via GitHub Actions • Custom gradient palette matching profile theme</sub>
 
 </div>
 
@@ -142,8 +116,6 @@ Building platform engineering capabilities at Thoughtworks (LATAM Airlines) and 
 <div align="center">
 
 **Professional** → [LinkedIn](https://www.linkedin.com/in/alejandrehl) • [Email](mailto:alejandrehl@icloud.com)
-
-**Content** → [YouTube](https://www.youtube.com/@alejandrehl) *(software & tech experiments)*
 
 **Open to collaboration on**: Platform Engineering • Cloud-Native Architectures • GenAI Automation • Open Source Projects
 
