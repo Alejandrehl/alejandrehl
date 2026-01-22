@@ -5,7 +5,7 @@
 
 ### Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) | Platform Engineering & Cloud Architecture | Founder & Principal Engineer @ [KaiNext](https://www.kainext.cl)
 
-Operating cloud-native platforms at enterprise scale • Shipping production systems • Executing personally, not delegating
+Operating cloud-native platforms at enterprise scale in production • Owning production outcomes • Executing personally, not delegating
 
 <br>
 
@@ -21,7 +21,7 @@ Operating cloud-native platforms at enterprise scale • Shipping production sys
 
 Senior platform engineer focused on designing and operating cloud-native systems at enterprise scale. My work centers on reliability, developer autonomy, and delivery efficiency in complex, regulated environments.
 
-At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantto domain, focusing on platform foundations, developer self-service, and automation patterns. Separately, I run **KaiNext**, a founder-led technical consulting practice where I personally execute all technical work for organizations running systems in production and startups transitioning to operational scale.
+At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantto domain, focusing on platform foundations, developer self-service, and automation patterns. Alongside this role, I run **KaiNext**, a founder-led technical consulting practice where I personally execute all technical work for organizations running systems in production and startups transitioning to operational scale. My work typically sits where systems are already running, constraints are real, and failure has a visible cost.
 
 ---
 
@@ -35,14 +35,17 @@ At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantt
 
 #### **[Disrover POS](https://disrover.com/)**
 
-Enterprise point-of-sale platform in daily production use
+Enterprise point-of-sale platform operating under production constraints
 
 - Multi-location inventory synchronization
 - Payment processing integration
 - Real-time transaction processing
+- Full ownership from architecture decisions through production operation
 
 </td>
 <td width="50%">
+
+### 📱 Product Systems
 
 #### **[Art Santiago](https://www.artstgo.cl/)**
 
@@ -51,6 +54,7 @@ Cross-platform mobile app connecting artists with audiences
 - Production mobile application (iOS & Android)
 - Gallery management and artist discovery
 - Available on [App Store](https://www.apple.com/app-store/) & [Google Play](https://play.google.com/)
+- End-to-end delivery from system design to mobile release
 
 </td>
 </tr>
@@ -69,7 +73,7 @@ Cross-platform mobile app connecting artists with audiences
 </tr>
 <tr>
 <td align="right"><strong>Software Architecture</strong></td>
-<td>API design • Microservices • System design for production scale</td>
+<td>API design • Microservices • System design under production constraints</td>
 </tr>
 <tr>
 <td align="right"><strong>Infrastructure & Delivery</strong></td>
@@ -87,7 +91,19 @@ Cross-platform mobile app connecting artists with audiences
 
 ## 🤝 Let's Connect
 
-For professional conversations around platform engineering, cloud-native systems, or collaboration on production-grade software:
+For conversations where platform engineering decisions have real operational consequences and constraints are non-negotiable:
 
 - LinkedIn: [linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl)
 - Email: [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
+
+I do not engage in staff augmentation or exploratory advisory without execution ownership.
+
+---
+
+> Engineering judgment, long-term system health, and ownership under real operational constraints.
+
+<div align="center">
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=120&section=footer)
+
+</div>
