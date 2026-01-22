@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # every 12 hours
+    - cron: "0 */6 * * *" # every 6 hours for smoother updates
   workflow_dispatch:
   push:
     branches:
@@ -16,13 +16,21 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: Generate github-contribution-grid-snake.svg
+      - name: Generate github-contribution-grid-snake.svg (Light)
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?palette=github-light
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate github-contribution-grid-snake.svg (Dark - Premium Gradient)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?color_snake=667eea&color_dots=0d1117,1a1f2e,2d3748,4a5568,667eea,764ba2,8b5cf6,a78bfa
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

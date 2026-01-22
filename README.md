@@ -1,14 +1,14 @@
+<!-- markdownlint-disable MD033 MD041 -->
 <div align="center">
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=200&section=header&text=Alejandro%20Hernández&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35)
 
-### Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) | Founder @ [KaiNext](https://www.kainext.cl)
+### Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) | Platform Engineering & Cloud Architecture | Founder & Principal Engineer @ [KaiNext](https://www.kainext.cl)
 
-GCP & Multi-Cloud Platform Engineering • GenAI & Automation for Developer Autonomy • 50K+ GitHub Contributions
+Platform Engineering at Enterprise Scale • GenAI & Automation for Developer Autonomy • Founder-Led Technical Consulting
 
 <br>
 
-[![committers.top](https://img.shields.io/badge/🇨🇱_Rank_2_in_Chile-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://committers.top/chile_private)
 [![Contributions](https://img.shields.io/badge/50K+_Contributions-00D9FF?style=for-the-badge&logo=git&logoColor=white)](https://github.com/alejandrehl)
 [![Repositories](https://img.shields.io/badge/194_Repositories-667eea?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alejandrehl?tab=repositories)
 [![Profile Views](https://komarev.com/ghpvc/?username=alejandrehl&label=Profile%20Views&color=667eea&style=for-the-badge)](https://github.com/alejandrehl)
@@ -24,25 +24,13 @@ GCP & Multi-Cloud Platform Engineering • GenAI & Automation for Developer Auto
 
 ## 💼 Who I Am
 
-I design and deliver **cloud-native platforms** that increase reliability, developer autonomy, and speed-to-delivery. I combine **platform engineering**, production-grade cloud architecture, and **GenAI-driven automation** to translate complex problems into scalable, maintainable systems with measurable business impact.
+Senior platform engineer focused on designing and operating cloud-native systems at enterprise scale. My work centers on reliability, developer autonomy, and delivery efficiency in complex, regulated environments.
 
-At **Thoughtworks**, I deliver **GCP platform capabilities** and self-service tooling for enterprise teams—focusing on production readiness, observability, and automation that lowers cognitive load and standardizes high-quality delivery. Currently working with **LATAM Airlines' eMantto organization** within Platform Engineering's TechLabs Team, building Terraform Cloud workspace models, monorepo strategies, and self-service capabilities that enable teams to operate infrastructure with less overhead.
+At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantto domain, as part of the Platform Engineering group. I focus on platform foundations, developer self-service, and automation patterns that improve consistency, reduce operational risk, and enable teams to ship with confidence.
 
-As **Founder & Product Engineer at KaiNext**, I build end-to-end solutions for SMEs and tech initiatives, working across **GCP, AWS, and other clouds**. I implement cloud-native services in **Python, Java, and Node.js**, use **FastAPI/NestJS/Laravel** where appropriate, and apply **TDD and hexagonal architecture** to ensure long-term operability.
+In parallel, I run **KaiNext**, a founder-led software engineering and technical consulting practice where I personally execute all technical work. Through KaiNext, I collaborate with organizations running systems in production and startups transitioning to operational scale, focusing on architecture, platform complexity, and applied AI when it delivers measurable value. Engagements are outcome-oriented and explicitly scoped, without staff augmentation or ticket-based delivery.
 
-**Current focus**: Applying **GenAI and automation** to accelerate delivery pipelines, reduce operational toil, and enable teams to ship stable software faster with greater autonomy.
-
-<div align="center">
-<br>
-
-### 🏆 Top 2 Most Active GitHub Developer in Chile
-
-[![committers.top badge](https://user-badge.committers.top/chile_private/alejandrehl.svg)](https://committers.top/chile_private)
-
-**50K+ contributions in the last year • November 2025 • [View Full Ranking →](https://committers.top/chile_private)**
-
-<br>
-</div>
+Across both contexts, my work emphasizes engineering judgment, long-term system health, and execution under real operational constraints.
 
 ---
 
@@ -56,12 +44,12 @@ As **Founder & Product Engineer at KaiNext**, I build end-to-end solutions for S
 
 #### **[Disrover POS](https://disrover.com/)**
 
-Enterprise mobile point-of-sale platform built with **Laravel**
+Enterprise point-of-sale platform in daily production use
 
 - Real-time inventory management
 - Payment processing integration
 - Multi-store synchronization
-- Used daily by retail operations
+- Built and operated via Laravel Forge
 
 </td>
 <td width="50%">
@@ -70,7 +58,7 @@ Enterprise mobile point-of-sale platform built with **Laravel**
 
 Cross-platform mobile app connecting artists with audiences
 
-- **Flutter** for iOS & Android
+- Mobile application for iOS & Android
 - Gallery management system
 - User authentication & profiles
 - Available on [App Store](https://www.apple.com/app-store/) & [Google Play](https://play.google.com/)
@@ -81,34 +69,34 @@ Cross-platform mobile app connecting artists with audiences
 
 ---
 
-## ⚡ Tech Arsenal
+## ⚡ Technical Capabilities
 
 <div align="center">
 
 <table>
 <tr>
-<td align="right"><strong>Platform</strong></td>
-<td>GCP • AWS • Terraform Cloud • Kubernetes • Docker</td>
+<td align="right"><strong>Platform Engineering</strong></td>
+<td>Multi-cloud architecture • Infrastructure as Code • Developer self-service • Platform foundations</td>
 </tr>
 <tr>
-<td align="right"><strong>Backend</strong></td>
-<td>Python • Java • Node.js • FastAPI • NestJS • Laravel</td>
+<td align="right"><strong>Backend Development</strong></td>
+<td>Python • Java • Node.js • API design • Microservices architecture</td>
 </tr>
 <tr>
-<td align="right"><strong>Infrastructure</strong></td>
-<td>Terraform • GitHub Actions • CI/CD • Kafka • Redis</td>
+<td align="right"><strong>Infrastructure & DevOps</strong></td>
+<td>CI/CD pipelines • Container orchestration • Observability • Delivery automation</td>
 </tr>
 <tr>
-<td align="right"><strong>GenAI</strong></td>
-<td>OpenAI GPT-4 • LangChain • Cursor Workflows • Prompt Engineering</td>
+<td align="right"><strong>GenAI & Automation</strong></td>
+<td>AI-assisted engineering workflows • Prompt engineering • Automation patterns</td>
 </tr>
 <tr>
-<td align="right"><strong>Frontend</strong></td>
-<td>Next.js • React • Flutter • TailwindCSS • TypeScript</td>
+<td align="right"><strong>Frontend & Mobile</strong></td>
+<td>Web applications • Mobile apps • TypeScript • Modern UI frameworks</td>
 </tr>
 <tr>
-<td align="right"><strong>Data</strong></td>
-<td>PostgreSQL • Observability • DORA Metrics • Pipeline Analytics</td>
+<td align="right"><strong>Data & Observability</strong></td>
+<td>Database design • Observability systems • DORA metrics • Pipeline analytics</td>
 </tr>
 </table>
 
@@ -122,9 +110,9 @@ Cross-platform mobile app connecting artists with audiences
 
 ## 🎯 Now
 
-Building **platform engineering capabilities** at Thoughtworks (LATAM Airlines) and shipping **cloud-native solutions** at KaiNext. Focused on **GenAI-driven automation**, **Terraform Cloud workspace models**, and **self-service tooling** that reduces cognitive load and accelerates delivery.
+Building platform engineering capabilities at Thoughtworks (LATAM Airlines) and shipping cloud-native solutions at KaiNext. Focused on GenAI-driven automation, infrastructure standardization, and self-service tooling that reduces cognitive load and accelerates delivery.
 
-**Key areas**: Platform Engineering • GenAI Workflows (Cursor) • Multi-Cloud Infrastructure • TDD & Hexagonal Architecture
+**Key areas**: Platform Engineering • GenAI Workflows • Multi-Cloud Infrastructure • Software Architecture • Applied AI
 
 ---
 
@@ -146,9 +134,13 @@ Building **platform engineering capabilities** at Thoughtworks (LATAM Airlines) 
 
 ### 🐍 Contribution Flow
 
+<div align="center">
+
 ![Snake animation](https://raw.githubusercontent.com/alejandrehl/alejandrehl/output/github-contribution-grid-snake-dark.svg)
 
-<sub>Updated daily via GitHub Actions</sub>
+</div>
+
+<sub>✨ Updated every 6 hours via GitHub Actions • Custom gradient palette matching profile theme</sub>
 
 </div>
 
@@ -172,7 +164,7 @@ Building **platform engineering capabilities** at Thoughtworks (LATAM Airlines) 
 
 <br>
 
-> *"Build with intent. Automate with intelligence. Deliver with impact."*
+> *"Engineering judgment, long-term system health, and execution under real operational constraints."*
 
 <br>
 
