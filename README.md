@@ -9,9 +9,8 @@ Operating cloud-native platforms at enterprise scale in production • Owning pr
 
 <br>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejandrehl)
-[![Email](https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:alejandrehl@icloud.com)
-[![Website](https://img.shields.io/badge/KaiNext-000000?style=for-the-badge&logo=safari&logoColor=white)](https://www.kainext.cl)
+<a href="https://www.linkedin.com/in/alejandrehl" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://www.kainext.cl" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/KaiNext-000000?style=for-the-badge&logo=safari&logoColor=white" alt="KaiNext"></a>
 
 </div>
 
@@ -93,8 +92,7 @@ Cross-platform mobile app connecting artists with audiences
 
 For conversations where platform engineering decisions have real operational consequences and constraints are non-negotiable:
 
-- LinkedIn: [linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl)
-- Email: [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
+- LinkedIn: <a href="https://www.linkedin.com/in/alejandrehl" target="_blank" rel="noopener noreferrer">linkedin.com/in/alejandrehl</a>
 
 I do not engage in staff augmentation or exploratory advisory without execution ownership.
 
