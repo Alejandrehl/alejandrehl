@@ -5,18 +5,17 @@
 
 ### Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) | Platform Engineering & Cloud Architecture | Founder & Principal Engineer @ [KaiNext](https://www.kainext.cl)
 
-Platform Engineering at Enterprise Scale • GenAI & Automation for Developer Autonomy • Founder-Led Technical Consulting
+Building cloud-native platforms at enterprise scale • Shipping production systems • Executing personally, not delegating
 
 <br>
 
 [![Contributions](https://img.shields.io/badge/50K+_Contributions-00D9FF?style=for-the-badge&logo=git&logoColor=white)](https://github.com/alejandrehl)
 [![Repositories](https://img.shields.io/badge/194_Repositories-667eea?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alejandrehl?tab=repositories)
-[![Profile Views](https://komarev.com/ghpvc/?username=alejandrehl&label=Profile%20Views&color=667eea&style=for-the-badge)](https://github.com/alejandrehl)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejandrehl)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@alejandrehl)
 [![Email](https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:alejandrehl@icloud.com)
 [![Website](https://img.shields.io/badge/KaiNext-000000?style=for-the-badge&logo=safari&logoColor=white)](https://www.kainext.cl)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@alejandrehl)
 
 </div>
 
@@ -26,11 +25,7 @@ Platform Engineering at Enterprise Scale • GenAI & Automation for Developer Au
 
 Senior platform engineer focused on designing and operating cloud-native systems at enterprise scale. My work centers on reliability, developer autonomy, and delivery efficiency in complex, regulated environments.
 
-At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantto domain, as part of the Platform Engineering group. I focus on platform foundations, developer self-service, and automation patterns that improve consistency, reduce operational risk, and enable teams to ship with confidence.
-
-In parallel, I run **KaiNext**, a founder-led software engineering and technical consulting practice where I personally execute all technical work. Through KaiNext, I collaborate with organizations running systems in production and startups transitioning to operational scale, focusing on architecture, platform complexity, and applied AI when it delivers measurable value. Engagements are outcome-oriented and explicitly scoped, without staff augmentation or ticket-based delivery.
-
-Across both contexts, my work emphasizes engineering judgment, long-term system health, and execution under real operational constraints.
+At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantto domain, focusing on platform foundations, developer self-service, and automation patterns. In parallel, I run **KaiNext**, a founder-led technical consulting practice where I personally execute all technical work for organizations running systems in production and startups transitioning to operational scale.
 
 ---
 
@@ -46,10 +41,10 @@ Across both contexts, my work emphasizes engineering judgment, long-term system 
 
 Enterprise point-of-sale platform in daily production use
 
-- Real-time inventory management
+- Production system processing real-time transactions
+- Multi-store inventory synchronization
 - Payment processing integration
-- Multi-store synchronization
-- Built and operated via Laravel Forge
+- Built and operated in production since 2025
 
 </td>
 <td width="50%">
@@ -58,9 +53,8 @@ Enterprise point-of-sale platform in daily production use
 
 Cross-platform mobile app connecting artists with audiences
 
-- Mobile application for iOS & Android
-- Gallery management system
-- User authentication & profiles
+- Production mobile application (iOS & Android)
+- Gallery management and artist discovery
 - Available on [App Store](https://www.apple.com/app-store/) & [Google Play](https://play.google.com/)
 
 </td>
@@ -108,11 +102,9 @@ Cross-platform mobile app connecting artists with audiences
 
 ---
 
-## 🎯 Now
+## 🎯 Current Focus
 
-Building platform engineering capabilities at Thoughtworks (LATAM Airlines) and shipping cloud-native solutions at KaiNext. Focused on GenAI-driven automation, infrastructure standardization, and self-service tooling that reduces cognitive load and accelerates delivery.
-
-**Key areas**: Platform Engineering • GenAI Workflows • Multi-Cloud Infrastructure • Software Architecture • Applied AI
+Building platform engineering capabilities at Thoughtworks (LATAM Airlines) and shipping cloud-native solutions at KaiNext. Focused on GenAI-driven automation, infrastructure standardization, and self-service tooling.
 
 ---
 
@@ -129,8 +121,7 @@ Building platform engineering capabilities at Thoughtworks (LATAM Airlines) and 
 <img src="https://github-readme-stats.vercel.app/api?username=alejandrehl&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&include_all_commits=true" width="49.5%" alt="GitHub Stats"/>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=alejandrehl&theme=tokyonight&hide_border=true&background=0D1117&ring=667eea&fire=764ba2&currStreakLabel=764ba2" width="49.5%" alt="GitHub Streak"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alejandrehl&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" width="49.5%" alt="Top Languages"/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=alejandrehl&theme=tokyo-night&hide_border=true&bg_color=0D1117&line=667eea&point=764ba2" width="49.5%" alt="Contribution Graph"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alejandrehl&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" width="100%" alt="Top Languages"/>
 
 ### 🐍 Contribution Flow
 
@@ -150,17 +141,11 @@ Building platform engineering capabilities at Thoughtworks (LATAM Airlines) and 
 
 <div align="center">
 
-**Professional** → [LinkedIn](https://www.linkedin.com/in/alejandrehl) • [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
+**Professional** → [LinkedIn](https://www.linkedin.com/in/alejandrehl) • [Email](mailto:alejandrehl@icloud.com)
 
-**Content** → [YouTube](https://www.youtube.com/@alejandrehl) *(software, gaming & tech experiments)*
+**Content** → [YouTube](https://www.youtube.com/@alejandrehl) *(software & tech experiments)*
 
-**Gaming** → PSN: **KaiNextCL** • Switch: **Sn00w** ([friend code](https://lounge.nintendo.com/friendcode/6317-7141-0337/DVd7sxYPf6))
-
-<br>
-
-### 💡 Open to collaboration on
-
-**Platform Engineering** • **Cloud-Native Architectures** • **GenAI Automation** • **Open Source Projects**
+**Open to collaboration on**: Platform Engineering • Cloud-Native Architectures • GenAI Automation • Open Source Projects
 
 <br>
 
