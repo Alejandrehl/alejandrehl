@@ -5,7 +5,7 @@
 
 ### Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) | Platform Engineering & Cloud Architecture | Founder & Principal Engineer @ [KaiNext](https://www.kainext.cl)
 
-Building cloud-native platforms at enterprise scale • Shipping production systems • Executing personally, not delegating
+Operating cloud-native platforms at enterprise scale • Shipping production systems • Executing personally, not delegating
 
 <br>
 
@@ -21,7 +21,7 @@ Building cloud-native platforms at enterprise scale • Shipping production syst
 
 Senior platform engineer focused on designing and operating cloud-native systems at enterprise scale. My work centers on reliability, developer autonomy, and delivery efficiency in complex, regulated environments.
 
-At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantto domain, focusing on platform foundations, developer self-service, and automation patterns. In parallel, I run **KaiNext**, a founder-led technical consulting practice where I personally execute all technical work for organizations running systems in production and startups transitioning to operational scale.
+At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantto domain, focusing on platform foundations, developer self-service, and automation patterns. Separately, I run **KaiNext**, a founder-led technical consulting practice where I personally execute all technical work for organizations running systems in production and startups transitioning to operational scale.
 
 ---
 
@@ -37,8 +37,7 @@ At **Thoughtworks**, I work as a Senior Consultant within LATAM Airlines' eMantt
 
 Enterprise point-of-sale platform in daily production use
 
-- Operating in active production use
-- Supports multi-location inventory flows
+- Multi-location inventory synchronization
 - Payment processing integration
 - Real-time transaction processing
 
@@ -83,3 +82,12 @@ Cross-platform mobile app connecting artists with audiences
 </table>
 
 </div>
+
+---
+
+## 🤝 Let's Connect
+
+For professional conversations around platform engineering, cloud-native systems, or collaboration on production-grade software:
+
+- LinkedIn: [linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl)
+- Email: [alejandrehl@icloud.com](mailto:alejandrehl@icloud.com)
