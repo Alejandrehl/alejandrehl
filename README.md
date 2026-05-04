@@ -2,7 +2,7 @@
 
 I work in the space between code and capital — building scalable architecture, applied AI, and platform modernization for production systems at enterprise scale.
 
-My professional focus combines two disciplines most people treat separately: technical auditing and financial auditing. That cross-disciplinary view comes from my family background and deepened through years leading projects where the right decision required understanding both sides at once.
+My professional focus combines two disciplines most people treat separately: technical auditing and operational clarity. Years working at the intersection of engineering and business operations taught me to read systems as a single piece. I diagnose before I build.
 
 ---
 
