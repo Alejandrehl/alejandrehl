@@ -1,25 +1,25 @@
-# Alejandro Hernández
+### Senior Consultant @ Thoughtworks
 
-Senior Consultant @ [Thoughtworks](https://www.thoughtworks.com) · Founder @ [KaiNext](https://www.kainext.cl)
+I work in the space between code and capital — building scalable architecture, applied AI, and platform modernization for production systems at enterprise scale.
 
-Platform engineering and cloud architecture. Systems where failure has a cost.
-
----
-
-**At Thoughtworks** — Platform Engineering for LATAM Airlines. Infrastructure automation, developer self-service, and platform foundations at scale.
-
-**At KaiNext** — Technical consulting and product studio. I personally execute all work.
+My professional focus combines two disciplines most people treat separately: technical auditing and financial auditing. That cross-disciplinary view comes from my family background and deepened through years leading projects where the right decision required understanding both sides at once.
 
 ---
 
-**[Voxcribe](https://www.kainext.cl/es/tools/voxcribe)** · Audio transcription with PDF generation · Live  
-**[Analyze](https://www.kainext.cl/es/tools/analyze)** · AI-powered file analysis with PDF reports · Live  
-**LexDex** · Legal document intelligence — OCR + AI cross-reference · In development
+**Currently working on**
+
+- Cloud-native platform foundations and developer self-service tooling
+- AI-assisted engineering workflows in regulated, high-stakes environments
+- Agentic workflows applied to platform modernization and refactoring
+
+**Tools and platforms I work with**
+
+GCP · AWS · DigitalOcean · Terraform · GitLab CI/CD · Next.js · NestJS · Laravel · React Native · Anthropic Claude · OpenAI
+
+**Writing**
+
+I publish technical writeups, methodology, and real cases at [kainext.cl/blog](https://kainext.cl/blog) — including agentic workflows, platform modernization, and engineering rigor applied to legacy systems.
 
 ---
 
-TypeScript · Next.js · NestJS · Terraform · GCP · Kubernetes · Docker
-
----
-
-[linkedin.com/in/alejandrehl](https://www.linkedin.com/in/alejandrehl) · [kainext.cl](https://www.kainext.cl)
+📍 Santiago, Chile
