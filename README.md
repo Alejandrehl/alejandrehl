@@ -7,7 +7,6 @@
 Platform engineering · applied AI · agentic workflows — Santiago, Chile 🇨🇱
 
 [![Website](https://img.shields.io/badge/KaiNext-www.kainext.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white)](https://www.kainext.cl)
-[![Blog](https://img.shields.io/badge/Blog-kainext.cl%2Fblog-1A1A1A?style=flat-square&logo=hashnode&logoColor=white)](https://www.kainext.cl/blog)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-alejandrehl-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejandrehl/)
 
 </div>
@@ -59,10 +58,6 @@ I work in the space between **code and capital** — designing scalable architec
 [![Profile](https://img.shields.io/badge/Explore-my%20work-0A0A0A?style=flat-square&logo=github&logoColor=white)](https://github.com/Alejandrehl?tab=repositories)
 
 </div>
-
-### ✍️ Writing
-
-I publish technical writeups, methodology, and real cases at **[kainext.cl/blog](https://www.kainext.cl/blog)** — agentic workflows, platform modernization, and engineering rigor applied to legacy systems.
 
 ---
 
