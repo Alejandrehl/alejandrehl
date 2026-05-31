@@ -54,10 +54,9 @@ I work in the space between **code and capital** — designing scalable architec
 
 <div align="center">
 
-![Alejandro's GitHub stats](https://github-readme-stats.vercel.app/api?username=Alejandrehl&show_icons=true&include_all_commits=true&hide_border=true&theme=tokyonight)
-
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Alejandrehl&layout=compact&langs_count=8&hide_border=true&theme=tokyonight)
-![GitHub streak](https://streak-stats.demolab.com/?user=Alejandrehl&hide_border=true&theme=tokyonight)
+[![Followers](https://img.shields.io/github/followers/Alejandrehl?style=flat-square&logo=github&logoColor=white&label=Followers&labelColor=0A0A0A&color=1A1A1A)](https://github.com/Alejandrehl?tab=followers)
+[![Repositories](https://img.shields.io/badge/Repos-460%2B-1A1A1A?style=flat-square&logo=git&logoColor=white)](https://github.com/Alejandrehl?tab=repositories)
+[![Profile](https://img.shields.io/badge/Explore-my%20work-0A0A0A?style=flat-square&logo=github&logoColor=white)](https://github.com/Alejandrehl?tab=repositories)
 
 </div>
 
