@@ -4,13 +4,14 @@
 
 # Alejandro Hernández Lara
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=D97757&center=true&vCenter=true&width=780&lines=Founder+%40+Ale+Hern%C3%A1ndez+SpA+%26+KaiNext;Senior+Consultant+%40+Thoughtworks;Platform+engineering+%C2%B7+applied+AI+%C2%B7+agentic+workflows;I+diagnose+before+I+build.+Then+I+ship." alt="Founder · Senior Consultant · Platform engineering · applied AI · I diagnose before I build, then I ship" />
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=D97757&center=true&vCenter=true&width=820&lines=Founder+%40+Ale+Hern%C3%A1ndez+SpA;Founder+%40+KaiNext+Solutions+Limitada;Senior+Consultant+%40+Thoughtworks;Platform+engineering+%C2%B7+applied+AI+%C2%B7+agentic+workflows;I+diagnose+before+I+build.+Then+I+ship." alt="Founder @ Ale Hernández SpA · Founder @ KaiNext Solutions Limitada · Senior Consultant @ Thoughtworks · Platform engineering, applied AI, agentic workflows · I diagnose before I build, then I ship" />
 
 <p>
   <a href="https://www.alehernandez.cl"><img src="https://img.shields.io/badge/alehernandez.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white" alt="alehernandez.cl"></a>
   <a href="https://www.kainext.cl"><img src="https://img.shields.io/badge/kainext.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white" alt="kainext.cl"></a>
   <a href="https://www.linkedin.com/in/alejandrehl/"><img src="https://img.shields.io/badge/LinkedIn-alejandrehl-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <img src="https://img.shields.io/badge/Built_with-Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Built with Claude Code">
+  <img src="https://img.shields.io/badge/Santiago-Chile%20%F0%9F%87%A8%F0%9F%87%B1-0A0A0A?style=flat-square&logo=googlemaps&logoColor=white" alt="Based in Santiago, Chile">
 </p>
 
 </div>
@@ -21,7 +22,9 @@ I work in the space between **code and capital** — designing scalable architec
 
 - 🏛️ **Thoughtworks** — Senior Consultant (P4), embedded in platform engineering for a major airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments.
 - 🏢 **[Ale Hernández SpA](https://www.alehernandez.cl)** — my own company, where I build and ship my own products end-to-end and run an **agent-orchestration practice** with uncompromising engineering rigor.
-- 🚀 **[KaiNext](https://www.kainext.cl)** — my software consultancy, delivering production systems and audits for clients.
+- 🚀 **[KaiNext Solutions Limitada](https://www.kainext.cl)** — my software consultancy, delivering production systems and audits for clients.
+
+> 🔭 **Now:** turning **NutriCoach** from dogfooding into a launched product, under Ale Hernández SpA.
 
 ### 🚢 Shipped
 
@@ -56,7 +59,6 @@ I work in the space between **code and capital** — designing scalable architec
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 ![Anthropic Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 
 ### ⚡ How I build
