@@ -6,10 +6,24 @@ markdown de marca. Editar con rigor, commitear directo a `main`, push → se ve 
 
 ## Qué es (y qué NO)
 
-- **Único artefacto:** `README.md` (la tarjeta de perfil). Nada más se despliega.
+- **Artefactos:** `README.md` (la tarjeta de perfil) + `assets/claude-code.svg`
+  (animación hecha a mano: terminal de Claude Code que "escribe" vía SMIL/CSS — se anima
+  en GitHub sin servicios externos; NO borrar ni convertir a imagen estática).
 - **Idioma:** inglés (audiencia global de GitHub).
 - **No** es fuente de verdad de ningún dominio. La data de negocio, salud y personal vive
   en el vault Obsidian; la orquestación multidominio vive en `kainext-hq`.
+
+## Elementos vivos del README (no romper)
+
+- **Contador de repos:** badge dinámico shields.io que lee `public_repos` de la API de GitHub.
+  **Nunca** hardcodear un número — se actualiza solo.
+- **Snake de contribuciones:** SVG generado por un workflow, servido desde la branch `output`
+  (`github-contribution-grid-snake{,-dark}.svg`) vía `<picture>` dark/light.
+- **Railway:** código de referido del operador **`KJa0VN`** → `https://railway.com?referralCode=KJa0VN`.
+  Debe permanecer en el README (badge + línea de texto).
+- **Typing SVG** (tagline animada): servicio externo `readme-typing-svg.demolab.com`. Si algún
+  día renderiza roto, degrada a su `alt`; los stats cards flaky (github-readme-stats / streak)
+  se descartaron a propósito por caídas 503 — no re-agregar.
 
 ## Identidad (mantener sincronizado con la realidad)
 

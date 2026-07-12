@@ -1,14 +1,17 @@
 <div align="center">
 
+<img src="./assets/claude-code.svg" width="760" alt="Alejandro prompting in Claude Code — shipping production software with agentic AI" />
+
 # Alejandro Hernández Lara
 
-**Founder @ [Ale Hernández SpA](https://www.alehernandez.cl) & [KaiNext](https://www.kainext.cl) · Senior Consultant @ Thoughtworks**
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=D97757&center=true&vCenter=true&width=780&lines=Founder+%40+Ale+Hern%C3%A1ndez+SpA+%26+KaiNext;Senior+Consultant+%40+Thoughtworks;Platform+engineering+%C2%B7+applied+AI+%C2%B7+agentic+workflows;I+diagnose+before+I+build.+Then+I+ship." alt="Founder · Senior Consultant · Platform engineering · applied AI · I diagnose before I build, then I ship" />
 
-Platform engineering · applied AI · agentic workflows — Santiago, Chile 🇨🇱
-
-[![Website](https://img.shields.io/badge/alehernandez.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white)](https://www.alehernandez.cl)
-[![KaiNext](https://img.shields.io/badge/kainext.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white)](https://www.kainext.cl)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-alejandrehl-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejandrehl/)
+<p>
+  <a href="https://www.alehernandez.cl"><img src="https://img.shields.io/badge/alehernandez.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white" alt="alehernandez.cl"></a>
+  <a href="https://www.kainext.cl"><img src="https://img.shields.io/badge/kainext.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white" alt="kainext.cl"></a>
+  <a href="https://www.linkedin.com/in/alejandrehl/"><img src="https://img.shields.io/badge/LinkedIn-alejandrehl-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <img src="https://img.shields.io/badge/Built_with-Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Built with Claude Code">
+</p>
 
 </div>
 
@@ -16,17 +19,18 @@ Platform engineering · applied AI · agentic workflows — Santiago, Chile 🇨
 
 I work in the space between **code and capital** — designing scalable architecture, applied AI, and platform modernization for production systems at enterprise scale. I diagnose before I build: years at the intersection of engineering and business operations taught me to read a system as a single piece, from the database to the P&L.
 
-- 🏛️ At **Thoughtworks** I'm embedded in platform engineering for a major airline — cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments.
-- 🏢 **[Ale Hernández SpA](https://www.alehernandez.cl)** is my own company — where I build and ship my own products end-to-end and run an **agent-orchestration practice** using Claude Code and applied AI, with uncompromising engineering rigor.
-- 🥗 **[NutriCoach](https://www.nutricoach.cl)** is the product I'm building under it: an AI nutrition-coaching platform — web + PWA + API, adaptive targets, and a clinical assistant, on a NestJS / Postgres / React stack.
-- 🚀 **[KaiNext](https://www.kainext.cl)** is my software consultancy, where I deliver production systems and audits for clients.
+- 🏛️ **Thoughtworks** — Senior Consultant (P4), embedded in platform engineering for a major airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments.
+- 🏢 **[Ale Hernández SpA](https://www.alehernandez.cl)** — my own company, where I build and ship my own products end-to-end and run an **agent-orchestration practice** with uncompromising engineering rigor.
+- 🚀 **[KaiNext](https://www.kainext.cl)** — my software consultancy, delivering production systems and audits for clients.
 
-### 🔭 What I'm working on
+### 🚢 Shipped
 
-- Building NutriCoach into a real product — from dogfooding to launch
-- Agentic workflows applied to platform modernization, refactoring, and auditing
-- AI-assisted engineering in regulated, high-stakes production systems
-- An open-source toolkit for agent-driven, multi-domain development
+| Product | What it is | Stack |
+|---|---|---|
+| **[NutriCoach](https://nutricoach.cl)** | AI nutrition-coaching platform — web + PWA + API, adaptive targets and a clinical assistant | NestJS · Postgres · React |
+| **[Disrover](https://disrover.com)** | ERP running in production — PWA, auth, auto-goals and reporting | Laravel · PWA |
+| **[Binance MCP](https://github.com/Alejandrehl/kainext-binance-mcp)** | Open-source MCP server: an AI reads markets and proposes orders, a human holds the trade key — security-first, 18 tools, ~99% coverage | TypeScript · MCP |
+| **[alehernandez.cl](https://www.alehernandez.cl)** | Personal brand site, bilingual EN/ES | Astro · Tailwind |
 
 ### 🛠️ Tech I work with
 
@@ -41,16 +45,27 @@ I work in the space between **code and capital** — designing scalable architec
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white)
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-![Anthropic Claude](https://img.shields.io/badge/Anthropic%20Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![Anthropic Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+
+### ⚡ How I build
+
+**[Claude Code](https://claude.com/claude-code)** is my primary environment — I run an agent-orchestration practice across a multi-domain command center, so software gets built, modernized, and audited with agents under tight engineering rigor. Most of what I ship runs on **Railway**.
+
+<a href="https://railway.com?referralCode=KJa0VN"><img src="https://img.shields.io/badge/Deploy_on_Railway-%245_free_credit_%C2%B7_code_KJa0VN-8B5CF6?style=for-the-badge&logo=railway&logoColor=white" alt="Deploy on Railway with referral code KJa0VN"></a>
+
+> Deploying on Railway? Use my referral code **`KJa0VN`** ([railway.com?referralCode=KJa0VN](https://railway.com?referralCode=KJa0VN)) — we both get credit.
 
 ### 📊 GitHub
 
@@ -59,6 +74,12 @@ I work in the space between **code and capital** — designing scalable architec
 [![Followers](https://img.shields.io/github/followers/Alejandrehl?style=flat-square&logo=github&logoColor=white&label=Followers&labelColor=0A0A0A&color=1A1A1A)](https://github.com/Alejandrehl?tab=followers)
 [![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FAlejandrehl&query=%24.public_repos&style=flat-square&logo=github&logoColor=white&label=Public%20Repos&labelColor=0A0A0A&color=1A1A1A)](https://github.com/Alejandrehl?tab=repositories)
 [![Profile](https://img.shields.io/badge/Explore-my%20work-0A0A0A?style=flat-square&logo=github&logoColor=white)](https://github.com/Alejandrehl?tab=repositories)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Alejandrehl/alejandrehl/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Alejandrehl/alejandrehl/output/github-contribution-grid-snake.svg">
+  <img alt="Alejandro's contribution graph as a snake game" src="https://raw.githubusercontent.com/Alejandrehl/alejandrehl/output/github-contribution-grid-snake.svg">
+</picture>
 
 </div>
 
