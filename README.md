@@ -10,6 +10,7 @@
   <a href="https://www.alehernandez.cl"><img src="https://img.shields.io/badge/alehernandez.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white" alt="alehernandez.cl"></a>
   <a href="https://www.kainext.cl"><img src="https://img.shields.io/badge/kainext.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white" alt="kainext.cl"></a>
   <a href="https://www.linkedin.com/in/alejandrehl/"><img src="https://img.shields.io/badge/LinkedIn-alejandrehl-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:alejandrehl@icloud.com"><img src="https://img.shields.io/badge/Email-let's_talk-D97757?style=flat-square&logo=maildotru&logoColor=white" alt="Email"></a>
   <img src="https://img.shields.io/badge/Built_with-Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Built with Claude Code">
   <img src="https://img.shields.io/badge/Santiago-Chile%20%F0%9F%87%A8%F0%9F%87%B1-0A0A0A?style=flat-square&logo=googlemaps&logoColor=white" alt="Based in Santiago, Chile">
 </p>
@@ -31,8 +32,9 @@ I work in the space between **code and capital** — designing scalable architec
 | Product | What it is | Stack |
 |---|---|---|
 | **[NutriCoach](https://nutricoach.cl)** | AI nutrition-coaching platform — web + PWA + API, adaptive targets and a clinical assistant | NestJS · Postgres · React |
-| **[Disrover](https://disrover.com)** | ERP running in production — PWA, auth, auto-goals and reporting | Laravel · PWA |
-| **[Binance MCP](https://github.com/Alejandrehl/kainext-binance-mcp)** | Open-source MCP server: an AI reads markets and proposes orders, a human holds the trade key — security-first, 18 tools, ~99% coverage | TypeScript · MCP |
+| **[Disrover](https://disrover.com)** | ERP shipped to production — PWA, auth, auto-goals and reporting | Laravel · PWA |
+| **[Binance MCP](https://github.com/Alejandrehl/kainext-binance-mcp)** | Open-source MCP server: an AI reads markets and proposes orders, a human holds the trade key — security-first, 18 tools, ~99% coverage | Python · MCP |
+| **[polydomain](https://github.com/Alejandrehl/polydomain)** | Open-source npx scaffolder — turns your AI coding agent into a multi-domain command center (the Capsule architecture) | TypeScript · CLI |
 | **[alehernandez.cl](https://www.alehernandez.cl)** | Personal brand site, bilingual EN/ES | Astro · Tailwind |
 
 ### 🛠️ Tech I work with
