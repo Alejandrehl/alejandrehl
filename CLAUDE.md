@@ -6,9 +6,14 @@ es el workflow del snake. Editar con rigor, commitear directo a `main`, push →
 
 ## Qué es (y qué NO)
 
-- **Artefactos:** `README.md` (la tarjeta de perfil) · `assets/claude-code.svg` (animación
-  hecha a mano: terminal de Claude Code que "escribe" vía SMIL — se anima en GitHub sin servicios
-  externos; NO borrar ni convertir a imagen estática) · `.github/workflows/snake.yml` (genera el snake).
+- **Artefactos:** `README.md` (la tarjeta de perfil) · `assets/claude-code.svg` (terminal de Claude
+  Code hecho a mano) · `.github/workflows/snake.yml` (genera el snake).
+- **GOTCHA verificado (12-07-2026):** GitHub **congela los SVG animados en su frame 0** dentro del
+  README (SMIL/CSS no corre en el embed vía camo). Por eso `claude-code.svg` está diseñado con
+  **estado base = terminal completo y legible** (todo el texto con opacity 1, sin clip que oculte);
+  la animación (blink del caret, sweep) es solo un bonus que no rompe nada si se congela. **Nunca**
+  volver a un diseño cuyo frame 0 quede en blanco. Por lo mismo se **removió el typing-SVG** de la
+  tagline (renderizaba vacío) → ahora es texto markdown estático.
 - **Idioma:** inglés (audiencia global de GitHub).
 - **No** es fuente de verdad de ningún dominio. La data de negocio, salud y personal vive
   en el vault Obsidian; la orquestación multidominio vive en `kainext-hq`.
@@ -22,9 +27,8 @@ es el workflow del snake. Editar con rigor, commitear directo a `main`, push →
   (`github-contribution-grid-snake{,-dark}.svg`), embebido vía `<picture>` dark/light.
 - **Railway:** código de referido del operador **`KJa0VN`** → `https://railway.com?referralCode=KJa0VN`.
   Debe permanecer en el README (badge + línea de texto).
-- **Typing SVG** (tagline animada): servicio externo `readme-typing-svg.demolab.com`. Si algún
-  día renderiza roto, degrada a su `alt`; los stats cards flaky (github-readme-stats / streak)
-  se descartaron a propósito por caídas 503 — no re-agregar.
+- **Stats cards** flaky (github-readme-stats / streak) se descartaron a propósito por caídas 503
+  y por el freeze de animación — no re-agregar. Métricas van por badges de shields (que sí sirven).
 
 ## Identidad (mantener sincronizado con la realidad)
 

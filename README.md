@@ -4,7 +4,9 @@
 
 # Alejandro Hernández Lara
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=D97757&center=true&vCenter=true&width=820&lines=Founder+%40+Ale+Hern%C3%A1ndez+SpA;Founder+%40+KaiNext+Solutions+Limitada;Senior+Consultant+%40+Thoughtworks;Platform+engineering+%C2%B7+applied+AI+%C2%B7+agentic+workflows;I+diagnose+before+I+build.+Then+I+ship." alt="Founder @ Ale Hernández SpA · Founder @ KaiNext Solutions Limitada · Senior Consultant @ Thoughtworks · Platform engineering, applied AI, agentic workflows · I diagnose before I build, then I ship" />
+**Founder @ [Ale Hernández SpA](https://www.alehernandez.cl) & [KaiNext Solutions Limitada](https://www.kainext.cl) · Senior Consultant @ Thoughtworks**
+
+*Platform engineering · applied AI · agentic workflows — I diagnose before I build, then I ship.*
 
 <p>
   <a href="https://www.alehernandez.cl"><img src="https://img.shields.io/badge/alehernandez.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white" alt="alehernandez.cl"></a>
