@@ -2,11 +2,12 @@
 
 # Alejandro Hernández Lara
 
-**Founder @ [KaiNext](https://www.kainext.cl) · Senior Consultant @ Thoughtworks**
+**Founder @ [Ale Hernández SpA](https://www.alehernandez.cl) & [KaiNext](https://www.kainext.cl) · Senior Consultant @ Thoughtworks**
 
 Platform engineering · applied AI · agentic workflows — Santiago, Chile 🇨🇱
 
-[![Website](https://img.shields.io/badge/KaiNext-www.kainext.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white)](https://www.kainext.cl)
+[![Website](https://img.shields.io/badge/alehernandez.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white)](https://www.alehernandez.cl)
+[![KaiNext](https://img.shields.io/badge/kainext.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white)](https://www.kainext.cl)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-alejandrehl-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejandrehl/)
 
 </div>
@@ -16,14 +17,16 @@ Platform engineering · applied AI · agentic workflows — Santiago, Chile 🇨
 I work in the space between **code and capital** — designing scalable architecture, applied AI, and platform modernization for production systems at enterprise scale. I diagnose before I build: years at the intersection of engineering and business operations taught me to read a system as a single piece, from the database to the P&L.
 
 - 🏛️ At **Thoughtworks** I'm embedded in platform engineering for a major airline — cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments.
-- 🚀 At **KaiNext** (the company I co-founded) I ship production software end-to-end and run an **agent-orchestration practice** — using Claude Code and applied AI to build, modernize, and audit systems with uncompromising engineering rigor.
+- 🏢 **[Ale Hernández SpA](https://www.alehernandez.cl)** is my own company — where I build and ship my own products end-to-end and run an **agent-orchestration practice** using Claude Code and applied AI, with uncompromising engineering rigor.
+- 🥗 **[NutriCoach](https://www.nutricoach.cl)** is the product I'm building under it: an AI nutrition-coaching platform — web + PWA + API, adaptive targets, and a clinical assistant, on a NestJS / Postgres / React stack.
+- 🚀 **[KaiNext](https://www.kainext.cl)** is my software consultancy, where I deliver production systems and audits for clients.
 
 ### 🔭 What I'm working on
 
-- Cloud-native platform foundations and developer self-service tooling
+- Building NutriCoach into a real product — from dogfooding to launch
 - Agentic workflows applied to platform modernization, refactoring, and auditing
 - AI-assisted engineering in regulated, high-stakes production systems
-- Building KaiNext products and an open-source toolkit for agent-driven development
+- An open-source toolkit for agent-driven, multi-domain development
 
 ### 🛠️ Tech I work with
 
@@ -54,7 +57,7 @@ I work in the space between **code and capital** — designing scalable architec
 <div align="center">
 
 [![Followers](https://img.shields.io/github/followers/Alejandrehl?style=flat-square&logo=github&logoColor=white&label=Followers&labelColor=0A0A0A&color=1A1A1A)](https://github.com/Alejandrehl?tab=followers)
-[![Repositories](https://img.shields.io/badge/Repos-460%2B-1A1A1A?style=flat-square&logo=git&logoColor=white)](https://github.com/Alejandrehl?tab=repositories)
+[![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FAlejandrehl&query=%24.public_repos&style=flat-square&logo=github&logoColor=white&label=Public%20Repos&labelColor=0A0A0A&color=1A1A1A)](https://github.com/Alejandrehl?tab=repositories)
 [![Profile](https://img.shields.io/badge/Explore-my%20work-0A0A0A?style=flat-square&logo=github&logoColor=white)](https://github.com/Alejandrehl?tab=repositories)
 
 </div>
