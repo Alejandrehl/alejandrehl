@@ -4,7 +4,7 @@
 
 # Alejandro Hernández Lara
 
-**Founder @ [Ale Hernández SpA](https://www.alehernandez.cl) & [KaiNext Solutions Limitada](https://www.kainext.cl) · Senior Consultant @ Thoughtworks**
+**Founder @ [KaiNext](https://www.kainext.cl) · Senior Software Engineer @ Thoughtworks**
 
 *Platform engineering · applied AI · agentic workflows — I diagnose before I build, then I ship.*
 
@@ -24,20 +24,17 @@
 I work in the space between **code and capital** — designing scalable architecture, applied AI, and platform modernization for production systems at enterprise scale. I diagnose before I build: years at the intersection of engineering and business operations taught me to read a system as a single piece, from the database to the P&L.
 
 - 🏛️ **Thoughtworks** — Senior Consultant (P4), embedded in platform engineering for a major airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments.
-- 🏢 **[Ale Hernández SpA](https://www.alehernandez.cl)** — my own company, where I build and ship my own products end-to-end and run an **agent-orchestration practice** with uncompromising engineering rigor.
-- 🚀 **[KaiNext Solutions Limitada](https://www.kainext.cl)** — my software consultancy, delivering production systems and audits for clients.
+- 🚀 **[KaiNext](https://www.kainext.cl)** — my own company: I build and ship my own products end-to-end, deliver production systems and audits for clients, and run an **agent-orchestration practice** with uncompromising engineering rigor.
 
-> 🔭 **Now:** turning **NutriCoach** from dogfooding into a launched product, under Ale Hernández SpA.
+> 🔭 **Now:** turning **NutriCoach** from dogfooding into a launched product, under KaiNext.
 
 ### 🚢 Shipped
 
 | Product | What it is | Stack |
 |---|---|---|
 | **[NutriCoach](https://nutricoach.cl)** | AI nutrition-coaching platform — web + PWA + API, adaptive targets and a clinical assistant | NestJS · Postgres · React |
-| **[Disrover](https://disrover.com)** | ERP shipped to production — PWA, auth, auto-goals and reporting | Laravel · PWA |
-| **[Binance MCP](https://github.com/Alejandrehl/kainext-binance-mcp)** | Open-source MCP server: an AI reads markets and proposes orders, a human holds the trade key — security-first, 18 tools, ~99% coverage | Python · MCP |
-| **[polydomain](https://github.com/Alejandrehl/polydomain)** | Open-source npx scaffolder — turns your AI coding agent into a multi-domain command center (the Capsule architecture) | TypeScript · CLI |
-| **[alehernandez.cl](https://www.alehernandez.cl)** | Personal brand site, bilingual EN/ES | Astro · Tailwind |
+| **[Disrover](https://disrover.com)** | ERP shipped to production for a client — PWA, auth, auto-goals and reporting | Laravel · PWA |
+| **[MiCodigoPostal.Fun](https://micodigopostal.fun)** | Chile's postal code by commune or exact address — free, bilingual, public API, no key | Astro · NestJS · Postgres |
 
 ### 🛠️ Tech I work with
 
