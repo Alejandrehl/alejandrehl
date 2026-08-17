@@ -23,7 +23,7 @@
 
 I work in the space between **code and capital** — designing scalable architecture, applied AI, and platform modernization for production systems at enterprise scale. I diagnose before I build: years at the intersection of engineering and business operations taught me to read a system as a single piece, from the database to the P&L.
 
-- 🏛️ **Thoughtworks** — Senior Consultant (P4), embedded in platform engineering for a major airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments.
+- 🏛️ **Thoughtworks** — Senior Consultant, embedded in platform engineering for a major airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments.
 - 🚀 **[KaiNext](https://www.kainext.cl)** — my own company: I build and ship my own products end-to-end, deliver production systems and audits for clients, and run an **agent-orchestration practice** with uncompromising engineering rigor.
 
 > 🔭 **Now:** turning **NutriCoach** from dogfooding into a launched product, under KaiNext.
