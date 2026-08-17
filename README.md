@@ -33,7 +33,6 @@ I work in the space between **code and capital** — designing scalable architec
 | Product | What it is | Stack |
 |---|---|---|
 | **[NutriCoach](https://nutricoach.cl)** | AI nutrition-coaching platform — web + PWA + API, adaptive targets and a clinical assistant | NestJS · Postgres · React |
-| **[Disrover](https://disrover.com)** | ERP shipped to production for a client — PWA, auth, auto-goals and reporting | Laravel · PWA |
 | **[MiCodigoPostal.Fun](https://micodigopostal.fun)** | Chile's postal code by commune or exact address — free, bilingual, public API, no key | Astro · NestJS · Postgres |
 
 ### 🛠️ Tech I work with
