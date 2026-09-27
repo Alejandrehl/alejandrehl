@@ -23,17 +23,18 @@
 
 I work in the space between **code and capital** — designing scalable architecture, applied AI, and platform modernization for production systems at enterprise scale. I diagnose before I build: years at the intersection of engineering and business operations taught me to read a system as a single piece, from the database to the P&L.
 
-- 🏛️ **Thoughtworks** — Senior Consultant, embedded in platform engineering for a major airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments.
+- 🏛️ **Thoughtworks** — Senior Consultant, embedded in platform engineering for a major airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments. Recent: a per-merge-request ephemeral-environments platform on GCP, the team's AI-agent command center, and an MCP server for self-service PostgreSQL CDC.
 - 🚀 **[KaiNext](https://www.kainext.cl)** — my own company: I build and ship my own products end-to-end, deliver production systems and audits for clients, and run an **agent-orchestration practice** with uncompromising engineering rigor.
 
-> 🔭 **Now:** turning **NutriCoach** from dogfooding into a launched product, under KaiNext.
+> 🔭 **Now:** taking an MCP self-service server to production at platform scale — and running **NutriCoach** live on the App Store and Google Play.
 
 ### 🚢 Shipped
 
 | Product | What it is | Stack |
 |---|---|---|
-| **[NutriCoach](https://nutricoach.cl)** | AI nutrition-coaching platform — web + PWA + API, adaptive targets and a clinical assistant | NestJS · Postgres · React |
+| **[NutriCoach](https://nutricoach.cl)** | AI nutrition-coaching platform — web + PWA + API + iOS & Android apps, adaptive targets and a clinical assistant | NestJS · Postgres · React |
 | **[MiCodigoPostal.Fun](https://micodigopostal.fun)** | Chile's postal code by commune or exact address — free, bilingual, public API, no key | Astro · NestJS · Postgres |
+| **[kainext-binance-mcp](https://github.com/Alejandrehl/kainext-binance-mcp)** | Security-first MCP server for Binance Spot — 25 tools, human-gated execution, on PyPI and the official MCP Registry | Python · MCP |
 
 ### 🛠️ Tech I work with
 
@@ -54,6 +55,7 @@ I work in the space between **code and capital** — designing scalable architec
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Google Cloud Run](https://img.shields.io/badge/Cloud_Run-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
