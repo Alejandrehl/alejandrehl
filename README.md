@@ -4,7 +4,7 @@
 
 # Alejandro Hernández Lara
 
-**Founder @ [KaiNext](https://www.kainext.cl) · Senior Software Engineer @ Thoughtworks**
+**Senior Software Engineer @ Thoughtworks · Founder @ [KaiNext](https://www.kainext.cl)**
 
 *Platform engineering · applied AI · agentic workflows — I diagnose before I build, then I ship.*
 
@@ -21,10 +21,10 @@
 
 ---
 
-I work in the space between **code and capital** — designing scalable architecture, applied AI, and platform modernization for production systems at enterprise scale. I diagnose before I build: years at the intersection of engineering and business operations taught me to read a system as a single piece, from the database to the P&L.
+I work in the space between **code and capital** — designing scalable architecture, applying AI and modernizing platforms for production systems at enterprise scale. I diagnose before I build: years at the intersection of engineering and business operations taught me to read a system as a single piece, from the database to the P&L.
 
-- 🏛️ **Thoughtworks** — Senior Consultant, embedded in platform engineering for a major airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments. Highlights: a per-merge-request ephemeral-environments platform on GCP, the team's AI-agent command center, and an MCP server for self-service PostgreSQL CDC.
-- 🚀 **[KaiNext](https://www.kainext.cl)** — my own company: I build and ship my own products end-to-end, deliver production systems and audits for clients, and run an **agent-orchestration practice** with uncompromising engineering rigor.
+- 🏛️ **Thoughtworks** — Senior Consultant, embedded in Platform Engineering for a leading Latin American airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments. Highlights: a per-merge-request ephemeral-environments platform on GCP, the team's AI-agent command center, and an MCP server for self-service PostgreSQL CDC.
+- 🚀 **[KaiNext](https://www.kainext.cl)** — the engineering consultancy I lead as founder: I build and ship my own products end to end, deliver production systems and audits for clients, and run an **agent-orchestration practice** with uncompromising engineering rigor.
 
 > 🔭 **Focus:** platform engineering, developer self-service and AI agents in production.
 
@@ -33,7 +33,7 @@ I work in the space between **code and capital** — designing scalable architec
 | Product | What it is | Stack |
 |---|---|---|
 | **[NutriCoach](https://nutricoach.cl)** | AI nutrition-coaching platform — web + PWA + API + iOS & Android apps, adaptive targets and a clinical assistant | NestJS · Postgres · React |
-| **[MiCodigoPostal.Fun](https://micodigopostal.fun)** | Chile's postal code by commune or exact address — free, bilingual, public API, no key | Astro · NestJS · Postgres |
+| **[MiCodigoPostal.Fun](https://micodigopostal.fun)** | Chilean postal codes by commune or exact address — free, bilingual, public API, no key required | Astro · NestJS · Postgres |
 | **[kainext-binance-mcp](https://github.com/Alejandrehl/kainext-binance-mcp)** | Security-first MCP server for Binance Spot — 25 tools, human-gated execution, on PyPI and the official MCP Registry | Python · MCP |
 
 ### 🛠️ Tech I work with
