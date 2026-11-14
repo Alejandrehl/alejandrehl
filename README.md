@@ -3,21 +3,16 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img src="./assets/hero-dark.svg" width="820" alt="Alejandro in Claude Code: diagnose before you build, plan reviewed, independent review passed, ship it. Beside it, a merge request moving through its own ephemeral environment and review to production.">
+  <img src="./assets/hero-light.svg" width="100%" alt="Alejandro in Claude Code: diagnose before you build, read the whole system from the database to the business outcome, plan reviewed, independent review passed, ship it. Beside it, a merge request moves through its own ephemeral environment and review to production.">
 </picture>
 
-# Alejandro Hernández Lara
+# Alejandro Hernández&nbsp;Lara
 
-**Senior Software Architect · Platform Engineering · Applied AI**
+**Senior&nbsp;Software&nbsp;Architect · Platform&nbsp;Engineering · Applied&nbsp;AI**
 
 *I build the platforms engineering teams ship on, and the AI tooling that makes them faster.*
 
-<p>
-  <a href="https://www.alehernandez.cl"><img src="https://img.shields.io/badge/alehernandez.cl-0A0A0A?style=flat-square" alt="alehernandez.cl"></a>
-  <a href="https://www.linkedin.com/in/alejandrehl/"><img src="https://img.shields.io/badge/LinkedIn-alejandrehl-0A66C2?style=flat-square" alt="LinkedIn"></a>
-  <a href="mailto:alejandrehl@icloud.com"><img src="https://img.shields.io/badge/Email-let's_talk-D97757?style=flat-square&logo=icloud&logoColor=white" alt="Email"></a>
-  <img src="https://img.shields.io/badge/Santiago-Chile%20%F0%9F%87%A8%F0%9F%87%B1-0A0A0A?style=flat-square&logo=googlemaps&logoColor=white" alt="Based in Santiago, Chile">
-</p>
+[alehernandez.cl](https://www.alehernandez.cl) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/alejandrehl/) &nbsp;·&nbsp; [Email](mailto:alejandrehl@icloud.com) &nbsp;·&nbsp; Santiago,&nbsp;Chile
 
 </div>
 
@@ -27,48 +22,53 @@ I design and build internal platforms and AI tooling for engineering teams: self
 
 ## Selected work
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Ephemeral environments, per merge&nbsp;request
 
-#### 🌱 Ephemeral environments, per merge request
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-ephemeral-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/work-ephemeral-light.svg">
+  <img src="./assets/work-ephemeral-light.svg" width="100%" alt="Diagram: each merge request gets its own ephemeral environment on Cloud Run, Cloud SQL, and DNS; a time to live runs down and the environment is torn down automatically.">
+</picture>
 
 Designed and built the core of an ephemeral-environments platform on GCP for a leading Latin American airline. Every merge request gets its own running environment, provisioned on demand and torn down automatically.
 
 `Cloud Run` `Cloud SQL` `Terraform Cloud API` `Automatic DNS` `TTL cleanup`
 
-</td>
-<td width="50%" valign="top">
+### A shared AI-agent workspace for a platform team
 
-#### 🤖 A shared AI-agent workspace for a platform team
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-agents-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/work-agents-light.svg">
+  <img src="./assets/work-agents-light.svg" width="100%" alt="Diagram: engineers on a platform team work from one shared Claude Code workspace with reusable agent skills, MCP servers, and CI quality gates; every change leaves with its gates green.">
+</picture>
 
 Built the Claude Code workspace a platform-engineering team works from: reusable agent skills, MCP servers, and CI quality gates. Recognized as the technical reference for generative AI on that engagement.
 
 `Claude Code` `MCP` `Agent skills` `CI gates`
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+### Self-service change data capture over&nbsp;MCP
 
-#### 🔄 Self-service change data capture over MCP
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-cdc-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/work-cdc-light.svg">
+  <img src="./assets/work-cdc-light.svg" width="100%" alt="Diagram: a team asks an MCP server for change data capture; the server checks the team's authorization, writes an audit entry, and enables CDC on PostgreSQL, whose change events then stream out.">
+</picture>
 
 Led the production rollout of an MCP server that lets teams set up PostgreSQL change data capture through self-service, with per-team authorization and audit logging.
 
 `Python` `FastAPI` `PostgreSQL` `MCP`
 
-</td>
-<td width="50%" valign="top">
+### Banking at national scale
 
-#### 🏦 Banking at national scale
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-bank-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/work-bank-light.svg">
+  <img src="./assets/work-bank-light.svg" width="100%" alt="Diagram: solution architecture for a bank's mobile app and website, and the bank's email delivery migrated from a legacy server to AWS SES, with messages flowing out to customers.">
+</picture>
 
 Designed solution architecture for the mobile app and website of the bank with the most customers in Chile, and migrated the bank's email delivery to AWS SES.
 
 `Solution architecture` `AWS` `AWS SES`
-
-</td>
-</tr>
-</table>
 
 ## How I work
 
@@ -81,61 +81,15 @@ Designed solution architecture for the mobile app and website of the bank with t
 ## Stack
 
 <table>
-<tr>
-<td><b>Cloud &amp; data</b></td>
-<td>
-
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td><b>AI</b></td>
-<td>
-
-![Anthropic Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
-![MCP](https://img.shields.io/badge/MCP-0A0A0A?style=flat-square&logo=modelcontextprotocol&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square)
-
-</td>
-</tr>
-<tr>
-<td><b>Languages</b></td>
-<td>
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td><b>Frameworks</b></td>
-<td>
-
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![React Native](https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-
-</td>
-</tr>
+<tr><td><b>Cloud &amp; data</b></td><td><code>GCP</code> <code>AWS</code> <code>Terraform</code> <code>Docker</code> <code>PostgreSQL</code> <code>MongoDB</code> <code>Railway</code></td></tr>
+<tr><td><b>AI</b></td><td><code>Claude</code> <code>MCP</code> <code>OpenAI</code></td></tr>
+<tr><td><b>Languages</b></td><td><code>TypeScript</code> <code>Python</code> <code>Go</code> <code>PHP</code> <code>Dart</code></td></tr>
+<tr><td><b>Frameworks</b></td><td><code>NestJS</code> <code>FastAPI</code> <code>Next.js</code> <code>React</code> <code>Laravel</code> <code>React Native</code> <code>Flutter</code></td></tr>
 </table>
 
 For my own deployments I use **Railway**.
 
-<a href="https://railway.com?referralCode=KJa0VN"><img src="https://img.shields.io/badge/Deploy_on_Railway-referral_code_KJa0VN-8B5CF6?style=for-the-badge&logo=railway&logoColor=white" alt="Deploy on Railway with referral code KJa0VN"></a>
+[![Deploy on Railway with referral code KJa0VN](https://img.shields.io/badge/Deploy_on_Railway-referral_code_KJa0VN-D97757?style=flat-square&logo=railway&logoColor=white&labelColor=0A0A0A)](https://railway.com?referralCode=KJa0VN)
 
 > Use referral code **`KJa0VN`** ([railway.com?referralCode=KJa0VN](https://railway.com?referralCode=KJa0VN)) and we both get credit.
 
@@ -156,9 +110,15 @@ For my own deployments I use **Railway**.
 
 ---
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/cta-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/cta-light.svg">
+  <img src="./assets/cta-light.svg" width="100%" alt="A Claude Code prompt reads: let's build something that has to work in production. Below it, alejandrehl@icloud.com and linkedin.com/in/alejandrehl.">
+</picture>
+
 <div align="center">
 
-**Building something that has to work in production?** [Let's talk](mailto:alejandrehl@icloud.com) · [LinkedIn](https://www.linkedin.com/in/alejandrehl/)
+**[Let's talk](mailto:alejandrehl@icloud.com)** &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/alejandrehl/)
 
 *Zero tolerance for mediocrity.*
 

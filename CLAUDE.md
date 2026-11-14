@@ -6,21 +6,32 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
 
 ## What it is (and what it is NOT)
 
-- **Artifacts:** `README.md` (the profile card) · `assets/hero-{dark,light}.svg` (Claude Code
-  terminal + per-merge-request flow, embedded via `<picture>` with `prefers-color-scheme`) ·
-  `scripts/hero.py` (generates both hero SVGs; edit it, never the SVGs by hand:
-  `python3 scripts/hero.py assets`) · `.github/workflows/snake.yml` (generates the snake).
-- **VERIFIED GOTCHA (12-07-2026):** GitHub **freezes animated SVGs at their frame 0** inside the
-  README (SMIL/CSS does not run in the camo-proxied embed). That's why the hero is designed with a
-  **base state = the full, legible terminal** (all text at opacity 1, no clip that hides it); the
-  caret blink is only a bonus that breaks nothing if it freezes. **Never** go back to a design whose
-  frame 0 is blank. For the same reason the animated typing-SVG tagline was **removed** (it rendered
-  blank) → it is now static markdown text.
-- **Hero text contrast:** every text colour in `scripts/hero.py` is at least 4.5:1 (WCAG AA) against
-  both background stops of its theme. Check it again after changing a colour.
-- **Badge logos (verified 14-11-2026):** shields.io drops a logo silently when its simple-icons slug
-  no longer exists (`linkedin`, `openai` and `amazonwebservices` are gone). Before adding a `logo=`,
-  check that the returned SVG contains an `<image>`.
+- **Artifacts:** `README.md` (the profile card) · `assets/{hero,work-ephemeral,work-agents,work-cdc,work-bank,cta}-{dark,light}.svg`
+  (animated art, embedded via `<picture>` with `prefers-color-scheme`) · `scripts/art.py` (generates every SVG;
+  edit it, never the SVGs by hand: `python3 scripts/art.py`, needs `fonttools` + `brotli`) · `scripts/fonts/`
+  (JetBrains Mono, OFL-1.1, subset and embedded in each SVG) · `.github/workflows/snake.yml` (the snake).
+- **`art.py` gates:** it stops if any text colour is below 4.5:1 (WCAG AA) on its theme's backgrounds, or if
+  a `<picture>` in the README is missing a theme or its `alt` differs from the SVG's label.
+- **Animation (verified 14-11-2026):** GitHub **does** run CSS and SMIL animations in repo SVGs on the live
+  profile (the snake and the hero caret move). The old note that GitHub freezes SVGs at frame 0 was wrong.
+  Two rules still hold:
+  1. The **base state** of every SVG (no animation, or `prefers-reduced-motion`) is the complete, legible
+     final frame. Animations only replay how it gets there.
+  2. One-shot sequences run on a **full-length timeline** (`Timeline` in `art.py`): every element animates
+     from t=0 for the whole sequence and holds its state through keyframe percentages. WebKit and Blink
+     **skip short delayed animations inside `<img>`** (a 10 ms step with a 3 s delay never fired), so never
+     go back to them.
+- **GitHub sanitizer (verified 14-11-2026):**
+  - A `<picture>` inside an `<a>` loses its `<img>`, so a linked, themed image is impossible. Links go as
+    text next to the art.
+  - Relative `srcset` is rewritten to `/Alejandrehl/alejandrehl/raw/main/…`.
+  - The markdown API (`POST /markdown`) wraps each `<img>` in an `<a>` inside the `<picture>`, which the
+    live page does not do. A local render must unwrap it, or `<source>` is ignored.
+- **Mobile:** the column is about 360 px, so art text scales to about 40 %. Keep hero text at 24 px or more,
+  and use `&nbsp;` where a line would leave an orphan (name, headline, H3s).
+- **Badge logos (verified 14-11-2026):** shields.io drops a logo silently when its simple-icons slug no longer
+  exists (`linkedin`, `openai` and `amazonwebservices` are gone). Before adding a `logo=`, check that the
+  returned SVG contains an `<image>`.
 - **Language:** English (GitHub's global audience) — including this file.
 - It is **not** the source of truth for any domain. Business, health and personal data live in the
   Obsidian vault; multi-domain orchestration lives in his private command-center repo.
@@ -63,5 +74,6 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
 
 ## Workflow
 
-Edit `README.md` → check the render (badges, links) → `git commit` → `git push origin main`.
+Edit `README.md` and/or `scripts/art.py` → `python3 scripts/art.py` → check the render in light and dark,
+desktop and mobile (badges, links, art at its final frame) → `git commit` → `git push origin main`.
 The profile updates instantly. Badges use shields.io (inline, no dependencies).
