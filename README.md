@@ -1,16 +1,15 @@
 <div align="center">
 
-<img src="./assets/claude-code.svg" width="760" alt="Alejandro prompting in Claude Code — shipping production software with agentic AI" />
+<img src="./assets/claude-code.svg" width="760" alt="Alejandro in Claude Code — designing and shipping production software with agentic AI" />
 
 # Alejandro Hernández Lara
 
-**Senior Software Engineer @ Thoughtworks · Founder @ [KaiNext](https://www.kainext.cl)**
+**Senior Software Architect · Platform Engineering · Applied AI**
 
-*Platform engineering · applied AI · agentic workflows — I diagnose before I build, then I ship.*
+*I diagnose before I build — then I ship production systems that scale.*
 
 <p>
   <a href="https://www.alehernandez.cl"><img src="https://img.shields.io/badge/alehernandez.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white" alt="alehernandez.cl"></a>
-  <a href="https://www.kainext.cl"><img src="https://img.shields.io/badge/kainext.cl-0A0A0A?style=flat-square&logo=googlechrome&logoColor=white" alt="kainext.cl"></a>
   <a href="https://www.linkedin.com/in/alejandrehl/"><img src="https://img.shields.io/badge/LinkedIn-alejandrehl-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:alejandrehl@icloud.com"><img src="https://img.shields.io/badge/Email-let's_talk-D97757?style=flat-square&logo=maildotru&logoColor=white" alt="Email"></a>
   <img src="https://img.shields.io/badge/Built_with-Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Built with Claude Code">
@@ -21,20 +20,17 @@
 
 ---
 
-I work in the space between **code and capital** — designing scalable architecture, applying AI and modernizing platforms for production systems at enterprise scale. I diagnose before I build: years at the intersection of engineering and business operations taught me to read a system as a single piece, from the database to the P&L.
+I design and build software where **architecture meets operations**: cloud-native platforms, developer self-service and AI agents running in production at enterprise scale. Years at the intersection of engineering and business operations taught me to read a system as a single piece — from the database to the P&L — and to fix the cause, not the symptom.
 
-- 🏛️ **Thoughtworks** — Senior Consultant, embedded in Platform Engineering for a leading Latin American airline: cloud-native foundations, developer self-service tooling, and AI-assisted engineering in regulated, high-stakes environments. Highlights: a per-merge-request ephemeral-environments platform on GCP, the team's AI-agent command center, and an MCP server for self-service PostgreSQL CDC.
-- 🚀 **[KaiNext](https://www.kainext.cl)** — the engineering consultancy I lead as founder: I build and ship my own products end to end, deliver production systems and audits for clients, and run an **agent-orchestration practice** with uncompromising engineering rigor.
+### 🏗️ Selected work
 
-> 🔭 **Focus:** platform engineering, developer self-service and AI agents in production.
+- **Ephemeral environments, per merge request** — designed and built the core of an ephemeral-environments platform on GCP for a leading Latin American airline: Cloud Run, Cloud SQL, Terraform Cloud workspaces driven by API, automatic DNS and TTL-based cleanup.
+- **An AI-agent command center** — created the command center a platform-engineering team works from: agent skills, MCP servers and CI quality gates, run with strict engineering rigor.
+- **Self-service data streaming over MCP** — led the production rollout of an MCP server for self-service PostgreSQL change data capture, with per-squad authorization and auditing.
+- **Banking at national scale** — designed architecture solutions shipped in the mobile app and website of the bank with the most customers in Chile, and migrated its email delivery to AWS SES.
+- **Generative AI, applied** — the go-to technical reference for generative AI on an enterprise engagement: agents, MCP and AI-assisted engineering in regulated, high-stakes environments.
 
-### 🚢 Shipped
-
-| Product | What it is | Stack |
-|---|---|---|
-| **[NutriCoach](https://nutricoach.cl)** | AI nutrition-coaching platform — web + PWA + API + iOS & Android apps, adaptive targets and a clinical assistant | NestJS · Postgres · React |
-| **[MiCodigoPostal.Fun](https://micodigopostal.fun)** | Chilean postal codes by commune or exact address — free, bilingual, public API, no key required | Astro · NestJS · Postgres |
-| **[kainext-binance-mcp](https://github.com/Alejandrehl/kainext-binance-mcp)** | Security-first MCP server for Binance Spot — 25 tools, human-gated execution, on PyPI and the official MCP Registry | Python · MCP |
+> 🔭 **Focus:** software architecture, platform engineering, developer self-service and AI agents in production.
 
 ### 🛠️ Tech I work with
 
@@ -66,7 +62,7 @@ I work in the space between **code and capital** — designing scalable architec
 
 ### ⚡ How I build
 
-**[Claude Code](https://claude.com/claude-code)** is my primary environment — I run an agent-orchestration practice across a multi-domain command center, so software gets built, modernized, and audited with agents under tight engineering rigor. Most of what I ship runs on **Railway**.
+**[Claude Code](https://claude.com/claude-code)** is my primary environment — I orchestrate agents to design, build, modernize and audit software under tight engineering rigor: plans reviewed before execution and independent reviews before shipping. Most of what I ship runs on **Railway**.
 
 <a href="https://railway.com?referralCode=KJa0VN"><img src="https://img.shields.io/badge/Deploy_on_Railway-%245_free_credit_%C2%B7_code_KJa0VN-8B5CF6?style=for-the-badge&logo=railway&logoColor=white" alt="Deploy on Railway with referral code KJa0VN"></a>
 

@@ -24,13 +24,13 @@
   <circle cx="40" cy="42" r="6.5" fill="#ff5f56"/>
   <circle cx="62" cy="42" r="6.5" fill="#ffbd2e"/>
   <circle cx="84" cy="42" r="6.5" fill="#27c93f"/>
-  <text x="440" y="47" text-anchor="middle" font-family="'SFMono-Regular',Consolas,Menlo,monospace" font-size="14" fill="#6e6259">✳ claude code — ~/ale-hernandez-spa</text>
+  <text x="440" y="47" text-anchor="middle" font-family="'SFMono-Regular',Consolas,Menlo,monospace" font-size="14" fill="#6e6259">✳ claude code — ~/platform</text>
   <line x1="24" y1="66" x2="856" y2="66" stroke="#1e1a17" stroke-width="1"/>
 
   <g font-family="'SFMono-Regular','JetBrains Mono',Consolas,Menlo,monospace" font-size="18.5">
-    <text x="36" y="114" fill="#e8e2da"><tspan fill="#D97757" font-weight="700">› </tspan>ship a nutrition platform. production-grade, no shortcuts.</text>
-    <text x="36" y="150" fill="#9b8d80"><tspan fill="#D97757" font-weight="700">✻ </tspan>Claude Code · orchestrating the build …</text>
-    <text x="58" y="182" fill="#7d7269" font-size="16">NestJS · Postgres · React PWA · adaptive AI targets</text>
+    <text x="36" y="114" fill="#e8e2da"><tspan fill="#D97757" font-weight="700">› </tspan>design it to scale. production-grade, no shortcuts.</text>
+    <text x="36" y="150" fill="#9b8d80"><tspan fill="#D97757" font-weight="700">✻ </tspan>Claude Code · orchestrating the agents …</text>
+    <text x="58" y="182" fill="#7d7269" font-size="16">cloud-native · CI/CD · MCP servers · AI agents</text>
     <text x="36" y="218" fill="#7ee787"><tspan font-weight="700">✓ </tspan>deployed to production</text>
     <text x="36" y="256" fill="#e8e2da"><tspan fill="#D97757" font-weight="700">› </tspan>ship it.</text>
     <rect x="150" y="242" width="10" height="19" fill="#D97757"><animate attributeName="opacity" begin="0s" dur="1.05s" values="1;1;0;0" keyTimes="0;0.5;0.5;1" repeatCount="indefinite"/></rect>

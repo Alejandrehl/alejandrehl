@@ -16,7 +16,7 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
   was **removed** (it rendered blank) → it is now static markdown text.
 - **Language:** English (GitHub's global audience) — including this file.
 - It is **not** the source of truth for any domain. Business, health and personal data live in the
-  Obsidian vault; multi-domain orchestration lives in `kainext-hq`.
+  Obsidian vault; multi-domain orchestration lives in his private command-center repo.
 
 ## Live README elements (don't break)
 
@@ -33,14 +33,18 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
 ## Identity (keep in sync with reality)
 
 - **Alejandro Exequiel Hernández Lara** — Santiago, Chile. `@alejandrehl` across all platforms.
-- **Ale Hernández SpA** — his **primary** company (100% his, incorporated 08-07-2026). Brand site:
-  alehernandez.cl. He builds **NutriCoach** (nutricoach.cl) under it. Legal data (tax ID, deed)
-  lives in the vault, **not** in this public repo.
-- **KaiNext Solutions Limitada** — software consultancy (secondary, with his father Julio). kainext.cl.
-- **Thoughtworks** — Senior Consultant (P4), embedded in Platform Engineering @ LATAM Airlines.
-
-> NutriCoach is in pre-launch refinement (dogfooding), **not** publicly launched. Do not describe it
-> as "launched" / "live for users" in the README.
+- **Headline:** Senior Software Architect · Platform Engineering · Applied AI. Seniority is **Senior**,
+  never Staff/Principal.
+- **Brand site:** alehernandez.cl (his own company). Legal data (tax ID, deed) never goes in this
+  public repo.
+- **Not mentioned, by the operator's decision (14-11-2026):** his employers by name, his consultancy,
+  and his own side products and tools. The README shows the work and its impact, not the brands.
+- **Employer and client work is always de-identified:** describe the work, never name the client
+  ("a leading Latin American airline", "the bank with the most customers in Chile"). No internal
+  project names, colleagues, tickets or business metrics.
+- **No counters or figures** in the README (they live only in the private CV). Past tense for
+  finished work; no "currently / now / recent".
+- The verified fact bank (what may be said, and where) lives in the operator's vault, not here.
 
 ## Cross-cutting rules (inherited from the command center)
 
