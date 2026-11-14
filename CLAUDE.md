@@ -6,7 +6,7 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
 
 ## What it is (and what it is NOT)
 
-- **Artifacts:** `README.md` (the profile card) · `assets/{hero,work-ephemeral,work-agents,work-cdc,cta}-{dark,light}.svg`
+- **Artifacts:** `README.md` (the profile card) · `assets/{hero,work-ephemeral,work-agents,work-cdc,work-mobile,work-erp,work-postal,cta}-{dark,light}.svg`
   (animated art, embedded via `<picture>` with `prefers-color-scheme`) · `scripts/art.py` (generates every SVG;
   edit it, never the SVGs by hand: `python3 scripts/art.py`, needs `fonttools` + `brotli`) · `scripts/fonts/`
   (JetBrains Mono, OFL-1.1, subset and embedded in each SVG) · `.github/workflows/snake.yml` (the snake).
@@ -65,11 +65,13 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
   never Staff/Principal.
 - **Brand site:** alehernandez.cl (his own company). Legal data (tax ID, deed) never goes in this
   public repo.
-- **Not mentioned, by the operator's decision (14-11-2026):** his employers by name, his consultancy,
-  and his own side products and tools. The README shows the work and its impact, not the brands.
-- **Employer and client work is always de-identified:** describe the work, never name the client
-  ("a leading Latin American airline"). No internal
-  project names, colleagues, tickets or business metrics.
+- **Named on purpose (operator, 14-11-2026):** only his own products, **NutriCoach** (with its store links)
+  and **micodigopostal.fun**. Never named: his employers, his consultancy, his former bank employer, any
+  other side product or tool, the ERP's client, and the art marketplace. The vault's leak patterns enforce
+  this.
+- **Client and employer work is always de-identified:** describe the work, never name the client
+  ("a leading Latin American airline", "a Chilean distribution company", "an art marketplace"). No internal
+  project names, colleagues, tickets, branch or MR numbers, or business metrics.
 - **No counters or figures** in the README (they live only in the private CV). Past tense for
   finished work; no "currently / now / recent".
 - The verified fact bank (what may be said, and where) lives in the operator's vault, not here.
