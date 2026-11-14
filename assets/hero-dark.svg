@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" width="880" height="360" role="img" aria-label="Alejandro in Claude Code: diagnose before you build, plan reviewed, independent review passed, ship it. Beside it, a merge request moving through its own ephemeral environment and review to production.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12100e"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D97757"/><stop offset="1" stop-color="#D97757" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="864" height="344" rx="16" fill="url(#bg)" stroke="#26211d" stroke-width="1.5"/>
+  <rect x="24" y="8.75" width="832" height="2.5" rx="1.25" fill="url(#glow)"/>
+  <circle cx="40" cy="42" r="6.5" fill="#ff5f56"/><circle cx="62" cy="42" r="6.5" fill="#ffbd2e"/><circle cx="84" cy="42" r="6.5" fill="#27c93f"/>
+  <text x="440" y="47" text-anchor="middle" font-family="'SFMono-Regular','JetBrains Mono',Consolas,Menlo,monospace" font-size="14" fill="#958779">✳ claude code — ~/alejandro</text>
+  <line x1="24" y1="66" x2="856" y2="66" stroke="#1e1a17" stroke-width="1"/>
+  <line x1="568" y1="82" x2="568" y2="314" stroke="#1e1a17" stroke-width="1"/>
+  <g font-family="'SFMono-Regular','JetBrains Mono',Consolas,Menlo,monospace" font-size="17.5">
+    <text x="36" y="112" fill="#e8e2da"><tspan fill="#D97757" font-weight="700">› </tspan>diagnose before you build.</text>
+    <text x="36" y="148" fill="#a89a8d"><tspan fill="#D97757" font-weight="700">✻ </tspan>reading the whole system …</text>
+    <text x="58" y="176" fill="#958779" font-size="15">database → services → business outcome</text>
+    <text x="36" y="212" fill="#7ee787"><tspan font-weight="700">✓ </tspan>plan reviewed before execution</text>
+    <text x="36" y="242" fill="#7ee787"><tspan font-weight="700">✓ </tspan>independent review passed</text>
+    <text x="36" y="282" fill="#e8e2da"><tspan fill="#D97757" font-weight="700">› </tspan>ship it. <tspan fill="#D97757">▌<animate attributeName="opacity" begin="0s" dur="1.05s" values="1;1;0;0" keyTimes="0;0.5;0.5;1" repeatCount="indefinite"/></tspan></text>
+  </g>
+  <g font-family="'SFMono-Regular','JetBrains Mono',Consolas,Menlo,monospace">
+    <text x="718" y="86" text-anchor="middle" fill="#958779" font-size="12.5">one environment per merge request</text>
+    <rect x="600" y="96" width="236" height="40" rx="10" fill="#171310" stroke="#2e2722" stroke-width="1.5"/><text x="718.0" y="122" text-anchor="middle" fill="#d9d0c6" font-size="15">merge request</text><path d="M718.0 139 V150" stroke="#6e6259" stroke-width="1.6"/><path d="M713.0 145 L718.0 151 L723.0 145" fill="none" stroke="#6e6259" stroke-width="1.6"/><rect x="600" y="154" width="236" height="40" rx="10" fill="#171310" stroke="#2e2722" stroke-width="1.5"/><text x="718.0" y="180" text-anchor="middle" fill="#d9d0c6" font-size="15">ephemeral env</text><path d="M718.0 197 V208" stroke="#6e6259" stroke-width="1.6"/><path d="M713.0 203 L718.0 209 L723.0 203" fill="none" stroke="#6e6259" stroke-width="1.6"/><rect x="600" y="212" width="236" height="40" rx="10" fill="#171310" stroke="#2e2722" stroke-width="1.5"/><text x="718.0" y="238" text-anchor="middle" fill="#d9d0c6" font-size="15">review · tests</text><path d="M718.0 255 V266" stroke="#6e6259" stroke-width="1.6"/><path d="M713.0 261 L718.0 267 L723.0 261" fill="none" stroke="#6e6259" stroke-width="1.6"/><rect x="600" y="270" width="236" height="40" rx="10" fill="#12261a" stroke="#2f6b3f" stroke-width="1.5"/><text x="718.0" y="296" text-anchor="middle" fill="#7ee787" font-size="15" font-weight="700">✓ production</text>
+  </g>
+  <line x1="24" y1="322" x2="856" y2="322" stroke="#1e1a17" stroke-width="1"/>
+  <g font-family="'SFMono-Regular','JetBrains Mono',Consolas,Menlo,monospace" font-size="12.5">
+    <text x="36" y="341" fill="#958779">◇ internal platforms · developer self-service · AI agents in production</text>
+    <text x="844" y="341" text-anchor="end" fill="#958779"><tspan fill="#D97757">✻</tspan> claude code</text>
+  </g>
+</svg>

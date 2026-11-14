@@ -6,14 +6,21 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
 
 ## What it is (and what it is NOT)
 
-- **Artifacts:** `README.md` (the profile card) · `assets/claude-code.svg` (hand-built Claude Code
-  terminal) · `.github/workflows/snake.yml` (generates the snake).
+- **Artifacts:** `README.md` (the profile card) · `assets/hero-{dark,light}.svg` (Claude Code
+  terminal + per-merge-request flow, embedded via `<picture>` with `prefers-color-scheme`) ·
+  `scripts/hero.py` (generates both hero SVGs; edit it, never the SVGs by hand:
+  `python3 scripts/hero.py assets`) · `.github/workflows/snake.yml` (generates the snake).
 - **VERIFIED GOTCHA (12-07-2026):** GitHub **freezes animated SVGs at their frame 0** inside the
-  README (SMIL/CSS does not run in the camo-proxied embed). That's why `claude-code.svg` is designed
-  with a **base state = the full, legible terminal** (all text at opacity 1, no clip that hides it);
-  the animation (caret blink, sweep) is only a bonus that breaks nothing if it freezes. **Never**
-  go back to a design whose frame 0 is blank. For the same reason the animated typing-SVG tagline
-  was **removed** (it rendered blank) → it is now static markdown text.
+  README (SMIL/CSS does not run in the camo-proxied embed). That's why the hero is designed with a
+  **base state = the full, legible terminal** (all text at opacity 1, no clip that hides it); the
+  caret blink is only a bonus that breaks nothing if it freezes. **Never** go back to a design whose
+  frame 0 is blank. For the same reason the animated typing-SVG tagline was **removed** (it rendered
+  blank) → it is now static markdown text.
+- **Hero text contrast:** every text colour in `scripts/hero.py` is at least 4.5:1 (WCAG AA) against
+  both background stops of its theme. Check it again after changing a colour.
+- **Badge logos (verified 14-11-2026):** shields.io drops a logo silently when its simple-icons slug
+  no longer exists (`linkedin`, `openai` and `amazonwebservices` are gone). Before adding a `logo=`,
+  check that the returned SVG contains an `<image>`.
 - **Language:** English (GitHub's global audience) — including this file.
 - It is **not** the source of truth for any domain. Business, health and personal data live in the
   Obsidian vault; multi-domain orchestration lives in his private command-center repo.
