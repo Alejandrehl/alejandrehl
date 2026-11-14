@@ -3,10 +3,10 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img src="./assets/hero-light.svg" width="100%" alt="Alejandro in Claude Code: diagnose before you build, read the whole system from the database to the business outcome, plan reviewed, independent review passed, ship it. Beside it, a list of shipped work checks off: ephemeral environments, an agent workspace, change data capture over MCP, and solution architecture for a bank.">
+  <img src="./assets/hero-light.svg" width="100%" alt="A Claude Code session: diagnose before you build, read the whole system from the database to the business outcome, plan reviewed, independent review passed, ship it. Beside it, a list of shipped work checks off: ephemeral environments, a shared agent workspace, and change data capture over MCP.">
 </picture>
 
-# Alejandro Hernández&nbsp;Lara
+# Alejandro&nbsp;Exequiel Hernández&nbsp;Lara
 
 **Senior&nbsp;Software&nbsp;Architect**<br>
 Platform&nbsp;Engineering · Applied&nbsp;AI
@@ -17,7 +17,7 @@ Platform&nbsp;Engineering · Applied&nbsp;AI
 
 </div>
 
-I have shipped internal platforms, AI agent tooling, and solution architecture to production for a leading Latin American airline and for the bank with the most customers in Chile.
+I have shipped internal platforms and AI agent tooling to production for a leading Latin American airline: an environment per merge request, one Claude Code workspace for a whole platform team, and self-service change data capture.
 
 ## Selected work
 
@@ -57,18 +57,6 @@ Led the production rollout of an MCP server that lets teams set up PostgreSQL ch
 
 <code>Python</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>MCP</code>
 
-### Banking at national&nbsp;scale
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-bank-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/work-bank-light.svg">
-  <img src="./assets/work-bank-light.svg" width="100%" alt="Diagram: a bank's mobile app and website served by backend services, and the bank's email delivery migrated from its previous setup to Amazon SES, with messages flowing out to customers.">
-</picture>
-
-Designed solution architecture for the mobile app and website of the bank with the most customers in Chile, and coordinated the migration of the bank's email delivery to Amazon SES.
-
-<code>AWS</code> <code>Amazon&nbsp;SES</code>
-
 ## How I work
 
 - **Diagnose first.** Find the root cause in the code, the data, and the operations before changing anything.
@@ -79,12 +67,10 @@ Designed solution architecture for the mobile app and website of the bank with t
 
 ## Stack
 
-<table>
-<tr><td><b>Cloud &amp; data</b></td><td><code>GCP</code> <code>AWS</code> <code>Terraform</code> <code>Docker</code> <code>PostgreSQL</code> <code>MongoDB</code> <code>Railway</code></td></tr>
-<tr><td><b>AI</b></td><td><code>Claude</code> <code>MCP</code></td></tr>
-<tr><td><b>Languages</b></td><td><code>TypeScript</code> <code>Python</code> <code>Go</code> <code>PHP</code> <code>Dart</code></td></tr>
-<tr><td><b>Frameworks</b></td><td><code>NestJS</code> <code>FastAPI</code> <code>Next.js</code> <code>React</code> <code>Laravel</code> <code>React&nbsp;Native</code> <code>Flutter</code></td></tr>
-</table>
+- <b>Cloud &amp; data</b> &nbsp; <code>GCP</code> <code>AWS</code> <code>Terraform</code> <code>Docker</code> <code>PostgreSQL</code> <code>MongoDB</code> <code>Railway</code>
+- <b>AI</b> &nbsp; <code>Claude</code> <code>MCP</code>
+- <b>Languages</b> &nbsp; <code>TypeScript</code> <code>Python</code> <code>Go</code> <code>PHP</code> <code>Dart</code>
+- <b>Frameworks</b> &nbsp; <code>NestJS</code> <code>FastAPI</code> <code>Next.js</code> <code>React</code> <code>Laravel</code> <code>React&nbsp;Native</code> <code>Flutter</code>
 
 [![Deploy on Railway with referral code KJa0VN](https://img.shields.io/badge/Deploy_on_Railway-referral_code_KJa0VN-D97757?style=flat-square&logo=railway&logoColor=white&labelColor=0A0A0A)](https://railway.com?referralCode=KJa0VN)
 
@@ -100,7 +86,7 @@ I deploy my own projects on **Railway**. Sign up with referral code **`KJa0VN`**
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Alejandrehl/alejandrehl/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Alejandrehl/alejandrehl/output/github-contribution-grid-snake.svg">
-  <img alt="Alejandro's contribution graph as a snake game" src="https://raw.githubusercontent.com/Alejandrehl/alejandrehl/output/github-contribution-grid-snake.svg">
+  <img alt="Contribution graph drawn as a snake game" src="https://raw.githubusercontent.com/Alejandrehl/alejandrehl/output/github-contribution-grid-snake.svg">
 </picture>
 
 </div>

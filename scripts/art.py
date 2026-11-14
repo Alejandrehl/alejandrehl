@@ -95,10 +95,14 @@ def esc(s):
     return html.escape(s, quote=True)
 
 
-def T(x, y, s, size, fill, weight=400, anchor="start", style="", cls="", extra=""):
+def T(x, y, s, size, fill, weight=400, anchor="start", style="", cls="", extra="", m=None):
+    """m: font size on narrow screens (below 600 px rendered width)."""
     USED_TEXT.update(s)
     a = f' text-anchor="{anchor}"' if anchor != "start" else ""
     w = ' font-weight="700"' if weight == 700 else ""
+    if m:
+        cls = (cls + " mb").strip()
+        style = (style + ";" if style else "") + f"--m:{m}px"
     c = f' class="{cls}"' if cls else ""
     st = f' style="{style}"' if style else ""
     return f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{fill}"{w}{a}{c}{st}{extra}>{esc(s)}</text>'
@@ -241,7 +245,8 @@ def doc(t, w, h, label, body, css="", grid=True):
         "@keyframes spin{to{transform:rotate(360deg)}}"
         ".spin{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}"
         "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
-        "@media (max-width:600px){.minor{display:none}}"
+        ".nar{display:none}"
+        "@media (max-width:600px){.minor,.wide{display:none}.nar{display:inline}.cap{font-size:20px}.mb{font-size:var(--m)}}"
     )
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc(label)}">'
@@ -259,11 +264,14 @@ def doc(t, w, h, label, body, css="", grid=True):
 
 
 # ---------------------------------------------------------------- hero
-HERO_LABEL = ("Alejandro in Claude Code: diagnose before you build, read the whole system from the database "
-              "to the business outcome, plan reviewed, independent review passed, ship it. Beside it, a list of "
-              "shipped work checks off: ephemeral environments, an agent workspace, change data capture over MCP, "
-              "and solution architecture for a bank.")
-SHIPPED = ["ephemeral envs", "agent workspace", "CDC over MCP", "bank architecture"]
+HERO_LABEL = ("A Claude Code session: diagnose before you build, read the whole system from the database to the "
+              "business outcome, plan reviewed, independent review passed, ship it. Beside it, a list of shipped work "
+              "checks off: ephemeral environments, a shared agent workspace, and change data capture over MCP.")
+SHIPPED = ["ephemeral envs", "agent workspace", "CDC over MCP"]
+# Narrow screens: hide the shipped pane and the status bar, and scale the terminal lines (bbox x 46..507,
+# y 102..372) by 1.27 into the centre of the frame, so the main lines read at about 12 px on a phone.
+HERO_MOBILE = ("@media (max-width:600px){.rp{display:none}"
+               ".lp{transform:translate(88.8px,-44px) scale(1.27)}}")
 
 
 def hero(t):
@@ -275,12 +283,12 @@ def hero(t):
     b = []
     # title bar
     b.append(dot(38, 40, 6, "#ff5f56") + dot(60, 40, 6, "#ffbd2e") + dot(82, 40, 6, "#27c93f"))
-    title = "Claude Code  ~/alejandro"
+    title = "Claude Code  ~/alejandrehl"
     tx = 440 - width(title, 15) / 2 + 10
     b.append(asterisk(tx - 14, 40.5, 7, t["acc"], w=1.8))
     b.append(T(tx, 46, title, 15, t["dim"]))
     b.append(f'<line x1="24" y1="64" x2="856" y2="64" stroke="{t["rule"]}"/>')
-    b.append(f'<line x1="576" y1="84" x2="576" y2="372" stroke="{t["rule"]}"/>')
+    left_start = len(b)
 
     def typed(x, y, s, start, per):
         for i, ch in enumerate(s):
@@ -316,12 +324,16 @@ def hero(t):
     b.append(group(f'<rect x="{cx:.1f}" y="{366 - fs * .78:.1f}" width="{adv * .62:.1f}" height="{fs * .98:.1f}" rx="1.5" '
                    f'fill="{t["acc"]}" style="{blink()}"/>', style=step_on(t_shipped)))
 
+    left = b[left_start:]
+    del b[left_start:]
+    b.append(group("".join(left), cls="lp"))
     # right pane: the work that shipped checks off, one by one
-    px, pw, ph = 592, 250, 46
+    rp = [f'<line x1="576" y1="84" x2="576" y2="372" stroke="{t["rule"]}"/>']
+    px, pw, ph = 592, 250, 52
     pcx = px + pw / 2
-    b.append(T(pcx, 104, "shipped", 15, t["faint"], anchor="middle", style=appear(0.2)))
-    tops = [118, 180, 242, 304]
-    hits = [t_shipped + 0.15 + i * 0.45 for i in range(4)]
+    rp.append(T(pcx, 128, "shipped", 15, t["faint"], anchor="middle", style=appear(0.2)))
+    tops = [144, 216, 288]
+    hits = [t_shipped + 0.15 + i * 0.5 for i in range(3)]
     for i, (top, lab) in enumerate(zip(tops, SHIPPED)):
         h = hits[i]
         flash = TL.add([(h, f"stroke:{t['boxs']}"), (h + .15, f"stroke:{t['acc']}"), (h + .55, f"stroke:{t['acc']}"),
@@ -331,20 +343,22 @@ def hero(t):
         icx, icy = px + 24, top + ph / 2
         pending = group(f'<circle cx="{icx}" cy="{icy}" r="6" fill="none" stroke="{t["ghost"]}" stroke-width="1.6"/>',
                         style=step_off(h), extra=' opacity="0"')
-        label = T(px + 44, top + 30, lab, 19, t["boxt"],
+        label = T(px + 46, top + 33, lab, 20, t["boxt"],
                   style=TL.add([(h, f"fill:{t['dim']}"), (h + .3, f"fill:{t['boxt']}")]))
-        b.append(group(rect + pending + check(icx, icy, 15, t["ok"], w=2.6, draw=h + 0.05) + label,
-                       style=appear(0.25 + i * 0.08)))
+        rp.append(group(rect + pending + check(icx, icy, 15, t["ok"], w=2.6, draw=h + 0.05) + label,
+                        style=appear(0.25 + i * 0.08)))
+    b.append(group("".join(rp), cls="rp"))
     # status bar
     b.append(group(f'<line x1="24" y1="394" x2="856" y2="394" stroke="{t["rule"]}"/>' + diamond(48, 418, 5, t["faint"]) +
-                   T(62, 423, "internal platforms · developer self-service · MCP servers in production", 15, t["faint"])))
+                   T(62, 423, "internal platforms · developer self-service · MCP servers in production", 15, t["faint"]),
+                   cls="minor"))
     assert hits[-1] + 0.9 <= TL.total, "hero timeline too short"
-    return doc(t, W, H, HERO_LABEL, "".join(b), grid=False)
+    return doc(t, W, H, HERO_LABEL, "".join(b), HERO_MOBILE, grid=False)
 
 
 # ---------------------------------------------------------------- shared diagram bits
 def caption(x, y, s, t, anchor="start"):
-    return T(x, y, s, 15, t["faint"], anchor=anchor, cls="minor")
+    return T(x, y, s, 15, t["faint"], anchor=anchor, cls="cap")
 
 
 def cyc(name, frames):
@@ -392,7 +406,7 @@ def ephemeral(t):
         lane = []
         # MR chip
         lane.append(box(36, yc - 19, 150, 38, t, rx=9))
-        lane.append(T(52, yc + 6, f"MR !{n}", 18, t["boxt"], 700))
+        lane.append(T(52, yc + 7, f"MR !{n}", 18, t["boxt"], 700, m=24))
         # arrow + pulse
         lane.append(arrow_r(194, 222, yc, t["wire"], head=4.5))
         lane.append(f'<circle cx="190" cy="{yc}" r="4" fill="{t["acc"]}" opacity="0" style="{a("ar")}"/>')
@@ -400,9 +414,11 @@ def ephemeral(t):
         env = [f'<rect x="232" y="{yc - 21}" width="380" height="42" rx="10" fill="{t["box"]}" '
                f'stroke="{t["boxs"] if st else t["rule"]}" stroke-width="1.5" style="{a("envb")}"/>',
                f'<circle cx="252" cy="{yc}" r="5" fill="{t["ok"] if st else t["ghost"]}" style="{a("st")}"/>',
-               T(268, yc + 6, f"mr-{n}", 18, t["text"] if st else t["faint"], 700, style=a("envn")),
+               T(268, yc + 7, f"mr-{n}", 18, t["text"] if st else t["faint"], 700, style=a("envn"), m=24),
                T(268 + width(f"mr-{n}", 18) + 14, yc + 6, "Cloud Run · Cloud SQL · DNS", 15,
-                 t["dim"] if st else t["faint"], style=a("envs"))]
+                 t["dim"] if st else t["faint"], style=a("envs"), cls="minor"),
+               T(268 + width(f"mr-{n}", 24) + 16, yc + 6, "Cloud Run · SQL · DNS", 17,
+                 t["dim"] if st else t["faint"], style=a("envs"), cls="nar")]
         lane.append(group("".join(env), style=a("env")))
         # ttl bar
         frac = {0: 0, 1: .45, 2: .9}[st]
@@ -410,7 +426,7 @@ def ephemeral(t):
         lane.append(f'<rect x="626" y="{yc - 3}" width="92" height="6" rx="3" fill="{t["acct"]}" '
                     f'style="transform-box:fill-box;transform-origin:left center;transform:scaleX({frac});{a("ttl")}"/>')
         # torn down
-        lane.append(group(check(746, yc, 16, t["ok"], w=2.4) + T(762, yc + 6, "torn down", 16, t["ok"]),
+        lane.append(group(check(746, yc, 16, t["ok"], w=2.4) + T(762, yc + 6, "torn down", 16, t["ok"], cls="minor"),
                           style=a("dn"), extra=f' opacity="{0 if st else 1}"'))
         b.append(group("".join(lane), style=a("ln"), extra=""))
     return doc(t, W, H, EPH_LABEL, "".join(b), "".join(css))
@@ -438,12 +454,12 @@ def agents(t):
     for y in ys:
         b.append(box(36, y - 20, 156, 40, t, rx=10))
         b.append(person(62, y - 1, t["dim"]))
-        b.append(T(84, y + 6, "engineer", 17, t["boxt"]))
+        b.append(T(84, y + 7, "engineer", 17, t["boxt"], m=21))
     # workspace card: one shared Claude Code workspace with its three building blocks
     wx, wy, ww, wh = 270, 66, 574, 152
     b.append(box(wx, wy, ww, wh, t, rx=14))
     b.append(asterisk(wx + 28, wy + 30, 8, t["acc"], w=2.2, cls="spin"))
-    b.append(T(wx + 46, wy + 36, "Claude Code", 18, t["text"], 700))
+    b.append(T(wx + 46, wy + 37, "Claude Code", 18, t["text"], 700, m=24))
     b.append(T(wx + ww - 20, wy + 36, "used by the whole team", 15, t["faint"], anchor="end", cls="minor"))
     b.append(f'<line x1="{wx + 16}" y1="{wy + 54}" x2="{wx + ww - 16}" y2="{wy + 54}" stroke="{t["rule"]}"/>')
     tiles = ["agent skills", "MCP servers", "CI quality gates"]
@@ -452,7 +468,12 @@ def agents(t):
         b.append(box(tx, wy + 72, 170, 60, t, rx=10, fill=t["bg1"]))
         b.append(f'<rect x="{tx}" y="{wy + 72}" width="170" height="60" rx="10" fill="{t["acc"]}" opacity="0" '
                  f'style="animation:row{i} {C}s linear 0s infinite both"/>')
-        b.append(T(tx + 85, wy + 108, label, 16, t["boxt"], anchor="middle"))
+        short = {"CI quality gates": "CI gates"}.get(label, label)
+        if short == label:
+            b.append(T(tx + 85, wy + 108, label, 16, t["boxt"], anchor="middle", m=20))
+        else:
+            b.append(T(tx + 85, wy + 108, label, 16, t["boxt"], anchor="middle", cls="wide"))
+            b.append(T(tx + 85, wy + 109, short, 20, t["boxt"], anchor="middle", cls="nar"))
         css.append(cyc(f"row{i}", [(0, "opacity:0"), (30 + i * 16, "opacity:0"), (34 + i * 16, "opacity:.16"),
                                    (44 + i * 16, "opacity:.16"), (48 + i * 16, "opacity:0"), (100, "opacity:0")]))
     # wires team -> workspace; the pulses follow the curve where offset-path is supported
@@ -494,7 +515,7 @@ def cdc(t):
     # team chip
     b.append(box(36, 112, 156, 44, t, rx=10))
     b.append(person(60, 133, t["dim"]))
-    b.append(T(82, 140, "team", 18, t["boxt"], 700))
+    b.append(T(82, 141, "team", 18, t["boxt"], 700, m=24))
     b.append(arrow_r(196, 226, 134, t["wire"], head=4.5))
     b.append(f'<circle cx="196" cy="134" r="4" fill="{t["acc"]}" opacity="0" style="animation:req {C}s ease-in-out 0s infinite both"/>')
     css.append(cyc("req", [(0, "opacity:0;transform:translateX(0)"), (2, "opacity:1"), (9, "opacity:1"),
@@ -502,21 +523,21 @@ def cdc(t):
     # MCP server card
     mx, my, mw, mh = 232, 62, 240, 152
     b.append(box(mx, my, mw, mh, t, rx=14))
-    b.append(T(mx + 20, my + 34, "CDC server", 18, t["text"], 700))
-    b.append(T(mx + 20 + width("CDC server", 18) + 10, my + 34, "MCP", 15, t["acct"], 700))
+    b.append(T(mx + 20, my + 35, "CDC server", 18, t["text"], 700, m=22))
+    b.append(T(mx + 20 + width("CDC server", 18) + 10, my + 34, "MCP", 15, t["acct"], 700, cls="minor"))
     b.append(f'<line x1="{mx + 16}" y1="{my + 50}" x2="{mx + mw - 16}" y2="{my + 50}" stroke="{t["rule"]}"/>')
     # authz row
     b.append(check(mx + 30, my + 78, 14, t["ok"], w=2.4))
-    b.append(T(mx + 46, my + 84, "authz per team", 16, t["dim"]))
+    b.append(T(mx + 46, my + 85, "authz per team", 16, t["dim"], m=20))
     b.append(f'<rect x="{mx + 14}" y="{my + 62}" width="{mw - 28}" height="30" rx="7" fill="{t["ok"]}" opacity="0" '
              f'style="animation:az {C}s linear 0s infinite both"/>')
     css.append(cyc("az", [(0, "opacity:0"), (11, "opacity:0"), (13, "opacity:.14"), (22, "opacity:.14"), (25, "opacity:0"), (100, "opacity:0")]))
     # audit log lines
-    b.append(T(mx + 20, my + 120, "audit log", 15, t["faint"]))
+    b.append(T(mx + 20, my + 121, "audit log", 15, t["faint"], m=19))
     for i in range(3):
         lx = mx + 20 + width("audit log", 15) + 12 + i * 34
         op = 1
-        b.append(f'<rect x="{lx:.1f}" y="{my + 110}" width="26" height="6" rx="3" fill="{t["wire"]}" '
+        b.append(f'<rect class="minor" x="{lx:.1f}" y="{my + 110}" width="26" height="6" rx="3" fill="{t["wire"]}" '
                  f'style="animation:lg{i} {C}s ease-out 0s infinite both" opacity="{op}"/>')
         s0 = 22 + i * 4
         css.append(cyc(f"lg{i}", [(0, "opacity:0"), (s0, "opacity:0"), (s0 + 3, f"opacity:1;fill:{t['acc']}"),
@@ -530,7 +551,7 @@ def cdc(t):
                           (100, "opacity:0;transform:translateX(36px)")]))
     # PostgreSQL
     b.append(cylinder(578, 88, 116, 96, t))
-    b.append(T(578, 160, "WAL", 15, t["faint"], anchor="middle"))
+    b.append(T(578, 161, "WAL", 15, t["faint"], anchor="middle", m=19))
     b.append(f'<circle cx="578" cy="124" r="6" fill="{t["ok"]}" style="animation:cdcon {C}s ease 0s infinite both"/>')
     css.append(cyc("cdcon", [(0, f"fill:{t['ghost']}"), (37, f"fill:{t['ghost']}"), (40, f"fill:{t['ok']}"),
                              (94, f"fill:{t['ok']}"), (98, f"fill:{t['ghost']}"), (100, f"fill:{t['ghost']}")]))
@@ -555,67 +576,6 @@ def cdc(t):
     return doc(t, W, H, CDC_LABEL, "".join(b), "".join(css))
 
 
-# ---------------------------------------------------------------- 4. banking
-BNK_LABEL = ("Diagram: a bank's mobile app and website served by backend services, and the bank's email delivery "
-             "migrated from its previous setup to Amazon SES, with messages flowing out to customers.")
-
-
-def envelope(x, y, w, h, color, fill):
-    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="2.5" fill="{fill}" stroke="{color}" stroke-width="1.5"/>'
-            f'<path d="M{x + 1.5} {y + 2} L{x + w / 2} {y + h * .58} L{x + w - 1.5} {y + 2}" fill="none" stroke="{color}" '
-            f'stroke-width="1.5" stroke-linejoin="round"/>')
-
-
-def bank(t):
-    global TL
-    TL = None
-    W, H, C = 880, 252, 6.0
-    b, css = [], []
-    b.append(caption(40, 46, "solution architecture", t))
-    b.append(caption(452, 46, "email delivery", t))
-    # channels -> services (straight wires, so the pulses only need a translate)
-    chips = [(100, "mobile app"), (168, "website")]
-    for k, (cy, lab) in enumerate(chips):
-        b.append(box(36, cy - 22, 172, 44, t, rx=10))
-        if k == 0:
-            b.append(f'<rect x="52" y="{cy - 11}" width="13" height="22" rx="3" fill="none" stroke="{t["dim"]}" stroke-width="1.6"/>')
-        else:
-            b.append(f'<rect x="49" y="{cy - 8}" width="20" height="16" rx="2.5" fill="none" stroke="{t["dim"]}" stroke-width="1.6"/>'
-                     f'<line x1="49" y1="{cy - 3}" x2="69" y2="{cy - 3}" stroke="{t["dim"]}" stroke-width="1.4"/>')
-        b.append(T(80, cy + 6, lab, 17, t["boxt"]))
-        b.append(arrow_r(212, 258, cy, t["wire"], head=4.5))
-        b.append(f'<circle cx="214" cy="{cy}" r="4" fill="{t["acc"]}" opacity="0" '
-                 f'style="animation:ch {C}s ease-in-out {-k * 3:.2f}s infinite both"/>')
-    css.append(cyc("ch", [(0, "opacity:0;transform:translateX(0)"), (4, "opacity:1"), (16, "opacity:1"),
-                          (20, "opacity:0;transform:translateX(40px)"), (100, "opacity:0;transform:translateX(40px)")]))
-    b.append(box(264, 76, 140, 116, t, rx=12))
-    b.append(T(334, 128, "backend", 18, t["text"], 700, anchor="middle"))
-    b.append(T(334, 152, "services", 18, t["text"], 700, anchor="middle"))
-    b.append(f'<rect x="264" y="76" width="140" height="116" rx="12" fill="none" stroke="{t["acc"]}" stroke-width="1.6" opacity="0" '
-             f'style="animation:sv {C / 2}s ease-out 0s infinite both"/>')
-    css.append(cyc("sv", [(0, "opacity:0"), (36, "opacity:0"), (42, "opacity:.8"), (70, "opacity:0"), (100, "opacity:0")]))
-    b.append(f'<line x1="428" y1="70" x2="428" y2="222" stroke="{t["rule"]}"/>')
-    # legacy -> SES
-    b.append(box(452, 74, 150, 42, t, rx=10, dash=True, fill="none", stroke=t["ghost"]))
-    b.append(T(527, 101, "previous mail", 16, t["faint"], anchor="middle"))
-    b.append(arrow_d(527, 120, 146, t["wire"], head=4.5))
-    b.append(T(540, 138, "migrated", 14, t["faint"]))
-    b.append(box(452, 150, 150, 46, t, rx=11, stroke=t["acc"]))
-    b.append(T(527, 179, "Amazon SES", 18, t["text"], 700, anchor="middle"))
-    # envelopes to customers
-    lane_y = 173
-    b.append(f'<line x1="606" y1="{lane_y}" x2="790" y2="{lane_y}" stroke="{t["rule"]}" stroke-width="1.5" stroke-dasharray="2 6" stroke-linecap="round"/>')
-    css.append(cyc("ml", [(0, "opacity:0;transform:translateX(0)"), (8, "opacity:1"), (86, "opacity:1"),
-                          (100, "opacity:0;transform:translateX(160px)")]))
-    for i in range(4):
-        static = 10 + i * 42
-        b.append(f'<g style="animation:ml 3.2s linear {-i * 0.8:.2f}s infinite both" transform="translate({static} 0)">'
-                 + envelope(612, lane_y - 8, 22, 16, t["acc"], t["box"]) + "</g>")
-    b.append(person(818, lane_y - 2, t["dim"]))
-    b.append(T(818, lane_y + 34, "customers", 15, t["faint"], anchor="middle", cls="minor"))
-    return doc(t, W, H, BNK_LABEL, "".join(b), "".join(css))
-
-
 # ---------------------------------------------------------------- footer
 CTA_LABEL = "A Claude Code prompt reads: let's build something that has to work in production."
 
@@ -623,30 +583,37 @@ CTA_LABEL = "A Claude Code prompt reads: let's build something that has to work 
 def cta(t):
     global TL
     TL = Timeline(3.0)
-    W, H = 880, 120
-    fs, adv = 21, ADV * 21
-    b = [box(28, 28, 824, 64, t, rx=14)]
-    y = 68
-    b.append(T(52, y, ">", fs, t["acct"], 700))
-    s = "let's build something that has to work in production"
-    for i, ch in enumerate(s):
-        if ch != " ":
-            b.append(T(52 + adv * 2 + i * adv, y, ch, fs, t["text"], style=step_on(0.4 + i * 0.03)))
-    tend = 0.4 + len(s) * 0.03
-    cx = 52 + adv * 2 + (len(s) + 1) * adv
-    b.append(group(f'<rect x="{cx:.1f}" y="{y - fs * .78:.1f}" width="{adv * .62:.1f}" height="{fs * .98:.1f}" rx="1.5" '
-                   f'fill="{t["acc"]}" style="{blink()}"/>', style=step_on(tend)))
-    assert tend < TL.total
+    W, H = 880, 136
+
+    def prompt(lines, fs, x, ys, start, per):
+        adv, out, k = ADV * fs, [T(x, ys[0], ">", fs, t["acct"], 700)], 0
+        for line, y in zip(lines, ys):
+            for i, ch in enumerate(line):
+                if ch != " ":
+                    out.append(T(x + adv * 2 + i * adv, y, ch, fs, t["text"], style=step_on(start + k * per)))
+                k += 1
+        end = start + k * per
+        cx = x + adv * 2 + (len(lines[-1]) + 1) * adv
+        out.append(group(f'<rect x="{cx:.1f}" y="{ys[-1] - fs * .78:.1f}" width="{adv * .62:.1f}" height="{fs * .98:.1f}" '
+                         f'rx="1.5" fill="{t["acc"]}" style="{blink()}"/>', style=step_on(end)))
+        return "".join(out), end
+
+    # wide: one line; narrow: the same words on two larger lines
+    wide, e1 = prompt(["let's build something that has to work in production"], 21, 52, [76], 0.4, 0.03)
+    nar, e2 = prompt(["let's build something that", "has to work in production"], 30, 52, [62, 100], 0.4, 0.03)
+    b = [group(box(28, 36, 824, 64, t, rx=14) + wide, cls="wide"),
+         group(box(28, 24, 824, 94, t, rx=14) + nar, cls="nar")]
+    assert max(e1, e2) < TL.total
     return doc(t, W, H, CTA_LABEL, "".join(b), grid=False)
 
 
 # ---------------------------------------------------------------- build
-ARTS = {"hero": hero, "work-ephemeral": ephemeral, "work-agents": agents, "work-cdc": cdc, "work-bank": bank, "cta": cta}
+ARTS = {"hero": hero, "work-ephemeral": ephemeral, "work-agents": agents, "work-cdc": cdc, "cta": cta}
 FONT_CSS = ""
 
 
 LABELS = {"hero": HERO_LABEL, "work-ephemeral": EPH_LABEL, "work-agents": AGT_LABEL, "work-cdc": CDC_LABEL,
-          "work-bank": BNK_LABEL, "cta": CTA_LABEL}
+          "cta": CTA_LABEL}
 
 
 def check_readme():

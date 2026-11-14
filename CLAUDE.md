@@ -6,7 +6,7 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
 
 ## What it is (and what it is NOT)
 
-- **Artifacts:** `README.md` (the profile card) · `assets/{hero,work-ephemeral,work-agents,work-cdc,work-bank,cta}-{dark,light}.svg`
+- **Artifacts:** `README.md` (the profile card) · `assets/{hero,work-ephemeral,work-agents,work-cdc,cta}-{dark,light}.svg`
   (animated art, embedded via `<picture>` with `prefers-color-scheme`) · `scripts/art.py` (generates every SVG;
   edit it, never the SVGs by hand: `python3 scripts/art.py`, needs `fonttools` + `brotli`) · `scripts/fonts/`
   (JetBrains Mono, OFL-1.1, subset and embedded in each SVG) · `.github/workflows/snake.yml` (the snake).
@@ -29,9 +29,11 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
   - Relative `srcset` is rewritten to `/Alejandrehl/alejandrehl/raw/main/…`.
   - The markdown API (`POST /markdown`) wraps each `<img>` in an `<a>` inside the `<picture>`, which the
     live page does not do. A local render must unwrap it, or `<source>` is ignored.
-- **Mobile:** the column is about 360 px, so art text scales to about 40 %. Keep the hero's main lines at
-  24 px and primary labels at 16 px or more. Tertiary labels carry `class="minor"`, which each SVG hides
-  below 600 px (media queries inside an `<img>` SVG follow its rendered width; verified in Blink and WebKit).
+- **Mobile:** the column is about 360 px, so art scales to about 40 %. Media queries inside an `<img>` SVG
+  follow its rendered width (verified in Blink and WebKit), so every SVG carries its own narrow layout
+  below 600 px: `.minor` hides tertiary labels, `.cap` enlarges captions, `T(..., m=N)` sets a label's narrow
+  font size, `.wide`/`.nar` swap a long label or block for a short one, and the hero hides its shipped pane
+  and scales the terminal lines 1.27x into the centre. Check every art at 358 px wide before shipping.
   Use `&nbsp;` where a line would leave an orphan (name, headline, H3s, multi-word chips).
 - **Claims in the art:** every label is a claim. Diagrams show what the fact bank backs (for example the
   CI gates check the workspace itself, so no "every change ships green"); anything else is generic
@@ -57,7 +59,8 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
 
 ## Identity (keep in sync with reality)
 
-- **Alejandro Exequiel Hernández Lara** — Santiago, Chile. `@alejandrehl` across all platforms.
+- **Alejandro Exequiel Hernández Lara** — Santiago, Chile. The name always appears in full (operator's
+  rule, 14-11-2026); alt texts never shorten it. `@alejandrehl` across all platforms.
 - **Headline:** Senior Software Architect · Platform Engineering · Applied AI. Seniority is **Senior**,
   never Staff/Principal.
 - **Brand site:** alehernandez.cl (his own company). Legal data (tax ID, deed) never goes in this
@@ -65,7 +68,7 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
 - **Not mentioned, by the operator's decision (14-11-2026):** his employers by name, his consultancy,
   and his own side products and tools. The README shows the work and its impact, not the brands.
 - **Employer and client work is always de-identified:** describe the work, never name the client
-  ("a leading Latin American airline", "the bank with the most customers in Chile"). No internal
+  ("a leading Latin American airline"). No internal
   project names, colleagues, tickets or business metrics.
 - **No counters or figures** in the README (they live only in the private CV). Past tense for
   finished work; no "currently / now / recent".
