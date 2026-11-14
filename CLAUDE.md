@@ -15,8 +15,10 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
 - **Animation (verified 14-11-2026):** GitHub **does** run CSS and SMIL animations in repo SVGs on the live
   profile (the snake and the hero caret move). The old note that GitHub freezes SVGs at frame 0 was wrong.
   Two rules still hold:
-  1. The **base state** of every SVG (no animation, or `prefers-reduced-motion`) is the complete, legible
-     final frame. Animations only replay how it gets there.
+  1. The **base state** of every SVG (what renders with no animation) is the complete, legible final frame.
+     Animations only replay how it gets there. Each SVG also stops animating under
+     `prefers-reduced-motion`, but browsers may not pass that preference into an `<img>` (Playwright's
+     emulation does not), so keep motion short or subtle.
   2. One-shot sequences run on a **full-length timeline** (`Timeline` in `art.py`): every element animates
      from t=0 for the whole sequence and holds its state through keyframe percentages. WebKit and Blink
      **skip short delayed animations inside `<img>`** (a 10 ms step with a 3 s delay never fired), so never
@@ -27,8 +29,13 @@ GitHub renders `README.md` on the profile landing page. It's branding, not a pro
   - Relative `srcset` is rewritten to `/Alejandrehl/alejandrehl/raw/main/…`.
   - The markdown API (`POST /markdown`) wraps each `<img>` in an `<a>` inside the `<picture>`, which the
     live page does not do. A local render must unwrap it, or `<source>` is ignored.
-- **Mobile:** the column is about 360 px, so art text scales to about 40 %. Keep hero text at 24 px or more,
-  and use `&nbsp;` where a line would leave an orphan (name, headline, H3s).
+- **Mobile:** the column is about 360 px, so art text scales to about 40 %. Keep the hero's main lines at
+  24 px and primary labels at 16 px or more. Tertiary labels carry `class="minor"`, which each SVG hides
+  below 600 px (media queries inside an `<img>` SVG follow its rendered width; verified in Blink and WebKit).
+  Use `&nbsp;` where a line would leave an orphan (name, headline, H3s, multi-word chips).
+- **Claims in the art:** every label is a claim. Diagrams show what the fact bank backs (for example the
+  CI gates check the workspace itself, so no "every change ships green"); anything else is generic
+  illustration, never an invented metric.
 - **Badge logos (verified 14-11-2026):** shields.io drops a logo silently when its simple-icons slug no longer
   exists (`linkedin`, `openai` and `amazonwebservices` are gone). Before adding a `logo=`, check that the
   returned SVG contains an `<image>`.

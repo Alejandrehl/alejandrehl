@@ -55,8 +55,6 @@ def check_contrast():
     for name, t in THEMES.items():
         for k in TEXT_KEYS:
             for bg in ("bg0", "bg1", "box"):
-                if k == "ok" and bg == "box":
-                    continue
                 c = contrast(t[k], t[bg])
                 if c < 4.5:
                     bad.append(f"{name}.{k} on {bg}: {c:.2f}")
@@ -243,6 +241,7 @@ def doc(t, w, h, label, body, css="", grid=True):
         "@keyframes spin{to{transform:rotate(360deg)}}"
         ".spin{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}"
         "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
+        "@media (max-width:600px){.minor{display:none}}"
     )
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc(label)}">'
@@ -261,110 +260,91 @@ def doc(t, w, h, label, body, css="", grid=True):
 
 # ---------------------------------------------------------------- hero
 HERO_LABEL = ("Alejandro in Claude Code: diagnose before you build, read the whole system from the database "
-              "to the business outcome, plan reviewed, independent review passed, ship it. Beside it, a merge "
-              "request moves through its own ephemeral environment and review to production.")
+              "to the business outcome, plan reviewed, independent review passed, ship it. Beside it, a list of "
+              "shipped work checks off: ephemeral environments, an agent workspace, change data capture over MCP, "
+              "and solution architecture for a bank.")
+SHIPPED = ["ephemeral envs", "agent workspace", "CDC over MCP", "bank architecture"]
 
 
 def hero(t):
     global TL
-    TL = Timeline(10.0)
+    TL = Timeline(6.0)
     W, H = 880, 456
     fs, adv = 24, ADV * 24
     x0 = 46
     b = []
     # title bar
     b.append(dot(38, 40, 6, "#ff5f56") + dot(60, 40, 6, "#ffbd2e") + dot(82, 40, 6, "#27c93f"))
-    title = "claude code  ~/alejandro"
-    tw = width(title, 15)
-    tx = 440 - tw / 2 + 10
+    title = "Claude Code  ~/alejandro"
+    tx = 440 - width(title, 15) / 2 + 10
     b.append(asterisk(tx - 14, 40.5, 7, t["acc"], w=1.8))
     b.append(T(tx, 46, title, 15, t["dim"]))
     b.append(f'<line x1="24" y1="64" x2="856" y2="64" stroke="{t["rule"]}"/>')
     b.append(f'<line x1="576" y1="84" x2="576" y2="372" stroke="{t["rule"]}"/>')
 
-    # L1  > diagnose before you build   (typed)
-    y = 120
-    b.append(T(x0, y, ">", fs, t["acct"], 700, style=appear(0.15, .2)))
-    s = "diagnose before you build"
-    for i, ch in enumerate(s):
-        if ch != " ":
-            b.append(T(x0 + adv * 2 + i * adv, y, ch, fs, t["text"], style=step_on(0.45 + i * 0.045)))
-    t_typed = 0.45 + len(s) * 0.045
+    def typed(x, y, s, start, per):
+        for i, ch in enumerate(s):
+            if ch != " ":
+                b.append(T(x + i * adv, y, ch, fs, t["text"], style=step_on(start + i * per)))
+        return start + len(s) * per
 
-    # L2  spinner "Reading the whole system…"  ->  done "Read the whole system"
+    # L1  > diagnose before you build
+    b.append(T(x0, 120, ">", fs, t["acct"], 700, style=appear(0.1, .2)))
+    t_typed = typed(x0 + adv * 2, 120, "diagnose before you build", 0.25, 0.028)
+    # L2  spinner "Reading the whole system..."  ->  "Read the whole system"
     y = 174
-    t_read0, t_read1 = t_typed + 0.35, t_typed + 1.75
+    t_read0, t_read1 = t_typed + 0.15, t_typed + 0.95
     spin = asterisk(x0 + 7, y - 8, 9, t["acc"], w=2.4, cls="spin")
     b.append(group(group(spin, style=step_off(t_read1)), style=step_on(t_read0), extra=' opacity="0"'))
     reading = T(x0 + adv * 2, y, "Reading the whole system...", fs, t["dim"])
     b.append(group(group(reading, style=step_off(t_read1)), style=step_on(t_read0), extra=' opacity="0"'))
     b.append(group(dot(x0 + 7, y - 8, 6.5, t["ok"]) + T(x0 + adv * 2, y, "Read the whole system", fs, t["text"]),
                    style=step_on(t_read1)))
-    # L3   ⎿ database → services → business outcome
-    y = 212
-    b.append(group(corner(x0 + 30, y - 5, t["faint"]) +
-                   flow_text(x0 + 52, y, 18, t["faint"], ["database", "services", "business outcome"], t["faint"]),
-                   style=appear(t_read1 + 0.1)))
+    # L3   database -> services -> business outcome
+    b.append(group(corner(x0 + 30, 207, t["faint"]) +
+                   flow_text(x0 + 52, 212, 18, t["faint"], ["database", "services", "business outcome"], t["faint"]),
+                   style=appear(t_read1 + 0.05)))
     # L4, L5
-    t_plan, t_rev = t_read1 + 0.55, t_read1 + 1.1
+    t_plan, t_rev = t_read1 + 0.4, t_read1 + 0.75
     for yy, txt, tt in ((266, "Plan reviewed before execution", t_plan), (314, "Independent review passed", t_rev)):
         b.append(group(dot(x0 + 7, yy - 8, 6.5, t["ok"]) + T(x0 + adv * 2, yy, txt, fs, t["text"]), style=appear(tt)))
-    # L6  > ship it ▌
-    y = 366
-    t_ship = t_rev + 0.6
-    b.append(T(x0, y, ">", fs, t["acct"], 700, style=appear(t_ship, .2)))
-    s = "ship it"
-    for i, ch in enumerate(s):
-        if ch != " ":
-            b.append(T(x0 + adv * 2 + i * adv, y, ch, fs, t["text"], style=step_on(t_ship + 0.15 + i * 0.06)))
-    t_shipped = t_ship + 0.15 + len(s) * 0.06
-    cx = x0 + adv * 2 + (len(s) + 1) * adv
-    b.append(group(f'<rect x="{cx:.1f}" y="{y - fs * .78:.1f}" width="{adv * .62:.1f}" height="{fs * .98:.1f}" rx="1.5" '
+    # L6  > ship it, then the caret blinks
+    t_ship = t_rev + 0.35
+    b.append(T(x0, 366, ">", fs, t["acct"], 700, style=appear(t_ship, .2)))
+    t_shipped = typed(x0 + adv * 2, 366, "ship it", t_ship + 0.1, 0.05)
+    cx = x0 + adv * 2 + 8 * adv
+    b.append(group(f'<rect x="{cx:.1f}" y="{366 - fs * .78:.1f}" width="{adv * .62:.1f}" height="{fs * .98:.1f}" rx="1.5" '
                    f'fill="{t["acc"]}" style="{blink()}"/>', style=step_on(t_shipped)))
 
-    # right pane: per merge request
-    px, pw, ph = 604, 226, 46
+    # right pane: the work that shipped checks off, one by one
+    px, pw, ph = 592, 250, 46
     pcx = px + pw / 2
-    b.append(T(pcx, 104, "per merge request", 15, t["faint"], anchor="middle", style=appear(0.3)))
-    tops = [122, 188, 254, 320]
-    labels = ["merge request", "ephemeral env", "review + tests", "production"]
-    t0 = t_shipped + 0.2
-    hits = [t0, t0 + 0.75, t0 + 1.5, t0 + 2.25]
-    for i, (top, lab) in enumerate(zip(tops, labels)):
-        prod = i == 3
-        st_box = appear(0.35 + i * 0.12)
-        if prod:
-            rect = (f'<rect x="{px}" y="{top}" width="{pw}" height="{ph}" rx="11" fill="{t["okf"]}" stroke="{t["oks"]}" '
-                    f'stroke-width="1.5" style="{TL.add([(hits[i], f"fill:{t['box']};stroke:{t['boxs']}"), (hits[i] + .45, f"fill:{t['okf']};stroke:{t['oks']}")])}"/>')
-            tw = width(lab, 19) + 26
-            lx = pcx - tw / 2
-            inner = (rect + check(lx + 8, top + ph / 2, 15, t["ok"], w=2.6, draw=hits[i] + 0.1) +
-                     T(lx + 26, top + 30, lab, 19, t["ok"], 700, style=TL.add([(hits[i], f"fill:{t['boxt']}"), (hits[i] + .45, f"fill:{t['ok']}")])))
-        else:
-            rect = (f'<rect x="{px}" y="{top}" width="{pw}" height="{ph}" rx="11" fill="{t["box"]}" stroke="{t["boxs"]}" '
-                    f'stroke-width="1.5" style="{TL.add([(hits[i], f"stroke:{t['boxs']}"), (hits[i] + .22, f"stroke:{t['acc']}"), (hits[i] + .72, f"stroke:{t['acc']}"), (hits[i] + 1.1, f"stroke:{t['boxs']}")])}"/>')
-            inner = rect + T(pcx, top + 30, lab, 19, t["boxt"], anchor="middle")
-        b.append(group(inner, style=st_box))
-        if i < 3:
-            ay1, ay2 = top + ph + 3, tops[i + 1] - 3
-            b.append(group(arrow_d(pcx, ay1, ay2, t["wire"], head=4.5), style=appear(0.41 + i * 0.12)))
-            d = ay2 - ay1 - 4
-            p0 = hits[i] + 0.15
-            pulse = TL.add([(p0, "opacity:0;transform:translateY(0px)"), (p0 + .09, f"opacity:1;transform:translateY({d * .15:.1f}px)"),
-                            (p0 + .51, f"opacity:1;transform:translateY({d * .85:.1f}px)"), (p0 + .6, f"opacity:0;transform:translateY({d:.1f}px)")])
-            b.append(f'<circle cx="{pcx}" cy="{ay1 + 2}" r="4.5" fill="{t["acc"]}" opacity="0" style="{pulse}"/>')
+    b.append(T(pcx, 104, "shipped", 15, t["faint"], anchor="middle", style=appear(0.2)))
+    tops = [118, 180, 242, 304]
+    hits = [t_shipped + 0.15 + i * 0.45 for i in range(4)]
+    for i, (top, lab) in enumerate(zip(tops, SHIPPED)):
+        h = hits[i]
+        flash = TL.add([(h, f"stroke:{t['boxs']}"), (h + .15, f"stroke:{t['acc']}"), (h + .55, f"stroke:{t['acc']}"),
+                        (h + .9, f"stroke:{t['boxs']}")])
+        rect = (f'<rect x="{px}" y="{top}" width="{pw}" height="{ph}" rx="11" fill="{t["box"]}" stroke="{t["boxs"]}" '
+                f'stroke-width="1.5" style="{flash}"/>')
+        icx, icy = px + 24, top + ph / 2
+        pending = group(f'<circle cx="{icx}" cy="{icy}" r="6" fill="none" stroke="{t["ghost"]}" stroke-width="1.6"/>',
+                        style=step_off(h), extra=' opacity="0"')
+        label = T(px + 44, top + 30, lab, 19, t["boxt"],
+                  style=TL.add([(h, f"fill:{t['dim']}"), (h + .3, f"fill:{t['boxt']}")]))
+        b.append(group(rect + pending + check(icx, icy, 15, t["ok"], w=2.6, draw=h + 0.05) + label,
+                       style=appear(0.25 + i * 0.08)))
     # status bar
-    b.append(f'<line x1="24" y1="394" x2="856" y2="394" stroke="{t["rule"]}"/>')
-    b.append(diamond(48, 418, 5, t["faint"]))
-    b.append(T(62, 423, "internal platforms · developer self-service · AI agents in production", 15, t["faint"]))
-    b.append(asterisk(838 - width("claude code", 15) - 12, 417.5, 6.5, t["acc"], w=1.7))
-    b.append(T(838, 423, "claude code", 15, t["faint"], anchor="end"))
+    b.append(group(f'<line x1="24" y1="394" x2="856" y2="394" stroke="{t["rule"]}"/>' + diamond(48, 418, 5, t["faint"]) +
+                   T(62, 423, "internal platforms · developer self-service · MCP servers in production", 15, t["faint"])))
+    assert hits[-1] + 0.9 <= TL.total, "hero timeline too short"
     return doc(t, W, H, HERO_LABEL, "".join(b), grid=False)
 
 
 # ---------------------------------------------------------------- shared diagram bits
 def caption(x, y, s, t, anchor="start"):
-    return T(x, y, s, 15, t["faint"], anchor=anchor)
+    return T(x, y, s, 15, t["faint"], anchor=anchor, cls="minor")
 
 
 def cyc(name, frames):
@@ -374,7 +354,7 @@ def cyc(name, frames):
 
 # ---------------------------------------------------------------- 1. ephemeral environments
 EPH_LABEL = ("Diagram: each merge request gets its own ephemeral environment on Cloud Run, Cloud SQL, and DNS; "
-             "a time to live runs down and the environment is torn down automatically.")
+             "a time to live (TTL) runs down and the environment is torn down automatically.")
 
 
 def ephemeral(t):
@@ -384,7 +364,7 @@ def ephemeral(t):
     b, css = [], []
     b.append(caption(40, 46, "merge request", t))
     b.append(caption(232, 46, "ephemeral environment", t))
-    b.append(caption(626, 46, "ttl", t))
+    b.append(caption(626, 46, "TTL", t))
     b.append(caption(738, 46, "cleanup", t))
     lanes = [(84, "128"), (142, "129"), (200, "130")]
     # static (reduced-motion) state of each lane: stage 0 = torn down, 1 = live half ttl, 2 = live full ttl
@@ -394,12 +374,15 @@ def ephemeral(t):
                           (7, "opacity:1"), (11, "opacity:1"), (13, "opacity:0;transform:translateX(30px)"),
                           (100, "opacity:0;transform:translateX(30px)")]))
     css.append(cyc("env", [(0, "opacity:0;transform:translateX(-8px)"), (12, "opacity:0;transform:translateX(-8px)"),
-                           (16, "opacity:1;transform:none"), (60, "opacity:1"), (64, "opacity:.38"),
-                           (90, "opacity:.38"), (96, "opacity:0"), (100, "opacity:0")]))
+                           (16, "opacity:1;transform:none"), (90, "opacity:1"), (96, "opacity:0"), (100, "opacity:0")]))
+    # torn down = colours fade to the faint text colour and a ghost outline (still 4.5:1), not to low opacity
+    css.append(cyc("envn", [(0, f"fill:{t['text']}"), (61, f"fill:{t['text']}"), (64, f"fill:{t['faint']}"), (100, f"fill:{t['faint']}")]))
+    css.append(cyc("envs", [(0, f"fill:{t['dim']}"), (61, f"fill:{t['dim']}"), (64, f"fill:{t['faint']}"), (100, f"fill:{t['faint']}")]))
+    css.append(cyc("envb", [(0, f"stroke:{t['boxs']}"), (61, f"stroke:{t['boxs']}"), (64, f"stroke:{t['rule']}"), (100, f"stroke:{t['rule']}")]))
     css.append(cyc("st", [(0, f"fill:{t['acc']}"), (20, f"fill:{t['acc']}"), (22, f"fill:{t['ok']}"),
                           (60, f"fill:{t['ok']}"), (62, f"fill:{t['ghost']}"), (100, f"fill:{t['ghost']}")]))
-    css.append(cyc("ttl", [(0, "transform:scaleX(1)"), (20, "transform:scaleX(1)"), (60, "transform:scaleX(0)"),
-                           (100, "transform:scaleX(0)")]))
+    css.append(cyc("ttl", [(0, "transform:scaleX(0)"), (14, "transform:scaleX(0)"), (17, "transform:scaleX(1)"),
+                           (21, "transform:scaleX(1)"), (60, "transform:scaleX(0)"), (100, "transform:scaleX(0)")]))
     css.append(cyc("dn", [(0, "opacity:0"), (61, "opacity:0"), (65, "opacity:1"), (90, "opacity:1"),
                           (96, "opacity:0"), (100, "opacity:0")]))
     for k, (yc, n) in enumerate(lanes):
@@ -410,20 +393,21 @@ def ephemeral(t):
         # MR chip
         lane.append(box(36, yc - 19, 150, 38, t, rx=9))
         lane.append(T(52, yc + 6, f"MR !{n}", 18, t["boxt"], 700))
-        lane.append(dot(166, yc, 4, t["acc"]))
         # arrow + pulse
         lane.append(arrow_r(194, 222, yc, t["wire"], head=4.5))
         lane.append(f'<circle cx="190" cy="{yc}" r="4" fill="{t["acc"]}" opacity="0" style="{a("ar")}"/>')
         # env card
-        env = [box(232, yc - 21, 380, 42, t, rx=10),
+        env = [f'<rect x="232" y="{yc - 21}" width="380" height="42" rx="10" fill="{t["box"]}" '
+               f'stroke="{t["boxs"] if st else t["rule"]}" stroke-width="1.5" style="{a("envb")}"/>',
                f'<circle cx="252" cy="{yc}" r="5" fill="{t["ok"] if st else t["ghost"]}" style="{a("st")}"/>',
-               T(268, yc + 6, f"mr-{n}", 18, t["text"], 700),
-               T(268 + width(f"mr-{n}", 18) + 14, yc + 6, "Cloud Run · Cloud SQL · DNS", 16, t["dim"])]
-        lane.append(group("".join(env), style=a("env"), extra=f' opacity="{1 if st else .38}"'))
+               T(268, yc + 6, f"mr-{n}", 18, t["text"] if st else t["faint"], 700, style=a("envn")),
+               T(268 + width(f"mr-{n}", 18) + 14, yc + 6, "Cloud Run · Cloud SQL · DNS", 15,
+                 t["dim"] if st else t["faint"], style=a("envs"))]
+        lane.append(group("".join(env), style=a("env")))
         # ttl bar
         frac = {0: 0, 1: .45, 2: .9}[st]
         lane.append(f'<rect x="626" y="{yc - 3}" width="92" height="6" rx="3" fill="{t["rule"]}" stroke="{t["boxs"]}" stroke-width="1"/>')
-        lane.append(f'<rect x="626" y="{yc - 3}" width="92" height="6" rx="3" fill="{t["acc"]}" '
+        lane.append(f'<rect x="626" y="{yc - 3}" width="92" height="6" rx="3" fill="{t["acct"]}" '
                     f'style="transform-box:fill-box;transform-origin:left center;transform:scaleX({frac});{a("ttl")}"/>')
         # torn down
         lane.append(group(check(746, yc, 16, t["ok"], w=2.4) + T(762, yc + 6, "torn down", 16, t["ok"]),
@@ -434,7 +418,7 @@ def ephemeral(t):
 
 # ---------------------------------------------------------------- 2. AI-agent workspace
 AGT_LABEL = ("Diagram: engineers on a platform team work from one shared Claude Code workspace with reusable "
-             "agent skills, MCP servers, and CI quality gates; every change leaves with its gates green.")
+             "agent skills, MCP servers, and CI quality gates.")
 
 
 def person(cx, cy, color, w=1.7):
@@ -450,51 +434,38 @@ def agents(t):
     b, css = [], []
     b.append(caption(40, 46, "team", t))
     b.append(caption(270, 46, "shared workspace", t))
-    b.append(caption(660, 46, "every change", t))
     ys = [92, 142, 192]
     for y in ys:
         b.append(box(36, y - 20, 156, 40, t, rx=10))
         b.append(person(62, y - 1, t["dim"]))
         b.append(T(84, y + 6, "engineer", 17, t["boxt"]))
-    # workspace card
-    wx, wy, ww, wh = 270, 66, 330, 152
-    b.append(box(wx, wy, ww, wh, t, rx=14, stroke=t["boxs"]))
-    b.append(asterisk(wx + 26, wy + 28, 8, t["acc"], w=2.2, cls="spin"))
-    b.append(T(wx + 44, wy + 34, "claude code", 18, t["text"], 700))
-    b.append(f'<line x1="{wx + 16}" y1="{wy + 50}" x2="{wx + ww - 16}" y2="{wy + 50}" stroke="{t["rule"]}"/>')
-    rows = [("agent skills", 0), ("MCP servers", 1), ("CI quality gates", 2)]
-    for label, i in rows:
-        ry = wy + 80 + i * 30
-        b.append(f'<rect x="{wx + 18}" y="{ry - 16}" width="{ww - 36}" height="24" rx="6" fill="{t["acc"]}" opacity="0" '
+    # workspace card: one shared Claude Code workspace with its three building blocks
+    wx, wy, ww, wh = 270, 66, 574, 152
+    b.append(box(wx, wy, ww, wh, t, rx=14))
+    b.append(asterisk(wx + 28, wy + 30, 8, t["acc"], w=2.2, cls="spin"))
+    b.append(T(wx + 46, wy + 36, "Claude Code", 18, t["text"], 700))
+    b.append(T(wx + ww - 20, wy + 36, "used by the whole team", 15, t["faint"], anchor="end", cls="minor"))
+    b.append(f'<line x1="{wx + 16}" y1="{wy + 54}" x2="{wx + ww - 16}" y2="{wy + 54}" stroke="{t["rule"]}"/>')
+    tiles = ["agent skills", "MCP servers", "CI quality gates"]
+    for i, label in enumerate(tiles):
+        tx = wx + 16 + i * 186
+        b.append(box(tx, wy + 72, 170, 60, t, rx=10, fill=t["bg1"]))
+        b.append(f'<rect x="{tx}" y="{wy + 72}" width="170" height="60" rx="10" fill="{t["acc"]}" opacity="0" '
                  f'style="animation:row{i} {C}s linear 0s infinite both"/>')
-        b.append(dot(wx + 32, ry - 4, 4, t["acc"]))
-        b.append(T(wx + 46, ry + 2, label, 17, t["dim"]))
-        css.append(cyc(f"row{i}", [(0, "opacity:0"), (18 + i * 14, "opacity:0"), (22 + i * 14, "opacity:.14"),
-                                   (30 + i * 14, "opacity:.14"), (34 + i * 14, "opacity:0"), (100, "opacity:0")]))
-    # wires team -> workspace
+        b.append(T(tx + 85, wy + 108, label, 16, t["boxt"], anchor="middle"))
+        css.append(cyc(f"row{i}", [(0, "opacity:0"), (30 + i * 16, "opacity:0"), (34 + i * 16, "opacity:.16"),
+                                   (44 + i * 16, "opacity:.16"), (48 + i * 16, "opacity:0"), (100, "opacity:0")]))
+    # wires team -> workspace; the pulses follow the curve where offset-path is supported
     for k, y in enumerate(ys):
-        b.append(f'<path d="M194 {y} C230 {y} 236 142 268 142" fill="none" stroke="{t["wire"]}" stroke-width="1.5"/>')
-        b.append(f'<circle r="4" fill="{t["acc"]}" opacity="0" style="offset-path:path(\'M194 {y} C230 {y} 236 142 268 142\');'
+        d = f"M194 {y} C230 {y} 236 142 268 142"
+        b.append(f'<path d="{d}" fill="none" stroke="{t["wire"]}" stroke-width="1.5"/>')
+        b.append(f'<circle r="4" fill="{t["acc"]}" opacity="0" class="mp" style="offset-path:path(\'{d}\');'
                  f'animation:in{k} {C}s ease-in-out 0s infinite both"/>')
-        s0 = k * 5
+        s0 = k * 7
         css.append(cyc(f"in{k}", [(0, "opacity:0;offset-distance:0%"), (s0, "opacity:0;offset-distance:0%"),
                                   (s0 + 2, "opacity:1"), (s0 + 14, "opacity:1"), (s0 + 16, "opacity:0;offset-distance:100%"),
                                   (100, "opacity:0;offset-distance:100%")]))
-    # workspace -> output
-    b.append(arrow_r(604, 650, 142, t["wire"], head=4.5))
-    b.append(f'<circle cx="606" cy="142" r="4" fill="{t["acc"]}" opacity="0" style="animation:out {C}s ease-in-out 0s infinite both"/>')
-    css.append(cyc("out", [(0, "opacity:0;transform:translateX(0)"), (64, "opacity:0;transform:translateX(0)"),
-                           (66, "opacity:1"), (72, "opacity:1"), (74, "opacity:0;transform:translateX(40px)"),
-                           (100, "opacity:0;transform:translateX(40px)")]))
-    # output card
-    ox, oy = 660, 112
-    b.append(box(ox, oy, 184, 60, t, rx=12, fill=t["okf"], stroke=t["oks"]))
-    b.append(check(ox + 24, oy + 30, 16, t["ok"], w=2.6))
-    b.append(T(ox + 42, oy + 26, "gates green", 17, t["ok"], 700))
-    b.append(T(ox + 42, oy + 46, "ready to ship", 15, t["ok"]))
-    b.append(f'<rect x="{ox}" y="{oy}" width="184" height="60" rx="12" fill="none" stroke="{t["ok"]}" stroke-width="2" opacity="0" '
-             f'style="animation:okp {C}s ease-out 0s infinite both"/>')
-    css.append(cyc("okp", [(0, "opacity:0"), (74, "opacity:0"), (76, "opacity:.9"), (92, "opacity:0"), (100, "opacity:0")]))
+    css.append("@supports not (offset-path:path('M0 0')){.mp{display:none}}")
     return doc(t, W, H, AGT_LABEL, "".join(b), "".join(css))
 
 
@@ -516,10 +487,10 @@ def cdc(t):
     TL = None
     W, H, C = 880, 252, 7.0
     b, css = [], []
-    b.append(caption(40, 46, "self-service", t))
+    b.append(caption(40, 46, "team", t))
     b.append(caption(232, 46, "MCP server", t))
     b.append(caption(520, 46, "PostgreSQL", t))
-    b.append(caption(684, 46, "change events", t))
+    b.append(caption(692, 46, "change stream", t))
     # team chip
     b.append(box(36, 112, 156, 44, t, rx=10))
     b.append(person(60, 133, t["dim"]))
@@ -531,8 +502,8 @@ def cdc(t):
     # MCP server card
     mx, my, mw, mh = 232, 62, 240, 152
     b.append(box(mx, my, mw, mh, t, rx=14))
-    b.append(T(mx + 20, my + 34, "cdc server", 18, t["text"], 700))
-    b.append(T(mx + 20 + width("cdc server", 18) + 10, my + 34, "MCP", 15, t["acct"], 700))
+    b.append(T(mx + 20, my + 34, "CDC server", 18, t["text"], 700))
+    b.append(T(mx + 20 + width("CDC server", 18) + 10, my + 34, "MCP", 15, t["acct"], 700))
     b.append(f'<line x1="{mx + 16}" y1="{my + 50}" x2="{mx + mw - 16}" y2="{my + 50}" stroke="{t["rule"]}"/>')
     # authz row
     b.append(check(mx + 30, my + 78, 14, t["ok"], w=2.4))
@@ -550,7 +521,7 @@ def cdc(t):
         s0 = 22 + i * 4
         css.append(cyc(f"lg{i}", [(0, "opacity:0"), (s0, "opacity:0"), (s0 + 3, f"opacity:1;fill:{t['acc']}"),
                                   (s0 + 12, f"fill:{t['wire']}"), (92, "opacity:1"), (98, "opacity:0"), (100, "opacity:0")]))
-    b.append(T(mx + 20, my + 140, "Python · FastAPI", 14, t["faint"]))
+    b.append(T(mx + 20, my + 140, "Python · FastAPI", 14, t["faint"], cls="minor"))
     # MCP -> PostgreSQL
     b.append(arrow_r(476, 514, 134, t["wire"], head=4.5))
     b.append(f'<circle cx="476" cy="134" r="4" fill="{t["acc"]}" opacity="0" style="animation:en {C}s ease-in-out 0s infinite both"/>')
@@ -564,11 +535,14 @@ def cdc(t):
     css.append(cyc("cdcon", [(0, f"fill:{t['ghost']}"), (37, f"fill:{t['ghost']}"), (40, f"fill:{t['ok']}"),
                              (94, f"fill:{t['ok']}"), (98, f"fill:{t['ghost']}"), (100, f"fill:{t['ghost']}")]))
     # stream of change events
-    sx1, sx2, sy = 642, 844, 134
+    sx1, sx2, sy = 654, 844, 134
     b.append(f'<line x1="{sx1}" y1="{sy}" x2="{sx2}" y2="{sy}" stroke="{t["rule"]}" stroke-width="22" stroke-linecap="round"/>')
-    kinds = [("I", t["ok"]), ("U", t["acc"]), ("D", t["dim"]), ("U", t["acc"]), ("I", t["ok"])]
+    kinds = [("I", t["ok"]), ("U", t["acct"]), ("D", t["dim"]), ("U", t["acct"]), ("I", t["ok"])]
     css.append(cyc("ev", [(0, "opacity:0;transform:translateX(0)"), (6, "opacity:1"), (88, "opacity:1"),
                           (100, "opacity:0;transform:translateX(170px)")]))
+    # events only flow while CDC is on (the same 40%..94% window as the WAL dot)
+    css.append(cyc("evon", [(0, "opacity:0"), (38, "opacity:0"), (42, "opacity:1"), (92, "opacity:1"), (96, "opacity:0"), (100, "opacity:0")]))
+    b.append(f'<g style="animation:evon {C}s linear 0s infinite both">')
     for i, (k, col) in enumerate(kinds):
         # static positions spread along the stream; the animation moves each one along it
         x = sx1 + 6
@@ -576,13 +550,14 @@ def cdc(t):
         b.append(f'<g style="animation:ev 3.5s linear {-i * 0.7:.2f}s infinite both" transform="translate({static} 0)">'
                  f'<rect x="{x}" y="{sy - 9}" width="22" height="18" rx="4" fill="{t["box"]}" stroke="{col}" stroke-width="1.5"/>'
                  + T(x + 11, sy + 5, k, 13, col, 700, anchor="middle") + "</g>")
-    b.append(T(743, 182, "insert · update · delete", 14, t["faint"], anchor="middle"))
+    b.append("</g>")
+    b.append(T(749, 182, "insert · update · delete", 14, t["faint"], anchor="middle", cls="minor"))
     return doc(t, W, H, CDC_LABEL, "".join(b), "".join(css))
 
 
 # ---------------------------------------------------------------- 4. banking
-BNK_LABEL = ("Diagram: solution architecture for a bank's mobile app and website, and the bank's email delivery "
-             "migrated from a legacy server to AWS SES, with messages flowing out to customers.")
+BNK_LABEL = ("Diagram: a bank's mobile app and website served by backend services, and the bank's email delivery "
+             "migrated from its previous setup to Amazon SES, with messages flowing out to customers.")
 
 
 def envelope(x, y, w, h, color, fill):
@@ -598,34 +573,35 @@ def bank(t):
     b, css = [], []
     b.append(caption(40, 46, "solution architecture", t))
     b.append(caption(452, 46, "email delivery", t))
-    # phone
-    px, py = 52, 70
-    b.append(f'<rect x="{px}" y="{py}" width="92" height="150" rx="16" fill="{t["box"]}" stroke="{t["boxs"]}" stroke-width="1.5"/>')
-    b.append(f'<rect x="{px + 32}" y="{py + 9}" width="28" height="5" rx="2.5" fill="{t["boxs"]}"/>')
-    for i, (w_, c) in enumerate(((52, t["acc"]), (64, t["wire"]), (40, t["wire"]), (58, t["wire"]))):
-        b.append(f'<rect x="{px + 14}" y="{py + 30 + i * 22}" width="{w_}" height="9" rx="4.5" fill="{c}" '
-                 f'style="animation:sk {C}s ease-in-out {-i * .25:.2f}s infinite both"/>')
-    b.append(T(px + 46, py + 140, "app", 15, t["faint"], anchor="middle"))
-    # browser
-    bx, by = 168, 82
-    b.append(f'<rect x="{bx}" y="{by}" width="232" height="128" rx="10" fill="{t["box"]}" stroke="{t["boxs"]}" stroke-width="1.5"/>')
-    b.append(f'<line x1="{bx}" y1="{by + 24}" x2="{bx + 232}" y2="{by + 24}" stroke="{t["boxs"]}" stroke-width="1.2"/>')
-    for i in range(3):
-        b.append(dot(bx + 16 + i * 13, by + 12, 3.5, t["boxs"]))
-    b.append(f'<rect x="{bx + 62}" y="{by + 7}" width="150" height="10" rx="5" fill="{t["rule"]}"/>')
-    for i, (w_, c) in enumerate(((120, t["acc"]), (180, t["wire"]), (150, t["wire"]))):
-        b.append(f'<rect x="{bx + 18}" y="{by + 42 + i * 22}" width="{w_}" height="9" rx="4.5" fill="{c}" '
-                 f'style="animation:sk {C}s ease-in-out {-1 - i * .25:.2f}s infinite both"/>')
-    b.append(T(bx + 116, by + 118, "website", 15, t["faint"], anchor="middle"))
-    css.append(cyc("sk", [(0, "opacity:1"), (40, "opacity:.45"), (80, "opacity:1"), (100, "opacity:1")]))
+    # channels -> services (straight wires, so the pulses only need a translate)
+    chips = [(100, "mobile app"), (168, "website")]
+    for k, (cy, lab) in enumerate(chips):
+        b.append(box(36, cy - 22, 172, 44, t, rx=10))
+        if k == 0:
+            b.append(f'<rect x="52" y="{cy - 11}" width="13" height="22" rx="3" fill="none" stroke="{t["dim"]}" stroke-width="1.6"/>')
+        else:
+            b.append(f'<rect x="49" y="{cy - 8}" width="20" height="16" rx="2.5" fill="none" stroke="{t["dim"]}" stroke-width="1.6"/>'
+                     f'<line x1="49" y1="{cy - 3}" x2="69" y2="{cy - 3}" stroke="{t["dim"]}" stroke-width="1.4"/>')
+        b.append(T(80, cy + 6, lab, 17, t["boxt"]))
+        b.append(arrow_r(212, 258, cy, t["wire"], head=4.5))
+        b.append(f'<circle cx="214" cy="{cy}" r="4" fill="{t["acc"]}" opacity="0" '
+                 f'style="animation:ch {C}s ease-in-out {-k * 3:.2f}s infinite both"/>')
+    css.append(cyc("ch", [(0, "opacity:0;transform:translateX(0)"), (4, "opacity:1"), (16, "opacity:1"),
+                          (20, "opacity:0;transform:translateX(40px)"), (100, "opacity:0;transform:translateX(40px)")]))
+    b.append(box(264, 76, 140, 116, t, rx=12))
+    b.append(T(334, 128, "backend", 18, t["text"], 700, anchor="middle"))
+    b.append(T(334, 152, "services", 18, t["text"], 700, anchor="middle"))
+    b.append(f'<rect x="264" y="76" width="140" height="116" rx="12" fill="none" stroke="{t["acc"]}" stroke-width="1.6" opacity="0" '
+             f'style="animation:sv {C / 2}s ease-out 0s infinite both"/>')
+    css.append(cyc("sv", [(0, "opacity:0"), (36, "opacity:0"), (42, "opacity:.8"), (70, "opacity:0"), (100, "opacity:0")]))
     b.append(f'<line x1="428" y1="70" x2="428" y2="222" stroke="{t["rule"]}"/>')
     # legacy -> SES
     b.append(box(452, 74, 150, 42, t, rx=10, dash=True, fill="none", stroke=t["ghost"]))
-    b.append(T(527, 101, "legacy mail", 16, t["faint"], anchor="middle"))
+    b.append(T(527, 101, "previous mail", 16, t["faint"], anchor="middle"))
     b.append(arrow_d(527, 120, 146, t["wire"], head=4.5))
     b.append(T(540, 138, "migrated", 14, t["faint"]))
     b.append(box(452, 150, 150, 46, t, rx=11, stroke=t["acc"]))
-    b.append(T(527, 179, "AWS SES", 18, t["text"], 700, anchor="middle"))
+    b.append(T(527, 179, "Amazon SES", 18, t["text"], 700, anchor="middle"))
     # envelopes to customers
     lane_y = 173
     b.append(f'<line x1="606" y1="{lane_y}" x2="790" y2="{lane_y}" stroke="{t["rule"]}" stroke-width="1.5" stroke-dasharray="2 6" stroke-linecap="round"/>')
@@ -636,37 +612,31 @@ def bank(t):
         b.append(f'<g style="animation:ml 3.2s linear {-i * 0.8:.2f}s infinite both" transform="translate({static} 0)">'
                  + envelope(612, lane_y - 8, 22, 16, t["acc"], t["box"]) + "</g>")
     b.append(person(818, lane_y - 2, t["dim"]))
-    b.append(T(818, lane_y + 34, "customers", 15, t["faint"], anchor="middle"))
+    b.append(T(818, lane_y + 34, "customers", 15, t["faint"], anchor="middle", cls="minor"))
     return doc(t, W, H, BNK_LABEL, "".join(b), "".join(css))
 
 
 # ---------------------------------------------------------------- footer
-CTA_LABEL = ("A Claude Code prompt reads: let's build something that has to work in production. "
-             "Below it, alejandrehl@icloud.com and linkedin.com/in/alejandrehl.")
+CTA_LABEL = "A Claude Code prompt reads: let's build something that has to work in production."
 
 
 def cta(t):
     global TL
-    TL = Timeline(4.0)
-    W, H = 880, 168
+    TL = Timeline(3.0)
+    W, H = 880, 120
     fs, adv = 21, ADV * 21
-    b = []
-    b.append(box(36, 40, 808, 64, t, rx=14, stroke=t["boxs"]))
-    y = 80
-    b.append(T(60, y, ">", fs, t["acct"], 700))
+    b = [box(28, 28, 824, 64, t, rx=14)]
+    y = 68
+    b.append(T(52, y, ">", fs, t["acct"], 700))
     s = "let's build something that has to work in production"
     for i, ch in enumerate(s):
         if ch != " ":
-            b.append(T(60 + adv * 2 + i * adv, y, ch, fs, t["text"], style=step_on(0.6 + i * 0.035)))
-    tend = 0.6 + len(s) * 0.035
-    cx = 60 + adv * 2 + (len(s) + 1) * adv
+            b.append(T(52 + adv * 2 + i * adv, y, ch, fs, t["text"], style=step_on(0.4 + i * 0.03)))
+    tend = 0.4 + len(s) * 0.03
+    cx = 52 + adv * 2 + (len(s) + 1) * adv
     b.append(group(f'<rect x="{cx:.1f}" y="{y - fs * .78:.1f}" width="{adv * .62:.1f}" height="{fs * .98:.1f}" rx="1.5" '
                    f'fill="{t["acc"]}" style="{blink()}"/>', style=step_on(tend)))
-    # contact line under the prompt
-    hy = 134
-    b.append(envelope(40, hy - 13, 20, 14, t["acc"], "none"))
-    b.append(T(70, hy, "alejandrehl@icloud.com", 15, t["dim"]))
-    b.append(T(844, hy, "linkedin.com/in/alejandrehl", 15, t["faint"], anchor="end"))
+    assert tend < TL.total
     return doc(t, W, H, CTA_LABEL, "".join(b), grid=False)
 
 

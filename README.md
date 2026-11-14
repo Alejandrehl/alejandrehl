@@ -3,22 +3,21 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img src="./assets/hero-light.svg" width="100%" alt="Alejandro in Claude Code: diagnose before you build, read the whole system from the database to the business outcome, plan reviewed, independent review passed, ship it. Beside it, a merge request moves through its own ephemeral environment and review to production.">
+  <img src="./assets/hero-light.svg" width="100%" alt="Alejandro in Claude Code: diagnose before you build, read the whole system from the database to the business outcome, plan reviewed, independent review passed, ship it. Beside it, a list of shipped work checks off: ephemeral environments, an agent workspace, change data capture over MCP, and solution architecture for a bank.">
 </picture>
 
 # Alejandro Hernández&nbsp;Lara
 
-**Senior&nbsp;Software&nbsp;Architect · Platform&nbsp;Engineering · Applied&nbsp;AI**
+**Senior&nbsp;Software&nbsp;Architect**<br>
+Platform&nbsp;Engineering · Applied&nbsp;AI
 
-*I build the platforms engineering teams ship on, and the AI tooling that makes them faster.*
+*I build the platforms that engineering teams ship on, and the AI tooling they build with.*
 
-[alehernandez.cl](https://www.alehernandez.cl) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/alejandrehl/) &nbsp;·&nbsp; [Email](mailto:alejandrehl@icloud.com) &nbsp;·&nbsp; Santiago,&nbsp;Chile
+[alehernandez.cl](https://www.alehernandez.cl) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/alejandrehl/) &nbsp;·&nbsp; [Email](mailto:alejandrehl@icloud.com)
 
 </div>
 
----
-
-I design and build internal platforms and AI tooling for engineering teams: self-service infrastructure, ephemeral environments, and agents that run in production. I read a system end to end, from the database to the business outcome, and fix root causes instead of symptoms.
+I have shipped internal platforms, AI agent tooling, and solution architecture to production for a leading Latin American airline and for the bank with the most customers in Chile.
 
 ## Selected work
 
@@ -27,24 +26,24 @@ I design and build internal platforms and AI tooling for engineering teams: self
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/work-ephemeral-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/work-ephemeral-light.svg">
-  <img src="./assets/work-ephemeral-light.svg" width="100%" alt="Diagram: each merge request gets its own ephemeral environment on Cloud Run, Cloud SQL, and DNS; a time to live runs down and the environment is torn down automatically.">
+  <img src="./assets/work-ephemeral-light.svg" width="100%" alt="Diagram: each merge request gets its own ephemeral environment on Cloud Run, Cloud SQL, and DNS; a time to live (TTL) runs down and the environment is torn down automatically.">
 </picture>
 
 Designed and built the core of an ephemeral-environments platform on GCP for a leading Latin American airline. Every merge request gets its own running environment, provisioned on demand and torn down automatically.
 
-`Cloud Run` `Cloud SQL` `Terraform Cloud API` `Automatic DNS` `TTL cleanup`
+<code>GCP</code> <code>Cloud&nbsp;Run</code> <code>Cloud&nbsp;SQL</code> <code>Terraform&nbsp;Cloud&nbsp;API</code>
 
-### A shared AI-agent workspace for a platform team
+### A shared AI-agent workspace for a platform&nbsp;team
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/work-agents-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/work-agents-light.svg">
-  <img src="./assets/work-agents-light.svg" width="100%" alt="Diagram: engineers on a platform team work from one shared Claude Code workspace with reusable agent skills, MCP servers, and CI quality gates; every change leaves with its gates green.">
+  <img src="./assets/work-agents-light.svg" width="100%" alt="Diagram: engineers on a platform team work from one shared Claude Code workspace with reusable agent skills, MCP servers, and CI quality gates.">
 </picture>
 
-Built the Claude Code workspace a platform-engineering team works from: reusable agent skills, MCP servers, and CI quality gates. Recognized as the technical reference for generative AI on that engagement.
+Built the Claude Code workspace a platform engineering team works from: reusable agent skills, MCP servers, and CI quality gates. I served as the technical reference for generative AI there.
 
-`Claude Code` `MCP` `Agent skills` `CI gates`
+<code>Claude&nbsp;Code</code> <code>MCP</code> <code>Agent&nbsp;Skills</code>
 
 ### Self-service change data capture over&nbsp;MCP
 
@@ -56,42 +55,40 @@ Built the Claude Code workspace a platform-engineering team works from: reusable
 
 Led the production rollout of an MCP server that lets teams set up PostgreSQL change data capture through self-service, with per-team authorization and audit logging.
 
-`Python` `FastAPI` `PostgreSQL` `MCP`
+<code>Python</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>MCP</code>
 
-### Banking at national scale
+### Banking at national&nbsp;scale
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/work-bank-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/work-bank-light.svg">
-  <img src="./assets/work-bank-light.svg" width="100%" alt="Diagram: solution architecture for a bank's mobile app and website, and the bank's email delivery migrated from a legacy server to AWS SES, with messages flowing out to customers.">
+  <img src="./assets/work-bank-light.svg" width="100%" alt="Diagram: a bank's mobile app and website served by backend services, and the bank's email delivery migrated from its previous setup to Amazon SES, with messages flowing out to customers.">
 </picture>
 
-Designed solution architecture for the mobile app and website of the bank with the most customers in Chile, and migrated the bank's email delivery to AWS SES.
+Designed solution architecture for the mobile app and website of the bank with the most customers in Chile, and coordinated the migration of the bank's email delivery to Amazon SES.
 
-`Solution architecture` `AWS` `AWS SES`
+<code>AWS</code> <code>Amazon&nbsp;SES</code>
 
 ## How I work
 
-- **Diagnose first.** Read the code, the data, and the operations, and find the root cause before writing anything.
+- **Diagnose first.** Find the root cause in the code, the data, and the operations before changing anything.
 - **Plan, then review.** Non-trivial changes start as a reviewed plan and ship only after an independent review and green CI.
-- **No deferred fixes.** No placeholders and no "later" TODOs; the docs match the system.
+- **No deferred fixes.** No placeholders and no TODOs for later; the docs match the system.
 
-[Claude Code](https://claude.com/claude-code) is my primary environment: I orchestrate agents to design, build, modernize, and audit software with the same rigor.
+[Claude Code](https://claude.com/claude-code) is my primary environment: I orchestrate agents to design, build, modernize, and audit software under these same three rules.
 
 ## Stack
 
 <table>
 <tr><td><b>Cloud &amp; data</b></td><td><code>GCP</code> <code>AWS</code> <code>Terraform</code> <code>Docker</code> <code>PostgreSQL</code> <code>MongoDB</code> <code>Railway</code></td></tr>
-<tr><td><b>AI</b></td><td><code>Claude</code> <code>MCP</code> <code>OpenAI</code></td></tr>
+<tr><td><b>AI</b></td><td><code>Claude</code> <code>MCP</code></td></tr>
 <tr><td><b>Languages</b></td><td><code>TypeScript</code> <code>Python</code> <code>Go</code> <code>PHP</code> <code>Dart</code></td></tr>
-<tr><td><b>Frameworks</b></td><td><code>NestJS</code> <code>FastAPI</code> <code>Next.js</code> <code>React</code> <code>Laravel</code> <code>React Native</code> <code>Flutter</code></td></tr>
+<tr><td><b>Frameworks</b></td><td><code>NestJS</code> <code>FastAPI</code> <code>Next.js</code> <code>React</code> <code>Laravel</code> <code>React&nbsp;Native</code> <code>Flutter</code></td></tr>
 </table>
-
-For my own deployments I use **Railway**.
 
 [![Deploy on Railway with referral code KJa0VN](https://img.shields.io/badge/Deploy_on_Railway-referral_code_KJa0VN-D97757?style=flat-square&logo=railway&logoColor=white&labelColor=0A0A0A)](https://railway.com?referralCode=KJa0VN)
 
-> Use referral code **`KJa0VN`** ([railway.com?referralCode=KJa0VN](https://railway.com?referralCode=KJa0VN)) and we both get credit.
+I deploy my own projects on **Railway**. Sign up with referral code **`KJa0VN`** at [railway.com](https://railway.com?referralCode=KJa0VN) and we both get credit.
 
 ## Activity
 
@@ -108,12 +105,10 @@ For my own deployments I use **Railway**.
 
 </div>
 
----
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/cta-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/cta-light.svg">
-  <img src="./assets/cta-light.svg" width="100%" alt="A Claude Code prompt reads: let's build something that has to work in production. Below it, alejandrehl@icloud.com and linkedin.com/in/alejandrehl.">
+  <img src="./assets/cta-light.svg" width="100%" alt="A Claude Code prompt reads: let's build something that has to work in production.">
 </picture>
 
 <div align="center">
